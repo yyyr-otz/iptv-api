@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<tv date="20251218134425 +0800">
+<tv date="20251218142915 +0800">
 	<channel id="CCTV-1">
 		<display-name lang="zh">CCTV-1</display-name>
 	</channel>
@@ -9030,6 +9030,12 @@
 	<programme channel="NewTV动作电影" start="20251218184700 +0800" stop="20251218201400 +0800">
 		<title lang="zh">绝色霸王花</title>
 	</programme>
+	<programme channel="NewTV动作电影" start="20251218201400 +0800" stop="20251218204400 +0800">
+		<title lang="zh">《美丽俏佳人》推荐第二期</title>
+	</programme>
+	<programme channel="NewTV动作电影" start="20251218204400 +0800" stop="20251218220400 +0800">
+		<title lang="zh">女特警之暗战</title>
+	</programme>
 	<channel id="NewTV惊悚悬疑">
 		<display-name lang="zh">NewTV惊悚悬疑</display-name>
 	</channel>
@@ -9089,6 +9095,12 @@
 	</programme>
 	<programme channel="NewTV惊悚悬疑" start="20251218195100 +0800" stop="20251218202100 +0800">
 		<title lang="zh">《美丽俏佳人》推荐第二期</title>
+	</programme>
+	<programme channel="NewTV惊悚悬疑" start="20251218202100 +0800" stop="20251218215500 +0800">
+		<title lang="zh">孤海寄生</title>
+	</programme>
+	<programme channel="NewTV惊悚悬疑" start="20251218215500 +0800" stop="20251218222500 +0800">
+		<title lang="zh">《八段锦》推荐第45期</title>
 	</programme>
 	<channel id="IPTV经典电影">
 		<display-name lang="zh">IPTV经典电影</display-name>
