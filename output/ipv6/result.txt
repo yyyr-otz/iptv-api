@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2025-12-19 06:24:58,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
+2025-12-19 18:26:47,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
 
 📺央视频道,#genre#
 CCTV-1,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
@@ -719,6 +719,7 @@ TVBS亚洲,https://live.tvfix.org/live/tvbs/index.m3u8
 纬来体育,http://bxtv.3a.ink/api.php?id=wlty
 纬来体育,https://live.catvod.com/live.php?id=videolandsport&token=08055a12092996ab466afdc9a84e304b36c6cb22d283a527e5830858447673c0%3A1766020769%3ANC4yNDYuMTM1LjY2
 纬来体育,http://php.666230.xyz/smt.php?id=videolandsport
+纬来体育,https://live.catvod.com/live.php?id=videolandsport&token=738d1d54fcdc973bbb988f1332a6939e3059a24b6b0d8c07e5c85b53d5b1da8b%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 纬来育乐,https://vx65267199.18cn.dpdns.org/48.m3u8
 纬来育乐,https://hls-gateway.vpstv.net/streams/477081.m3u8
 纬来育乐,https://smart.pendy.dpdns.org/Smart.php?id=videolandyule
@@ -735,6 +736,7 @@ J2,http://r.jdshipin.com/ndGgS
 Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=e06036a69c6ad8d7f08620ca78cb66158b2d5225882066f7694eda3fd326781c%3A1766020769%3ANC4yNDYuMTM1LjY2
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
+三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=e039493f840da9d72d823cd5264b4585e2456b2dd0087311ff4215af3acc0503%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 无线新闻,http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbxw
 无线新闻,https://cdn9.163189.xyz/smt3.1.1.php?id=inews_twn
 无线新闻,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
@@ -748,15 +750,18 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 东森综合,https://smart.pendy.dpdns.org/Smart.php?id=ettvzhonghe
 东森综合,https://hls-gateway.vpstv.net/streams/476987.m3u8
 东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=4f7150de825ba704f2380acc26ba0791d7f9baa035dbddafb1de01360787dedf%3A1766020769%3ANC4yNDYuMTM1LjY2
+东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=e014d57b60a641b3593d18e25f42c9099cfc85d831985a76ef1b54d14cce7551%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=e97643e76ffb45ac64c15b1d792e3db845d9dc39defa0a07c949d88c7f2faeb0%3A1766020769%3ANC4yNDYuMTM1LjY2
+东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=a9f4740e240c5c46ddef16159e74c4d0f3705fd4674205b074a94b6dfecdfc31%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 东森电影,http://mytv.cdn.com.mp/live/dsdy/stream.m3u8
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,http://bxtv.3a.ink/api.php?id=dsdy
 东森电影,https://live.catvod.com/live.php?id=ettvmovie&token=fa02733b2ddfaf8cebe409cd135417297bf01a0fa9d09eeea6fbc7f56cfd523f%3A1766020769%3ANC4yNDYuMTM1LjY2
 东森电影,http://php.666230.xyz/smt.php?id=ettvmovie
+东森电影,https://live.catvod.com/live.php?id=ettvmovie&token=da6119d2a49307ffd5fea3345508df5f3fe6635584ea490c48b0956a00142650%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 Now剧集,http://pullpackage.alivecdn.com/live/B9AKX0X3gSWZVv91H6UZDdsYyM8Fie9HvmJFzg3XN8JiR27kog.flv
 靖天资讯,https://hls-gateway.vpstv.net/streams/476258.m3u8
 靖天资讯,http://pullpackage.alivecdn.com/live/jSi62v69ef4x6iYBScl4GTgr9WaWuRtR1v7DfyIDrCzlEjd4oO.flv
@@ -871,6 +876,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/4/224/3221227606/index.m3u8
 东森电影,http://bxtv.3a.ink/api.php?id=dsdy
 东森电影,https://live.catvod.com/live.php?id=ettvmovie&token=fa02733b2ddfaf8cebe409cd135417297bf01a0fa9d09eeea6fbc7f56cfd523f%3A1766020769%3ANC4yNDYuMTM1LjY2
 东森电影,http://php.666230.xyz/smt.php?id=ettvmovie
+东森电影,https://live.catvod.com/live.php?id=ettvmovie&token=da6119d2a49307ffd5fea3345508df5f3fe6635584ea490c48b0956a00142650%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 东森洋片,http://s1.an94tv.cfd/aktv2/CH-2/AKTV.m3u8
 东森洋片,https://hls-gateway.vpstv.net/streams/476997.m3u8
 东森洋片,http://pullpackage.alivecdn.com/live/kik9tNVo2R9KMDD687bFX3vtLMD4Lwg69y94g8XKH40P1BOa5U.flv
@@ -884,6 +890,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/4/224/3221227606/index.m3u8
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=e97643e76ffb45ac64c15b1d792e3db845d9dc39defa0a07c949d88c7f2faeb0%3A1766020769%3ANC4yNDYuMTM1LjY2
+东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=a9f4740e240c5c46ddef16159e74c4d0f3705fd4674205b074a94b6dfecdfc31%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 
 🏀体育频道,#genre#
 CCTV-5,http://php.jdshipin.com/TVOD/hljyd.php?id=3221226019
