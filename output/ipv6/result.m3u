@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/yyyr-otz/iptv-api/refs/heads/master/output/epg/epg.gz"
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1.png" group-title="🕘️更新时间",2025-12-21 06:22:54
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1.png" group-title="🕘️更新时间",2025-12-21 18:23:51
 http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1.png" group-title="📺央视频道",CCTV-1
 http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
@@ -1461,6 +1461,8 @@ http://php.666230.xyz/smt.php?id=sanlitaiwan
 https://live.catvod.com/live.php?id=sanlitaiwan&token=e039493f840da9d72d823cd5264b4585e2456b2dd0087311ff4215af3acc0503%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="三立台湾" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/三立台湾.png" group-title="🌊港·澳·台",三立台湾
 https://live.catvod.com/live.php?id=sanlitaiwan&token=6469ab7a1075825c75fdd502b80c70547bf32503c1a301d5d754c61accb8a74b%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="三立台湾" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/三立台湾.png" group-title="🌊港·澳·台",三立台湾
+https://live.catvod.com/live.php?id=sanlitaiwan&token=ba25735ff72497c29274998facf524448e12cc231caa3a0a2fdf7aab0736d49d%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="🌊港·澳·台",无线新闻
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbxw
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="🌊港·澳·台",无线新闻
@@ -1491,6 +1493,8 @@ https://live.catvod.com/live.php?id=ettvzhonghe&token=4f7150de825ba704f2380acc26
 https://live.catvod.com/live.php?id=ettvzhonghe&token=e014d57b60a641b3593d18e25f42c9099cfc85d831985a76ef1b54d14cce7551%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="东森综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森综合.png" group-title="🌊港·澳·台",东森综合
 https://live.catvod.com/live.php?id=ettvzhonghe&token=e1012cb76c9ec21a2e089d095fc628ff3e48c022048e483634af14f4bf2290e7%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="东森综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森综合.png" group-title="🌊港·澳·台",东森综合
+https://live.catvod.com/live.php?id=ettvzhonghe&token=df1fc515b42df8560ee5404036392edc2ff0f6d193722d015002be86724c9b8f%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
 https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 #EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
@@ -1501,6 +1505,8 @@ https://live.catvod.com/live.php?id=ettvsuper&token=e97643e76ffb45ac64c15b1d792e
 https://live.catvod.com/live.php?id=ettvsuper&token=a9f4740e240c5c46ddef16159e74c4d0f3705fd4674205b074a94b6dfecdfc31%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
 https://live.catvod.com/live.php?id=ettvsuper&token=d07757aee2c8f1812bbbb7acb6c36806622a25c5d9baedc58acd9f0b94c6fdcf%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
+https://live.catvod.com/live.php?id=ettvsuper&token=39297c90694c423f1b867077df3389643fe3d33c747860e2c144299ddc439cec%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
 http://mytv.cdn.com.mp/live/dsdy/stream.m3u8
 #EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
@@ -1517,6 +1523,8 @@ http://php.666230.xyz/smt.php?id=ettvmovie
 https://live.catvod.com/live.php?id=ettvmovie&token=da6119d2a49307ffd5fea3345508df5f3fe6635584ea490c48b0956a00142650%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
 https://live.catvod.com/live.php?id=ettvmovie&token=acf05528e67fd1f41d2161bc6c577677b4d311bfd0603e96f1f6f03703490cda%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
+https://live.catvod.com/live.php?id=ettvmovie&token=4170bcd0d5ab152905de977040351444c526600c37b002c09ed04c668477604f%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="Now剧集" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/Now剧集.png" group-title="🌊港·澳·台",Now剧集
 http://pullpackage.alivecdn.com/live/B9AKX0X3gSWZVv91H6UZDdsYyM8Fie9HvmJFzg3XN8JiR27kog.flv
 #EXTINF:-1 tvg-name="靖天资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天资讯.png" group-title="🌊港·澳·台",靖天资讯
@@ -1745,6 +1753,8 @@ http://php.666230.xyz/smt.php?id=ettvmovie
 https://live.catvod.com/live.php?id=ettvmovie&token=da6119d2a49307ffd5fea3345508df5f3fe6635584ea490c48b0956a00142650%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🎬电影频道",东森电影
 https://live.catvod.com/live.php?id=ettvmovie&token=acf05528e67fd1f41d2161bc6c577677b4d311bfd0603e96f1f6f03703490cda%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🎬电影频道",东森电影
+https://live.catvod.com/live.php?id=ettvmovie&token=4170bcd0d5ab152905de977040351444c526600c37b002c09ed04c668477604f%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="东森洋片" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森洋片.png" group-title="🎬电影频道",东森洋片
 http://s1.an94tv.cfd/aktv2/CH-2/AKTV.m3u8
 #EXTINF:-1 tvg-name="东森洋片" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森洋片.png" group-title="🎬电影频道",东森洋片
@@ -1775,6 +1785,8 @@ https://live.catvod.com/live.php?id=ettvsuper&token=e97643e76ffb45ac64c15b1d792e
 https://live.catvod.com/live.php?id=ettvsuper&token=a9f4740e240c5c46ddef16159e74c4d0f3705fd4674205b074a94b6dfecdfc31%3A1766107501%3AMTI4LjI0LjE2MS4xNzY%3D
 #EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
 https://live.catvod.com/live.php?id=ettvsuper&token=d07757aee2c8f1812bbbb7acb6c36806622a25c5d9baedc58acd9f0b94c6fdcf%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
+#EXTINF:-1 tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
+https://live.catvod.com/live.php?id=ettvsuper&token=39297c90694c423f1b867077df3389643fe3d33c747860e2c144299ddc439cec%3A1766280998%3AMjAuNTEuMjA2Ljgx
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV5.png" group-title="🏀体育频道",CCTV-5
 http://php.jdshipin.com/TVOD/hljyd.php?id=3221226019
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV5.png" group-title="🏀体育频道",CCTV-5
