@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2025-12-23 06:24:23,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
+2025-12-23 18:28:49,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
 
 📺央视频道,#genre#
 CCTV-1,http://php.jdshipin.com/TVOD/iptv.php?id=rthk33
@@ -740,6 +740,7 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=6469ab7a1075825c75fdd502b80c70547bf32503c1a301d5d754c61accb8a74b%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
 三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=ba25735ff72497c29274998facf524448e12cc231caa3a0a2fdf7aab0736d49d%3A1766280998%3AMjAuNTEuMjA2Ljgx
 三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=459a5895a7c65f1dc4cc1a11af936d07a726f957138411f06f655ad390d2fb9c%3A1766366878%3ANjguMjIwLjYyLjI0Ng%3D%3D
+三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan&token=06e9f1bcf9faec678036e930ac499564c02feaf3e7e55813398a0c09b43a1984%3A1766453072%3AMjAuMTYxLjY3LjIxMA%3D%3D
 无线新闻,http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbxw
 无线新闻,https://cdn9.163189.xyz/smt3.1.1.php?id=inews_twn
 无线新闻,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
@@ -757,6 +758,7 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=e1012cb76c9ec21a2e089d095fc628ff3e48c022048e483634af14f4bf2290e7%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
 东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=df1fc515b42df8560ee5404036392edc2ff0f6d193722d015002be86724c9b8f%3A1766280998%3AMjAuNTEuMjA2Ljgx
 东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=b8f7a2a00a75b93c9ccaf9b0c1e95e03ff4cdfc742839748d5db649a458d1627%3A1766366878%3ANjguMjIwLjYyLjI0Ng%3D%3D
+东森综合,https://live.catvod.com/live.php?id=ettvzhonghe&token=323a2e2ece8cfcfb6cc9f066e3d08bae4c5bb1ae7042acf9ee298a8e1d785815%3A1766453072%3AMjAuMTYxLjY3LjIxMA%3D%3D
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=e97643e76ffb45ac64c15b1d792e3db845d9dc39defa0a07c949d88c7f2faeb0%3A1766020769%3ANC4yNDYuMTM1LjY2
@@ -764,6 +766,7 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=d07757aee2c8f1812bbbb7acb6c36806622a25c5d9baedc58acd9f0b94c6fdcf%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=39297c90694c423f1b867077df3389643fe3d33c747860e2c144299ddc439cec%3A1766280998%3AMjAuNTEuMjA2Ljgx
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=6f964ddac2d6c98495aedb1e210e3a1319f6480063e221479d0a127359805bfb%3A1766366878%3ANjguMjIwLjYyLjI0Ng%3D%3D
+东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=7b693dfea009c16ef4bc6f67dbd93b776fea20b8e763836185778275afc8e53c%3A1766453072%3AMjAuMTYxLjY3LjIxMA%3D%3D
 东森电影,http://mytv.cdn.com.mp/live/dsdy/stream.m3u8
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
@@ -909,6 +912,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/4/224/3221227606/index.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=d07757aee2c8f1812bbbb7acb6c36806622a25c5d9baedc58acd9f0b94c6fdcf%3A1766193519%3ANjguMTU0LjExNy4zNQ%3D%3D
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=39297c90694c423f1b867077df3389643fe3d33c747860e2c144299ddc439cec%3A1766280998%3AMjAuNTEuMjA2Ljgx
 东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=6f964ddac2d6c98495aedb1e210e3a1319f6480063e221479d0a127359805bfb%3A1766366878%3ANjguMjIwLjYyLjI0Ng%3D%3D
+东森超视,https://live.catvod.com/live.php?id=ettvsuper&token=7b693dfea009c16ef4bc6f67dbd93b776fea20b8e763836185778275afc8e53c%3A1766453072%3AMjAuMTYxLjY3LjIxMA%3D%3D
 
 🏀体育频道,#genre#
 CCTV-5,http://php.jdshipin.com/TVOD/hljyd.php?id=3221226019
