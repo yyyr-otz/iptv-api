@@ -1288,6 +1288,7 @@ CHC家庭影院,http://[2409:8087:7008:20::8]:80/dbiptv.sn.chinamobile.com/PLTV/
 CHC家庭影院,http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/1.m3u8
 CHC家庭影院,http://[2409:8087:7008:20::8]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/1.m3u8
 CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
+CHC家庭影院,http://iptv.cqshushu.com/migu.php?pid=chc%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2&token=263b9cc89eb51ce670b1043b52f2b2d3
 CHC动作电影,http://z.b.bkpcp.top/m.php
 CHC动作电影,http://goo.bkpcp.top/mg/dzdy
 CHC动作电影,http://z.b.bkpcp.top/m.php?id=dzdy
@@ -1469,13 +1470,13 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 动漫秀场,http://[2409:8087:1e02:20::10]/000000001000PLTV/11/224/3221226138/1.m3u8
 动漫秀场,http://[2409:8087:1e02:20::10]/000000001000PLTV/11/224/3221225764/1.m3u8
 动漫秀场,http://nas.laokhome.cn:19000/udp/232.0.0.128:1234
-动漫秀场,https://zby.130519.xyz/PLTV/11/224/3221226138/index.m3u8
 动漫秀场,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=YanG-1989
 动漫秀场,http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226197/index.m3u8
 动漫秀场,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031113/1.m3u8
 动漫秀场,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=YanG-1989
 动漫秀场,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000009&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 动漫秀场,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000009&IASHttpSessionId=OTT19019320240419154124000281
+动漫秀场,https://zby.130519.xyz/PLTV/11/224/3221226138/index.m3u8
 新动漫,http://[2409:8087:1400:26::1012]/PLTV/88888888/224/3221226501/index.m3u8
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
