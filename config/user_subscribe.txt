@@ -30,6 +30,29 @@ https://raw.githubusercontent.com/wucaizhong2828/ceshi/main/tv.txt
 https://raw.githubusercontent.com/l19270149853/zm/main/y.txt
 https://raw.githubusercontent.com/jinlaoshu/TV/main/live.txt
 https://raw.githubusercontent.com/tvzb/tvzb.github.io/main/live.txt
+https://raw.githubusercontent.com/hyf1966/mytv/main/gggg.nzk
+https://raw.githubusercontent.com/qy1987/TV1999/main/outputs/ipv4.txt
+
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/9688
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/1698
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/9908
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/HKTV.txt
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/QWT.txt
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/WSD.txt
+https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/sztw
+
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt2
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/lt
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/yd
+
+https://raw.githubusercontent.com/zuomy2021/tv/main/iTV.txt
+https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.m3u
+https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.txt
+https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc.htm
+https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc2.htm
+https://raw.githubusercontent.com/zuomy2021/tv/main/test1.txt
+
 https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/huuc_ipv6.m3u
 https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/ipv6_merged.m3u
 https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/kakaxi-1_ipv6.m3u
@@ -71,7 +94,6 @@ https://itv.shrimp.netlib.re/MiGu.txt
 # https://raw.githubusercontent.com/wind005/TVlive/main/%E4%BB%A3%E7%90%86%E6%BA%90/%E7%A6%8F%E5%BB%BA%E7%A7%BB%E5%8A%A8-dl.txt
 # https://raw.githubusercontent.com/wind005/TVlive/main/%E4%BB%A3%E7%90%86%E6%BA%90/%E4%B8%8A%E6%B5%B7%E7%A7%BB%E5%8A%A8-dl.txt
 # https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/output/result.txt
-https://github.com/gitgordon85/Gordon85_IPTV/raw/master/config/9688
 https://raw.githubusercontent.com/q1017673817/iptvz/62feb02f32ea7a3eb2939a24bb01cd4eebbe4ee3/txt/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.txt
 https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/config/866-898-9898
 #IPTV-GO 项目
