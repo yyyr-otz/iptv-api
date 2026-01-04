@@ -1,0 +1,37 @@
+name: 同步上游
+on:
+  workflow_dispatch:  # 手动触发
+  #schedule:
+  #  - cron: '0 3 * * *'  # 每天 UTC 3:00 
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整 Git 历史
+      - name: 合并
+        run: |
+          git remote add upstream https://github.com/Guovin/iptv-api.git || true
+          git fetch upstream
+          git checkout master
+          git merge upstream/master || true
+
+          git checkout HEAD --.github/workflows/sync.yml
+          git checkout HEAD --.github/workflows/main.yml
+          git checkout HEAD -- output/
+          git checkout HEAD -- config/demo.txt
+          git checkout HEAD -- config/epg.txt
+          git checkout HEAD -- config/local.txt
+          git checkout HEAD -- config/subscribe.txt
+          git checkout HEAD -- config/user_config.ini
+          git checkout HEAD -- config/user_demo.txt
+          git checkout HEAD -- config/user_subscribe.txt
+          git checkout HEAD -- config/whitelist.txt
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add -A
+          git commit -m "合并上游" || echo "没有需要提交的更改"
+          git push origin master
