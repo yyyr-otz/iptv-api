@@ -1215,6 +1215,7 @@ TVBS亚洲,https://live.tvfix.org/live/tvbs/index.m3u8
 纬来体育,https://smt.858.qzz.io/Smart.php?id=videolandsport
 纬来体育,https://smt.go-iptv.ggff.net/smart.php?id=videolandsport&token=Goiptv
 纬来体育,http://php.666230.xyz/smt.php?id=videolandsport
+纬来体育,https://smart.946985.filegear-sg.me/smart.php?id=videolandsport
 纬来育乐,https://vx65267199.18cn.dpdns.org/48.m3u8
 纬来育乐,https://hls-gateway.vpstv.net/streams/477081.m3u8
 纬来育乐,https://smart.pendy.dpdns.org/Smart.php?id=videolandyule
@@ -1239,6 +1240,7 @@ J2,http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
 Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 三立台湾,https://live.catvod.com/live.php?id=sanlitaiwan
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
+三立台湾,https://smart.946985.filegear-sg.me/smart.php?id=sanlitaiwan
 无线新闻,https://cdn9.163189.xyz/smt3.1.1.php?id=inews_twn
 无线新闻,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
 三立新闻,https://tv.iill.top/4gtv/229
@@ -1254,6 +1256,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper
+东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
 东森电影,http://mytv.cdn.com.mp/live/dsdy/stream.m3u8
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
@@ -1261,6 +1264,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
 东森电影,https://smt.go-iptv.ggff.net/smart.php?id=ettvmovie&token=Goiptv
 东森电影,http://php.666230.xyz/smt.php?id=ettvmovie
+东森电影,https://smart.946985.filegear-sg.me/smart.php?id=ettvmovie
 Now剧集,http://pullpackage.alivecdn.com/live/B9AKX0X3gSWZVv91H6UZDdsYyM8Fie9HvmJFzg3XN8JiR27kog.flv
 靖天资讯,https://hls-gateway.vpstv.net/streams/476258.m3u8
 靖天资讯,http://pullpackage.alivecdn.com/live/jSi62v69ef4x6iYBScl4GTgr9WaWuRtR1v7DfyIDrCzlEjd4oO.flv
@@ -1425,6 +1429,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
 东森电影,https://smt.go-iptv.ggff.net/smart.php?id=ettvmovie&token=Goiptv
 东森电影,http://php.666230.xyz/smt.php?id=ettvmovie
+东森电影,https://smart.946985.filegear-sg.me/smart.php?id=ettvmovie
 龙祥电影,https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
 龙祥电影,https://smt.go-iptv.ggff.net/smart.php?id=lungxiangtime_twn&token=Goiptv
 龙祥电影,http://thunderbolt-40gbps.com/live/qtTNEdtW/JdEZiDM5/54678.ts
@@ -1451,6 +1456,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://live.catvod.com/live.php?id=ettvsuper
+东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
 
 🪁动画频道,#genre#
 少儿动画,http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
