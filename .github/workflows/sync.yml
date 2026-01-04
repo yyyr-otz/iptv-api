@@ -1,8 +1,8 @@
-name: 同步上游
+name: 定时同步上游
 on:
   workflow_dispatch:  # 手动触发
-  #schedule:
-  #  - cron: '0 3 * * *'  # 每天 UTC 3:00 
+  schedule:
+    - cron: '0 3 * * *'  # 每天 UTC 3:00 
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
 
           # 提交更改
           git add -A
-          git commit -m "合并上游" || echo "没有需要提交的更改"
+          git commit -m "自动合并上游" || echo "没有需要提交的更改"
 
           # 推送到你的 fork 的 master 分支
           git push origin master
