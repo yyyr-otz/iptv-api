@@ -13,13 +13,21 @@ jobs:
           fetch-depth: 0  # 获取完整 Git 历史
       - name: 合并
         run: |
+          # 添加上游仓库（允许已存在）
           git remote add upstream https://github.com/Guovin/iptv-api.git || true
+
+          # 设置提交者信息
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          # 拉取上游变更
           git fetch upstream
           git checkout master
           git merge upstream/master || true
 
-          git checkout HEAD --.github/workflows/sync.yml
-          git checkout HEAD --.github/workflows/main.yml
+          # 恢复要保留的文件和目录
+          git checkout HEAD -- .github/workflows/sync.yml
+          git checkout HEAD -- .github/workflows/main.yml
           git checkout HEAD -- output/
           git checkout HEAD -- config/demo.txt
           git checkout HEAD -- config/epg.txt
@@ -30,8 +38,9 @@ jobs:
           git checkout HEAD -- config/user_subscribe.txt
           git checkout HEAD -- config/whitelist.txt
 
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          # 提交更改
           git add -A
           git commit -m "合并上游" || echo "没有需要提交的更改"
+
+          # 推送到你的 fork 的 master 分支
           git push origin master
