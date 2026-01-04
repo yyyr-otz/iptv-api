@@ -15,11 +15,7 @@ def get_proxy_list(page_count=1):
     """
     Get proxy list, parameter page_count is the number of pages to get
     """
-    url_pattern = [
-        "https://www.zdaye.com/free/{}/",
-        "https://www.kuaidaili.com/free/inha/{}/",
-        "https://www.kuaidaili.com/free/intr/{}/",
-    ]
+    url_pattern = []
     proxy_list = []
     urls = []
     open_driver = config.open_driver

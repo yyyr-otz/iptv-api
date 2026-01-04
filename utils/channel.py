@@ -712,11 +712,7 @@ def print_channel_number(data: CategoryChannelData, cate: str, name: str):
 def append_total_data(
         items,
         data,
-        hotel_fofa_result=None,
-        multicast_result=None,
-        hotel_foodie_result=None,
         subscribe_result=None,
-        online_search_result=None,
         whitelist_maps=None,
         blacklist=None,
 ):
@@ -724,11 +720,7 @@ def append_total_data(
     Append all method data to total info data
     """
     total_result = [
-        ("hotel_fofa", hotel_fofa_result),
-        ("multicast", multicast_result),
-        ("hotel_foodie", hotel_foodie_result),
         ("subscribe", subscribe_result),
-        ("online_search", online_search_result),
     ]
     url_hosts_ipv_type = {}
     for obj in data.values():

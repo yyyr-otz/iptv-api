@@ -120,8 +120,8 @@ origin_map = {
 
 ipv6_proxy = "http://www.ipv6proxy.net/go.php?u="
 
-foodie_url = "http://www.foodieguide.com/iptvsearch/"
+foodie_url = ""
 
-foodie_hotel_url = "http://www.foodieguide.com/iptvsearch/iptvhotel.php"
+foodie_hotel_url = ""
 
 waiting_tip = t("msg.waiting_tip")

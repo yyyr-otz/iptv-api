@@ -11,10 +11,6 @@ from tqdm import tqdm
 
 import utils.constants as constants
 from updates.epg import get_epg
-from updates.fofa import get_channels_by_fofa
-from updates.hotel import get_channels_by_hotel
-from updates.multicast import get_channels_by_multicast
-from updates.online_search import get_channels_by_online_search
 from updates.subscribe import get_channels_by_subscribe_urls
 from utils.channel import (
     get_channel_items,
@@ -50,11 +46,7 @@ class UpdateSource:
         self.run_ui = False
         self.tasks = []
         self.channel_items: CategoryChannelData = {}
-        self.hotel_fofa_result = {}
-        self.hotel_foodie_result = {}
-        self.multicast_result = {}
         self.subscribe_result = {}
-        self.online_search_result = {}
         self.epg_result = {}
         self.channel_data: CategoryChannelData = {}
         self.pbar = None
@@ -66,23 +58,11 @@ class UpdateSource:
 
     async def visit_page(self, channel_names: list[str] = None):
         tasks_config = [
-            ("hotel_fofa", get_channels_by_fofa, "hotel_fofa_result"),
-            ("multicast", get_channels_by_multicast, "multicast_result"),
-            ("hotel_foodie", get_channels_by_hotel, "hotel_foodie_result"),
             ("subscribe", get_channels_by_subscribe_urls, "subscribe_result"),
-            (
-                "online_search",
-                get_channels_by_online_search,
-                "online_search_result",
-            ),
             ("epg", get_epg, "epg_result"),
         ]
 
         for setting, task_func, result_attr in tasks_config:
-            if (
-                    setting == "hotel_foodie" or setting == "hotel_fofa"
-            ) and config.open_hotel == False:
-                continue
             if config.open_method[setting]:
                 if setting == "subscribe":
                     whitelist_subscribe_urls, default_subscribe_urls = get_section_entries(constants.subscribe_path,
@@ -98,8 +78,6 @@ class UpdateSource:
                                   callback=self.update_progress
                                   )
                     )
-                elif setting == "hotel_foodie" or setting == "hotel_fofa":
-                    task = asyncio.create_task(task_func(callback=self.update_progress))
                 else:
                     task = asyncio.create_task(
                         task_func(channel_names, callback=self.update_progress)
@@ -139,11 +117,7 @@ class UpdateSource:
                 append_total_data(
                     self.channel_items.items(),
                     self.channel_data,
-                    self.hotel_fofa_result,
-                    self.multicast_result,
-                    self.hotel_foodie_result,
                     self.subscribe_result,
-                    self.online_search_result,
                     self.whitelist_maps,
                     self.blacklist
                 )

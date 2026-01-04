@@ -227,7 +227,6 @@ def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_pr
         else:
             categorized_urls[origin]["all"].append(info)
 
-    ipv_num = {ipv_type: 0 for ipv_type in ipv_type_prefer}
     urls_limit = config.urls_limit
     for origin in origin_type_prefer:
         if len(total_urls) >= urls_limit:
@@ -235,21 +234,12 @@ def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_pr
         for ipv_type in ipv_type_prefer:
             if len(total_urls) >= urls_limit:
                 break
-            ipv_type_num = ipv_num[ipv_type]
-            ipv_type_limit = config.ipv_limit[ipv_type] or urls_limit
-            if ipv_type_num < ipv_type_limit:
-                urls = categorized_urls[origin][ipv_type]
-                if not urls:
-                    continue
-                limit = min(
-                    max(config.source_limits.get(origin, urls_limit) - ipv_type_num, 0),
-                    max(ipv_type_limit - ipv_type_num, 0),
-                )
-                limit_urls = urls[:limit]
-                total_urls.extend(limit_urls)
-                ipv_num[ipv_type] += len(limit_urls)
-            else:
+            urls = categorized_urls[origin].get(ipv_type, [])
+            if not urls:
                 continue
+            remaining = urls_limit - len(total_urls)
+            limit_urls = urls[:remaining]
+            total_urls.extend(limit_urls)
 
     total_urls = total_urls[:urls_limit]
 

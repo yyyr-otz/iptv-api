@@ -94,30 +94,8 @@ class ConfigManager:
         ]
 
     @property
-    def ipv4_num(self):
-        try:
-            return self.config.getint("Settings", "ipv4_num", fallback=5)
-        except:
-            return ""
-
-    @property
-    def ipv6_num(self):
-        try:
-            return self.config.getint("Settings", "ipv6_num", fallback=5)
-        except:
-            return ""
-
-    @property
     def ipv6_support(self):
         return self.config.getboolean("Settings", "ipv6_support", fallback=False)
-
-    @property
-    def ipv_limit(self):
-        return {
-            "all": self.urls_limit,
-            "ipv4": self.ipv4_num,
-            "ipv6": self.ipv6_num,
-        }
 
     @property
     def origin_type_prefer(self):
@@ -180,15 +158,11 @@ class ConfigManager:
 
     @property
     def urls_limit(self):
-        return self.config.getint("Settings", "urls_limit", fallback=30)
+        return self.config.getint("Settings", "urls_limit", fallback=10)
 
     @property
     def open_url_info(self):
         return self.config.getboolean("Settings", "open_url_info", fallback=True)
-
-    @property
-    def recent_days(self):
-        return self.config.getint("Settings", "recent_days", fallback=30)
 
     @property
     def source_file(self):
@@ -208,33 +182,33 @@ class ConfigManager:
 
     @property
     def open_hotel(self):
-        return self.config.getboolean("Settings", f"open_hotel", fallback=True)
+        return self.config.getboolean("Settings", f"open_hotel", fallback=False)
 
     @property
     def open_hotel_fofa(self):
-        return self.config.getboolean("Settings", f"open_hotel_fofa", fallback=True)
+        return self.config.getboolean("Settings", f"open_hotel_fofa", fallback=False)
 
     @property
     def open_hotel_foodie(self):
-        return self.config.getboolean("Settings", f"open_hotel_foodie", fallback=True)
+        return self.config.getboolean("Settings", f"open_hotel_foodie", fallback=False)
 
     @property
     def open_multicast(self):
-        return self.config.getboolean("Settings", f"open_multicast", fallback=True)
+        return self.config.getboolean("Settings", f"open_multicast", fallback=False)
 
     @property
     def open_multicast_fofa(self):
-        return self.config.getboolean("Settings", f"open_multicast_fofa", fallback=True)
+        return self.config.getboolean("Settings", f"open_multicast_fofa", fallback=False)
 
     @property
     def open_multicast_foodie(self):
         return self.config.getboolean(
-            "Settings", f"open_multicast_foodie", fallback=True
+            "Settings", f"open_multicast_foodie", fallback=False
         )
 
     @property
     def open_online_search(self):
-        return self.config.getboolean("Settings", f"open_online_search", fallback=True)
+        return self.config.getboolean("Settings", f"open_online_search", fallback=False)
 
     @property
     def open_method(self):
@@ -327,7 +301,7 @@ class ConfigManager:
 
     @property
     def open_supply(self):
-        return self.config.getboolean("Settings", "open_supply", fallback=True)
+        return self.config.getboolean("Settings", "open_supply", fallback=False)
 
     @property
     def update_time_position(self):
@@ -399,7 +373,13 @@ class ConfigManager:
 
     @property
     def update_interval(self):
-        return self.config.getfloat("Settings", "update_interval", fallback=12)
+        raw = self.config.get("Settings", "update_interval", fallback="12")
+        if raw is None or str(raw).strip() == "":
+            return None
+        try:
+            return float(raw)
+        except (ValueError, TypeError):
+            return 12.0
 
     @property
     def update_times(self):
