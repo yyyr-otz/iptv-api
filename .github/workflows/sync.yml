@@ -44,3 +44,10 @@ jobs:
 
           # 推送到你的 fork 的 master 分支
           git push origin master
+      - name: 清理工作流
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ secrets.MYPAT }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 1
