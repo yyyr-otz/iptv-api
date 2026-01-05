@@ -1611,6 +1611,7 @@ CCTV-15,http://zteres.sn.chinamobile.com:6060/000000001000/5000000005000018417/1
 风云音乐,http://mov.mtoo.vip:8333/udp/239.253.43.29:5146
 风云音乐,http://[2409:8087:1400:26::1012]/PLTV/88888888/224/3221227148/index.m3u8
 风云音乐,http://nas.laokhome.cn:19000/udp/232.0.0.47:1234
+风云音乐,http://w.yao87.com:4022/rtp/239.76.254.51:9000
 音乐之声,https://radio.0472.org/?id=641
 音乐广播,https://tv-1.iill.top/fm/552
 音乐广播,https://tv.iill.top/fm/552&token=7c908a370d95d78e90a9d2ba4007e5185038b0ceac7435ba90e72c77cc035ff6
