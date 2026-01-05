@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<tv date="20260104220613 +0800">
+<tv date="20260105000502 +0800">
 	<channel id="CCTV-1">
 		<display-name lang="zh">CCTV-1</display-name>
 	</channel>
@@ -11520,8 +11520,74 @@
 	<programme channel="电竞天堂" start="20260105224400 +0800" stop="20260105231900 +0800">
 		<title lang="zh">JJ斗地主S3春季赛八强赛4－2重庆�...</title>
 	</programme>
-	<programme channel="电竞天堂" start="20260105231900 +0800" stop="20260106000800 +0800">
+	<programme channel="电竞天堂" start="20260105231900 +0800" stop="20260106000000 +0800">
 		<title lang="zh">JJ斗地主S3春季赛八强赛4－3重庆�...</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106000000 +0800" stop="20260106004200 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106004200 +0800" stop="20260106012800 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106012800 +0800" stop="20260106021000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106021000 +0800" stop="20260106024600 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106024600 +0800" stop="20260106031400 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106031400 +0800" stop="20260106040000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106040000 +0800" stop="20260106044000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106044000 +0800" stop="20260106053700 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106053700 +0800" stop="20260106061100 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106061100 +0800" stop="20260106070000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106070000 +0800" stop="20260106081100 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106081100 +0800" stop="20260106101500 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106101500 +0800" stop="20260106120800 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106120800 +0800" stop="20260106134000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106134000 +0800" stop="20260106151100 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106151100 +0800" stop="20260106171500 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106171500 +0800" stop="20260106190900 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106190900 +0800" stop="20260106204000 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106204000 +0800" stop="20260106215700 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106215700 +0800" stop="20260106230800 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106230800 +0800" stop="20260106235900 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
+	</programme>
+	<programme channel="电竞天堂" start="20260106235900 +0800" stop="20260106235959 +0800">
+		<title lang="zh">游戏LOL全明星赛事精选</title>
 	</programme>
 	<channel id="IPTV经典电影">
 		<display-name lang="zh">IPTV经典电影</display-name>
