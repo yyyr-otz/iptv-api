@@ -10,6 +10,9 @@
 📺 IPTV live-source auto-update platform — 🤖 fully automated collection, filtering, speed-testing, and generation
 pipeline 🚀. Supports extensive customization; paste the resulting URL into your player to watch
 
+> [!NOTE]
+> Remote deployment or customized paid services (paid) are available. Contact email: `360996299@qq.com`
+
 There are four installation and operation methods in total, choose the one that suits you.
 
 ## Workflow Deployment
@@ -58,6 +61,10 @@ This is because some files conflict with the default files of the main repositor
 latest code.
 ![Conflict resolution](./images/conflict.png 'Conflict resolution')
 
+> [!IMPORTANT]
+> To avoid conflicts when updating the code later, it is recommended to copy files in the `config` directory and rename
+> them by adding the `user_` prefix before modifying.
+
 ### Modify Template
 
 When you click to confirm creation in step one, you will automatically jump to your personal repository after success.
@@ -103,9 +110,10 @@ Like editing templates, modify the runtime configuration.
 3. Paste the default configuration. (when creating `user_config.ini`, you can only enter the configuration items you
    want to modify, no need to copy the entire `config.ini`. Note that the `[Settings]` at the top of the configuration
    file must be retained, otherwise the custom configuration below will not take effect)
-4. Modify the template and result file configuration:
+4. Modify the template and result file configuration and CDN proxy acceleration (recommended):
     - source_file = config/user_demo.txt
     - final_file = output/user_result.txt
+    - cdn_url = (go to the `Govin` public account and reply `cdn` to get it)
 5. Click `Commit changes...` to save.
 
 ![Create user_config.ini](./images/edit-user-config.png 'Create user_config.ini')
@@ -123,23 +131,20 @@ Adjust the configuration as needed, here is the default configuration descriptio
      uncheck display interface information) to disable this feature.
 > 2. If your network supports IPv6, you can modify the configuration: `ipv6_support = True` (GUI: Check
      `Force assume the current network supports IPv6`) to skip the support check.
-> 3. Enabling keyword search (disabled by default) will significantly increase the update time, not recommended to
-     enable.
 
-#### Similarly, you can customize subscription sources, blacklists, and whitelists (it is recommended to copy files and rename them with the
-
-`user_` prefix).
+#### Similarly, you can customize subscription sources, blacklists, and whitelists
 
 - Subscription sources (`config/subscribe.txt`)
 
-  Supports txt and m3u addresses as subscriptions, the program will read the channel interface data in sequence.
+  Since no default subscription addresses are provided, you need to add them yourself; otherwise the update results may
+  be empty. Both `.txt` and `.m3u` URLs are supported as subscriptions, and the program will read channel interface
+  entries from them sequentially.
   ![Subscription sources](./images/subscribe.png 'Subscription sources')
 
 
 - Local sources（`config/local.txt`）
 
   The channel interface data comes from local files, and the program will read the channel interface data in sequence.
-  ![Local sources](./images/local.png 'Local sources')
 
 
 - EPG Source (`config/epg.txt`)
@@ -158,7 +163,6 @@ Adjust the configuration as needed, here is the default configuration descriptio
 
   Interfaces that match the blacklist keywords will be filtered and not collected, such as low-quality interfaces with
   ads.
-  ![Blacklist](./images/blacklist.png 'Blacklist')
 
 
 - Whitelist (`config/whitelist.txt`)
@@ -167,14 +171,6 @@ Adjust the configuration as needed, here is the default configuration descriptio
   the top of the results. Fill in the channel name to directly retain the record in the final result, such as: CCTV-1,
   interface address, only filling in the interface address will apply to all channels, multiple records are entered on
   separate lines.
-  ![Whitelist](./images/whitelist.png 'Whitelist')
-
-
-- Multicast data (`config/rtp`)
-
-  In addition, you can also maintain multicast source data yourself, the files are located in the config/rtp directory,
-  and the file naming format is: `region_operator.txt`.
-  ![Multicast data](./images/rtp.png 'Multicast data')
 
 ### Run Update
 
@@ -236,13 +232,10 @@ mark).
 ![Workflow executed successfully](./images/workflow-success.png 'Workflow executed successfully')
 
 At this point, you can visit the file link to see if the latest results have been synchronized:
-https://raw.githubusercontent.com/your\_github\_username/repository\_name (corresponding to the TV
-created when forking)
-/master/output/user\_result.txt
+https://raw.githubusercontent.com/your-github-username/repository-name/master/output/user_result.txt
 
-Or proxy address:
-https://cdn.jsdelivr.net/gh/your\_github\_username/repository\_name (corresponding to the TV created when forking)
-@master/output/user\_result.txt
+Recommended CDN-accelerated URL:
+{cdn_url}/https://raw.githubusercontent.com/your-github-username/repository-name/master/output/user_result.txt
 
 ![Username and Repository Name](./images/rep-info.png 'Username and Repository Name')
 
@@ -319,8 +312,6 @@ pipenv run ui
 ```
 
 ![IPTV-API Update Software](./images/ui.png 'IPTV-API Update Software')
-
-If you do not understand the software configuration options, do not change anything, just click start.
 
 ## Docker
 

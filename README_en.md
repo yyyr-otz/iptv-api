@@ -53,8 +53,9 @@ pipeline 🚀. Supports extensive customization; paste the resulting URL into yo
 > [!IMPORTANT]
 > 1. Visit the `Govin` WeChat official account and reply with `cdn` to get a proxy acceleration address to improve
      access speed for subscription sources and channel icons.
-> 2. This project does not guarantee or explain the stability of the interface results.
-> 3. To achieve optimal stability, it is recommended to maintain the data sources yourself.
+> 2. The default subscription sources are no longer provided; please add them yourself.
+> 3. This project does not guarantee or explain the stability of the interface results.
+> 4. To achieve optimal stability, it is recommended to maintain the data sources yourself.
 
 ## Core Features
 
@@ -143,7 +144,6 @@ pipeline 🚀. Supports extensive customization; paste the resulting URL into yo
 iptv-api/                  # Project root directory
 ├── config                 # Configuration files directory, includes config files, templates, etc.
 │   └── config.ini         # Configuration parameters file
-│   └── rtp                # Multicast IPs for each region/operator
 │   └── demo.txt           # Channel template
 │   └── alias.txt          # Channel aliases
 │   └── blacklist.txt      # Interface blacklist
@@ -324,6 +324,10 @@ Follow my GitHub account [Guovin](https://github.com/Guovin) to find more useful
 WeChat public account search for Govin, or scan the code to receive updates and learn more tips:
 
 ![Wechat public account](./static/images/qrcode.jpg)
+
+### Customization (Paid)
+
+For remote deployment or custom services, please contact: `360996299@qq.com`
 
 ## Star History
 

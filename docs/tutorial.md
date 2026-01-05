@@ -9,6 +9,9 @@
 
 📺IPTV直播源自动更新平台，『🤖全自动采集、筛选、测速、生成流程🚀』，支持丰富的个性化配置，将结果地址输入播放器即可观看
 
+> [!NOTE]
+> 需要远程部署或定制化服务（付费）可联系邮箱：`360996299@qq.com`
+
 以下一共4种安装运行方式，选择一种适合您的即可
 
 ## 工作流部署
@@ -51,6 +54,9 @@
 这是因为某些文件与主仓库的默认文件冲突了，点击`Discard commits`即可更新最新代码
 ![冲突解决](./images/conflict.png '冲突解决')
 
+> [!IMPORTANT]
+> 为了避免后续更新代码发生冲突，以下修改`config`目录下的文件时建议复制文件后重命名添加`user_`前缀
+
 ### 修改模板
 
 当您在步骤一中点击确认创建，成功后会自动跳转到您的个人仓库。这个时候您的个人仓库就创建完成了，可以定制个人的直播源频道菜单了！
@@ -92,9 +98,10 @@
 2. 配置文件命名为`user_config.ini`
 3. 粘贴默认配置 （创建`user_config.ini`可以只输入想要修改的配置项即可，无需全部复制 config.ini，注意配置文件上方的
    `[Settings]`必须保留，否则下方的自定义配置不生效）
-4. 修改模板和结果文件配置：
+4. 修改模板和结果文件配置以及CDN代理加速（推荐）：
     - source_file = config/user_demo.txt
     - final_file = output/user_result.txt
+    - cdn_url = （前往`Govin`公众号回复`cdn`获取）
 5. 点击`Commit changes...`进行保存
 
 ![创建user_config.ini](./images/edit-user-config.png '创建user_config.ini')
@@ -107,21 +114,19 @@
 > [!NOTE]
 > 1. 对于开启显示接口信息，由于部分播放器（如`PotPlayer`）不支持解析接口补充信息，导致无法正常播放，可修改配置:`open_url_info
 =False`（GUI：取消勾选显示接口信息）关闭该功能
-> 2. 如果你的网络确定支持IPv6，可修改配置:`ipv6_support =True`(GUI：勾选`强制认为当前网络支持IPv6`）跳过支持性检查
-> 3. 开启关键字搜索（默认关闭）会大幅增加更新耗时，不推荐开启
+> 2. 如果你的网络确定支持IPv6，可修改配置:`ipv6_support = True`(GUI：勾选`强制认为当前网络支持IPv6`）跳过支持性检查
 
-#### 同理你可以自定义订阅源、黑名单、白名单（建议复制文件重命名添加`user_`前缀）
+#### 同理你可以自定义订阅源、黑名单、白名单
 
 - 订阅源（`config/subscribe.txt`）
 
-  支持txt和m3u地址作为订阅，程序将依次读取其中的频道接口数据
+  由于没有提供默认订阅地址，所以您需要自行添加，否则更新结果可能为空。支持txt和m3u地址作为订阅，程序将依次读取其中的频道接口数据。
   ![订阅源](./images/subscribe.png '订阅源')
 
 
 - 本地源（`config/local.txt`）
 
   频道接口数据来源于本地文件，程序将依次读取其中的频道接口数据
-  ![本地源](./images/local.png '本地源')
 
 
 - EPG源（`config/epg.txt`）
@@ -137,19 +142,11 @@
 - 黑名单（`config/blacklist.txt`）
 
   符合黑名单关键字的接口将会被过滤，不会被收集，比如含广告等低质量接口
-  ![黑名单](./images/blacklist.png '黑名单')
 
 
 - 白名单（`config/whitelist.txt`）
 
   白名单内的接口或订阅源获取的接口将不会参与测速，优先排序至结果最前。填写频道名称会直接保留该记录至最终结果，如：CCTV-1,接口地址，只填写接口地址则对所有频道生效，多条记录换行输入。
-  ![白名单](./images/whitelist.png '白名单')
-
-
-- 组播数据（`config/rtp`）
-
-  此外，对于组播源数据你也可以自行维护，文件位于config/rtp目录下，文件命名格式为：`地区_运营商.txt`
-  ![组播数据](./images/rtp.png '组播数据')
 
 ### 运行更新
 
@@ -210,8 +207,8 @@
 此时您可以访问文件链接，查看最新结果有没有同步即可：
 https://raw.githubusercontent.com/您的github用户名/仓库名称（对应上述Fork创建时的iptv-api）/master/output/user_result.txt
 
-或者代理地址：
-https://cdn.jsdelivr.net/gh/您的github用户名/仓库名称（对应上述Fork创建时的TV）@master/output/user_result.txt
+代理加速地址（推荐）：
+{cdn_url}/https://raw.githubusercontent.com/您的github用户名/仓库名称（对应上述Fork创建时的iptv-api）/master/output/user_result.txt
 
 ![用户名与仓库名称](./images/rep-info.png '用户名与仓库名称')
 
@@ -279,8 +276,6 @@ pipenv run ui
 ```
 
 ![IPTV-API 更新软件](./images/ui.png 'IPTV-API 更新软件')
-
-如果你看不懂软件的配置项，不要动，直接点启动即可
 
 ## Docker
 
