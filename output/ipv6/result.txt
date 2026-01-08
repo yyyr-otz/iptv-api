@@ -1565,6 +1565,7 @@ CN卡通,https://hls-gateway.vpstv.net/streams/476247.m3u8
 河北少儿科教,https://www.nettvpro.xyz/hls/hebei.php?id=hbse
 河北少儿科教,http://kictoc.top:7000/rtp/239.254.200.21:6000
 河北少儿科教,https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=5
+河北少儿科教,https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=5
 七龙珠,https://live.ottiptv.cc/huya/11601966
 海绵宝宝,https://live.metshop.top/douyu/3949681
 猫和老鼠,https://live.iill.top/huya/11352879
