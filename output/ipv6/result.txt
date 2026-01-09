@@ -1494,6 +1494,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 新动漫,http://tvgslb.hn.chinamobile.com:8089/180000001002/00000001000000000050000000448837/main.m3u8?stbid=
 新动漫,https://tv.iill.top/migu/xdm&token=2f124ab6ac087bc9ff8827f65331bcefcc19f2be5fdb4aa28fe293a39b7c65a6
 新动漫,https://tv.iill.top/migu/xdm&token=7ce15d51da8e60be86cc1bde4d856274b2bd781528e9f64ff1d7d9370b9d7268
+新动漫,http://iptv.cqshushu.com/migu.php?pid=%E6%96%B0%E5%8A%A8%E6%BC%AB&token=263b9cc89eb51ce670b1043b52f2b2d3
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
 爱动漫,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000004000000059/index.m3u8
