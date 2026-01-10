@@ -3,6 +3,9 @@ on:
   workflow_dispatch:  # 手动触发
   schedule:
     - cron: '0 3 * * *'  # 每天 UTC 3:00 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
