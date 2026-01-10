@@ -14,6 +14,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 获取完整 Git 历史
+          token: ${{ secrets.MYPAT }}
       - name: 合并
         run: |
           # 添加上游仓库（允许已存在）
@@ -46,7 +47,8 @@ jobs:
           git commit -m "自动合并上游" || echo "没有需要提交的更改"
 
           # 推送到你的 fork 的 master 分支
-          git push origin master
+          # git push origin master
+          git push "https://${{ secrets.MYPAT }}@github.com/${{ github.repository }}.git" master
       - name: 清理工作流
         uses: Mattraks/delete-workflow-runs@v2
         with:
