@@ -23,8 +23,6 @@ from utils.tools import (
 async def get_channels_by_subscribe_urls(
         urls,
         names=None,
-        multicast=False,
-        hotel=False,
         retry=True,
         error_print=True,
         whitelist=None,
@@ -50,24 +48,16 @@ async def get_channels_by_subscribe_urls(
         desc=pbar_desc,
     )
     start_time = time()
-    mode_name = t("name.multicast") if multicast else t("name.hotel") if hotel else t("name.subscribe")
+    mode_name = t("name.subscribe")
     if callback:
         callback(
             f"{t("pbar.getting_name").format(name=mode_name)}",
             0,
         )
-    hotel_name = constants.origin_map["hotel"]
     logger = get_logger(constants.nomatch_log_path, level=INFO, init=True)
 
     def process_subscribe_channels(subscribe_info: str | dict) -> defaultdict:
-        region = ""
-        url_type = ""
-        if (multicast or hotel) and isinstance(subscribe_info, dict):
-            region = subscribe_info.get("region")
-            url_type = subscribe_info.get("type", "")
-            subscribe_url = subscribe_info.get("url")
-        else:
-            subscribe_url = subscribe_info
+        subscribe_url = subscribe_info
         channels = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
         in_whitelist = whitelist and (subscribe_url in whitelist)
         try:
@@ -109,26 +99,18 @@ async def get_channels_by_subscribe_urls(
                         url_partition = url.partition("$")
                         url = url_partition[0]
                         info = url_partition[2]
-                        value = url if multicast else {
+                        value = {
                             "url": url,
                             "headers": item.get("headers", None),
                             "extra_info": info
                         }
                         if in_whitelist:
                             value["origin"] = "whitelist"
-                        if hotel:
-                            value["extra_info"] = f"{region}{hotel_name}"
                         if name in channels:
-                            if multicast:
-                                if value not in channels[name][region][url_type]:
-                                    channels[name][region][url_type].append(value)
-                            elif value not in channels[name]:
+                            if value not in channels[name]:
                                 channels[name].append(value)
                         else:
-                            if multicast:
-                                channels[name][region][url_type] = [value]
-                            else:
-                                channels[name] = [value]
+                            channels[name] = [value]
         except Exception as e:
             if error_print:
                 print(f"Error on {subscribe_url}: {e}")

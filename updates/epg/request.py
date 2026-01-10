@@ -54,6 +54,8 @@ def parse_epg(epg_content):
 
 async def get_epg(names=None, callback=None):
     urls = get_urls_from_file(constants.epg_path)
+    if not urls:
+        return {}
     if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
         urls = [join_url(config.cdn_url, url) if "raw.githubusercontent.com" in url else url
                 for url in urls]

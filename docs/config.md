@@ -21,7 +21,6 @@
 | public_scheme          | 公网协议；可选值: http、https                                                                                                 | http              |
 | public_domain          | 公网 Host 地址，用于生成结果中的访问地址，默认使用本机 IP                                                                                    | 127.0.0.1         |
 | cdn_url                | CDN 代理加速地址，用于订阅源、频道图标等资源的加速访问                                                                                        |                   |
-| open_driver            | 开启浏览器运行，若更新无数据可开启此模式，较消耗性能                                                                                           | False             |
 | open_local             | 开启本地源功能，将使用模板文件与本地源文件（local.txt）中的数据                                                                                 | True              |
 | open_subscribe         | 开启订阅源功能                                                                                                              | True              |
 | open_history           | 开启使用历史更新结果（包含模板与结果文件的接口），合并至本次更新中                                                                                    | True              |
@@ -29,7 +28,7 @@
 | open_speed_test        | 开启测速功能，获取响应时间、速率、分辨率                                                                                                 | True              |
 | open_filter_resolution | 开启分辨率过滤，低于最小分辨率（min_resolution）的接口将会被过滤，GUI 用户需要手动安装 FFmpeg，程序会自动调用 FFmpeg 获取接口分辨率，推荐开启，虽然会增加测速阶段耗时，但能更有效地区分是否可播放的接口 | True              |
 | open_filter_speed      | 开启速率过滤，低于最小速率（min_speed）的接口将会被过滤                                                                                     | True              |
-| open_supply            | 开启补偿机制模式，用于控制当频道接口数量不足时，自动将不满足条件（例如低于最小速率）但可能可用的接口添加至结果中，从而避免结果为空的情况                                                 | False             |
+| open_supply            | 开启补偿机制模式，用于控制当频道接口数量不足时，自动将不满足条件（例如低于最小速率）但可能可用的接口添加至结果中，从而避免结果为空的情况                                                 | True              |
 | min_resolution         | 接口最小分辨率，需要开启 open_filter_resolution 才能生效                                                                             | 1920x1080         |
 | max_resolution         | 接口最大分辨率，需要开启 open_filter_resolution 才能生效                                                                             | 1920x1080         |
 | min_speed              | 接口最小速率（单位 M/s），需要开启 open_filter_speed 才能生效                                                                           | 0.5               |

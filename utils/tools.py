@@ -409,11 +409,13 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
                             )
                         except:
                             continue
+                        use_name = first_channel_name if current_group in (t("content.update_time"),
+                                                                           t("content.update_running")) else original_channel_name
                         processed_channel_name = re.sub(
                             r"(CCTV|CETV)-(\d+)(\+.*)?",
                             lambda m: f"{m.group(1)}{m.group(2)}"
                                       + ("+" if m.group(3) else ""),
-                            first_channel_name if current_group == t("content.update_time") else original_channel_name,
+                            use_name,
                         )
                         m3u_output += f'#EXTINF:-1 tvg-name="{processed_channel_name}" tvg-logo="{join_url(logo_url, f'{processed_channel_name}.{config.logo_type}')}"'
                         if current_group:
@@ -570,8 +572,6 @@ def format_name(name: str) -> str:
     Format the  name with sub and replace and lower
     """
     name = opencc_t2s.convert(name)
-    for region in constants.region_list:
-        name = name.replace(f"{region}｜", "")
     name = constants.sub_pattern.sub("", name)
     for old, new in constants.replace_dict.items():
         name = name.replace(old, new)

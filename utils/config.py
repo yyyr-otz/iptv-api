@@ -110,30 +110,15 @@ class ConfigManager:
         ]
 
     @property
-    def hotel_num(self):
-        return self.config.getint("Settings", "hotel_num", fallback=10)
-
-    @property
-    def multicast_num(self):
-        return self.config.getint("Settings", "multicast_num", fallback=10)
-
-    @property
     def subscribe_num(self):
         return self.config.getint("Settings", "subscribe_num", fallback=10)
-
-    @property
-    def online_search_num(self):
-        return self.config.getint("Settings", "online_search_num", fallback=10)
 
     @property
     def source_limits(self):
         return {
             "all": self.urls_limit,
             "local": self.local_num,
-            "hotel": self.hotel_num,
-            "multicast": self.multicast_num,
             "subscribe": self.subscribe_num,
-            "online_search": self.online_search_num,
         }
 
     @property
@@ -181,48 +166,11 @@ class ConfigManager:
         return self.config.getboolean("Settings", f"open_subscribe", fallback=True)
 
     @property
-    def open_hotel(self):
-        return self.config.getboolean("Settings", f"open_hotel", fallback=False)
-
-    @property
-    def open_hotel_fofa(self):
-        return self.config.getboolean("Settings", f"open_hotel_fofa", fallback=False)
-
-    @property
-    def open_hotel_foodie(self):
-        return self.config.getboolean("Settings", f"open_hotel_foodie", fallback=False)
-
-    @property
-    def open_multicast(self):
-        return self.config.getboolean("Settings", f"open_multicast", fallback=False)
-
-    @property
-    def open_multicast_fofa(self):
-        return self.config.getboolean("Settings", f"open_multicast_fofa", fallback=False)
-
-    @property
-    def open_multicast_foodie(self):
-        return self.config.getboolean(
-            "Settings", f"open_multicast_foodie", fallback=False
-        )
-
-    @property
-    def open_online_search(self):
-        return self.config.getboolean("Settings", f"open_online_search", fallback=False)
-
-    @property
     def open_method(self):
         return {
             "epg": self.open_epg,
             "local": self.open_local,
             "subscribe": self.open_subscribe,
-            "hotel": self.open_hotel,
-            "multicast": self.open_multicast,
-            "online_search": self.open_online_search,
-            "hotel_fofa": self.open_hotel and self.open_hotel_fofa,
-            "hotel_foodie": self.open_hotel and self.open_hotel_foodie,
-            "multicast_fofa": self.open_multicast and self.open_multicast_fofa,
-            "multicast_foodie": self.open_multicast and self.open_multicast_foodie,
         }
 
     @property
@@ -238,50 +186,12 @@ class ConfigManager:
         return self.config.getboolean("Settings", "open_update_time", fallback=True)
 
     @property
-    def multicast_region_list(self):
-        return [
-            region.strip()
-            for region in self.config.get(
-                "Settings", "multicast_region_list", fallback="all"
-            ).split(",")
-            if region.strip()
-        ]
-
-    @property
-    def hotel_region_list(self):
-        return [
-            region.strip()
-            for region in self.config.get(
-                "Settings", "hotel_region_list", fallback="all"
-            ).split(",")
-            if region.strip()
-        ]
-
-    @property
     def request_timeout(self):
         return self.config.getint("Settings", "request_timeout", fallback=10)
 
     @property
     def speed_test_timeout(self):
         return self.config.getint("Settings", "speed_test_timeout", fallback=10)
-
-    @property
-    def open_driver(self):
-        return self.config.getboolean(
-            "Settings", "open_driver", fallback=False
-        )
-
-    @property
-    def hotel_page_num(self):
-        return self.config.getint("Settings", "hotel_page_num", fallback=1)
-
-    @property
-    def multicast_page_num(self):
-        return self.config.getint("Settings", "multicast_page_num", fallback=1)
-
-    @property
-    def online_search_page_num(self):
-        return config.getint("Settings", "online_search_page_num", fallback=1)
 
     @property
     def open_empty_category(self):
