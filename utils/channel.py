@@ -691,8 +691,7 @@ def process_write_content(
                         )
                 conn.commit()
             finally:
-                if is_last:
-                    return_db_connection(constants.rtmp_data_path, conn)
+                return_db_connection(constants.rtmp_data_path, conn)
     try:
         target_dir = os.path.dirname(path) or "."
         os.makedirs(target_dir, exist_ok=True)
@@ -701,6 +700,10 @@ def process_write_content(
             tmpf.write(content)
             tmp_path = tmpf.name
         os.replace(tmp_path, path)
+        try:
+            os.chmod(path, 0o644)
+        except Exception:
+            pass
     except Exception as e:
         print(e)
         try:

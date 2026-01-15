@@ -53,7 +53,20 @@ class ResultAggregator:
         Ensure the debounce task is running in the specified event loop.
         """
         if not self._debounce_task or self._debounce_task.done():
-            loop.call_soon_threadsafe(asyncio.create_task, self._debounce_loop())
+            try:
+                self._debounce_task = loop.create_task(self._debounce_loop())
+            except Exception:
+                try:
+                    loop.call_soon_threadsafe(self._create_debounce_task_threadsafe)
+                except Exception:
+                    pass
+
+    def _create_debounce_task_threadsafe(self) -> None:
+        """
+        Helper to create the debounce task from within the event loop thread.
+        This is intended to be invoked via loop.call_soon_threadsafe.
+        """
+        self._debounce_task = asyncio.create_task(self._debounce_loop())
 
     def add_item(self, cate: str, name: str, item: dict, is_channel_last: bool = False, is_last: bool = False):
         """
@@ -180,6 +193,7 @@ class ResultAggregator:
         """
         Debounce loop to handle flush events.
         """
+        self._debounce_task = asyncio.current_task()
         try:
             while not self._stopped:
                 await self._flush_event.wait()
