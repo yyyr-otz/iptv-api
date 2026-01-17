@@ -3,6 +3,11 @@ name: 'Update schedule'
 on:
 #  schedule:
 #    - cron: '0 22,10 * * *'
+  workflow_run:
+    workflows: ["定时同步上游"]
+    branches: [master]
+    types:
+      - completed
   workflow_dispatch:
     branches:
       - master
