@@ -1,3 +1,24 @@
+https://tmxk.pp.ua/iptv-cn.m3u
+ https://www.iyouhun.com/tv/zb
+ https://live.zbds.top/tv/iptv4.txt
+ https://3043.kstore.space/bhvip/bhzb.txt
+ https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt
+ https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u
+ https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u
+ https://live.zbds.top/tv/iptv4.txt
+ https://live.zbds.top/tv/iptv4.m3u
+ https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
+ https://raw.githubusercontent.com/vamoschuck/TV/main/M3U
+ https://live.zbds.top/tv/iptv6.txt
+ https://live.zbds.top/tv/iptv6.m3u
+ https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
+ https://live.fanmingming.cn/tv/m3u/ipv6.m3u
+ https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u
+ https://gitee.com/xxy002/zhiboyuan/raw/master/dsy
+ https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+ https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/release/Gather.m3u
+ https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
+
 https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/user_result.txt
 https://d.kstore.dev/download/12792/ln.txt
 http://156.238.248.80/2099.php
