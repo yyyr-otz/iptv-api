@@ -1422,6 +1422,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 新动漫,https://tv.iill.top/migu/xdm&token=2276b9830bd9e6d7f4858f72fe6095ad7d4eeb9d25164399bb076f31d3ce364b
 新动漫,https://tv.iill.top/migu/xdm&token=886bce813f2cd4e37742d034db073fb39288ecfa7b0e43b20307dd9a2b2d0bdc
 新动漫,https://tv.iill.top/migu/xdm&token=7d321042b2f5789d57294578c80935696c5c1326ca57bc4bb58174e879b25dd6
+新动漫,https://tv.iill.top/migu/xdm&token=ad73153cdea1fbd107ecb21f633c449542412c1ff26b11caafd59267d0eec755
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
 青春动漫,https://live.metshop.top/bestv.php?id=qcdm8m/8000000
@@ -1552,13 +1553,6 @@ CCTV-15,http://k.061899.xyz/m.php?id=cctv15
 风云音乐,http://w.yao87.com:4022/rtp/239.76.254.51:9000
 风云音乐,http://ott.mobaibox.com/PLTV/3/224/3221228665/index.m3u8
 风云音乐,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
-风云音乐,https://hls-gateway.vpstv.net/streams/708858.m3u8
-风云音乐,http://iptv.666230.xyz/iptv/jsyd.php/G_FENGYUNYY-CQ
-风云音乐,http://www.qfly9236.cn:8888/rtp/239.253.92.111:8060
-风云音乐,http://www.xiaomo520.cn:4020/udp/239.252.219.87:5140
-风云音乐,http://www.1328099.xyz:9688/rtp/239.253.43.29:5146
-风云音乐,http://www.1328099.xyz:9688/rtp/239.253.43.6:5146
-风云音乐,http://www.xinxuzhen.com:8000/udp/239.253.43.29:5146
 音乐之声,https://radio.0472.org/?id=641
 音乐广播,https://tv.iill.top/fm/552&token=7c908a370d95d78e90a9d2ba4007e5185038b0ceac7435ba90e72c77cc035ff6
 音乐广播,https://tv.iill.top/fm/552&token=074c3dfc2f95090e006ab15f0d86b1aaef70b389a934b096ad5e6674b5724d0d
