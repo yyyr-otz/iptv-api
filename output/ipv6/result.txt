@@ -1552,6 +1552,13 @@ CCTV-15,http://k.061899.xyz/m.php?id=cctv15
 风云音乐,http://w.yao87.com:4022/rtp/239.76.254.51:9000
 风云音乐,http://ott.mobaibox.com/PLTV/3/224/3221228665/index.m3u8
 风云音乐,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
+风云音乐,https://hls-gateway.vpstv.net/streams/708858.m3u8
+风云音乐,http://iptv.666230.xyz/iptv/jsyd.php/G_FENGYUNYY-CQ
+风云音乐,http://www.qfly9236.cn:8888/rtp/239.253.92.111:8060
+风云音乐,http://www.xiaomo520.cn:4020/udp/239.252.219.87:5140
+风云音乐,http://www.1328099.xyz:9688/rtp/239.253.43.29:5146
+风云音乐,http://www.1328099.xyz:9688/rtp/239.253.43.6:5146
+风云音乐,http://www.xinxuzhen.com:8000/udp/239.253.43.29:5146
 音乐之声,https://radio.0472.org/?id=641
 音乐广播,https://tv.iill.top/fm/552&token=7c908a370d95d78e90a9d2ba4007e5185038b0ceac7435ba90e72c77cc035ff6
 音乐广播,https://tv.iill.top/fm/552&token=074c3dfc2f95090e006ab15f0d86b1aaef70b389a934b096ad5e6674b5724d0d
