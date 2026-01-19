@@ -1,5 +1,5 @@
 {
-  "msg.version_info": "✡\uFE0F {name} Version: {version}",
+  "msg.version_info": "⚡\uFE0F {name} Version: {version}",
   "msg.check_ipv6_support": "Checking whether the current network supports IPv6...",
   "msg.ipv6_supported": "✅ The current network supports IPv6!",
   "msg.ipv6_not_supported": "❌ The current network does not support IPv6. Don't worry. The results of IPv6 will be saved",

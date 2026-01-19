@@ -3,12 +3,14 @@
 [中文](./tutorial.md) | English
 
 <div align="center">
-  <img src="../static/images/logo.png" alt="logo"/>
-  <h1 align="center">IPTV-API</h1>
+  <img src="../static/images/logo.svg" alt="IPTV-API logo"  width="120" height="120"/>
 </div>
 
-📺 IPTV live-source auto-update platform — 🤖 fully automated collection, filtering, speed-testing, and generation
-pipeline 🚀. Supports extensive customization; paste the resulting URL into your player to watch.
+<p>
+    <br>
+    📺 IPTV live-source auto-update platform — 🤖 fully automated collection, filtering, speed-testing, and generation
+    pipeline 🚀. Supports extensive customization; paste the resulting URL into your player to watch.
+</p>
 
 There are four installation and operation methods in total, choose the one that suits you.
 
