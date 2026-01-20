@@ -1,9 +1,10 @@
 FROM python:3.13-alpine AS builder
 
+ARG APP_WORKDIR=/iptv-api
 ARG NGINX_VER=1.27.4
 ARG RTMP_VER=1.2.2
 
-WORKDIR /app
+WORKDIR $APP_WORKDIR
 
 COPY Pipfile* ./
 
@@ -17,9 +18,9 @@ RUN wget https://nginx.org/download/nginx-${NGINX_VER}.tar.gz && \
 RUN wget https://github.com/arut/nginx-rtmp-module/archive/v${RTMP_VER}.tar.gz && \
     tar xzf v${RTMP_VER}.tar.gz
 
-WORKDIR /app/nginx-${NGINX_VER}
+WORKDIR $APP_WORKDIR/nginx-${NGINX_VER}
 RUN ./configure \
-    --add-module=/app/nginx-rtmp-module-${RTMP_VER} \
+    --add-module=$APP_WORKDIR/nginx-rtmp-module-${RTMP_VER} \
     --conf-path=/etc/nginx/nginx.conf \
     --error-log-path=/var/log/nginx/error.log \
     --http-log-path=/var/log/nginx/access.log \
@@ -36,13 +37,13 @@ ENV APP_PORT=5180
 ENV NGINX_HTTP_PORT=8080
 ENV NGINX_RTMP_PORT=1935
 ENV PUBLIC_PORT=80
-ENV PATH="/.venv/bin:/usr/local/nginx/sbin:$PATH"
+ENV PATH="$APP_WORKDIR/.venv/bin:/usr/local/nginx/sbin:$PATH"
 
 WORKDIR $APP_WORKDIR
 
 COPY . $APP_WORKDIR
 
-COPY --from=builder /app/.venv /.venv
+COPY --from=builder $APP_WORKDIR/.venv $APP_WORKDIR/.venv
 COPY --from=builder /usr/local/nginx /usr/local/nginx
 
 RUN mkdir -p /var/log/nginx && \
