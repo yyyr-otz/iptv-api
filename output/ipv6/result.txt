@@ -1128,6 +1128,8 @@ CETV-4,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000012000283003/1.m3
 明珠台,https://smart.946985.filegear-sg.me/smart.php?id=pearl_twn
 明珠台,http://cdn6.veryfast.filegear-sg.me/live/mzt/stream.m3u8
 明珠台,http://o12.veryfast.filegear-sg.me/hls/mzt/playlist.m3u8
+明珠台,https://o11.163189.xyz/stream/tvb/mzt/
+明珠台,https://smt.1678520.xyz/smt3.2.1.php?id=pearl_twn
 凤凰中文,https://k44991.kylintv.tv/live/pxna_iphone.m3u8
 凤凰中文,https://cdn.163189.xyz/live/fhzw/stream.m3u8
 凤凰中文,http://cdn5.1678520.xyz/live/live2.1.php?id=fhzw
@@ -1426,6 +1428,7 @@ NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 新动漫,https://tv.iill.top/migu/xdm&token=7d321042b2f5789d57294578c80935696c5c1326ca57bc4bb58174e879b25dd6
 新动漫,https://tv.iill.top/migu/xdm&token=ad73153cdea1fbd107ecb21f633c449542412c1ff26b11caafd59267d0eec755
 新动漫,https://tv.iill.top/migu/xdm&token=d25986dec232345e7d991eb80f90d884b6037b42c12c8b793d52ff710cbe29b7
+新动漫,https://tv.iill.top/migu/xdm&token=5e1e0665ab28c6b396cfe65196076812fddb1605c28ea3a97faf40c908fbfe06
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
 青春动漫,https://live.metshop.top/bestv.php?id=qcdm8m/8000000
