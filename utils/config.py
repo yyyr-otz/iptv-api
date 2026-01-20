@@ -226,10 +226,6 @@ class ConfigManager:
         return self.config.getboolean("Settings", "open_local", fallback=True)
 
     @property
-    def local_file(self):
-        return self.config.get("Settings", "local_file", fallback="config/local.txt")
-
-    @property
     def local_num(self):
         return self.config.getint("Settings", "local_num", fallback=10)
 

@@ -8,7 +8,9 @@ import shutil
 import sys
 from collections import defaultdict
 from logging.handlers import RotatingFileHandler
+from pathlib import Path
 from time import time
+from typing import Iterable, List, Optional, Union
 from urllib.parse import urlparse, urlunparse
 
 import pytz
@@ -662,24 +664,51 @@ def get_urls_from_file(path: str, pattern_search: bool = True) -> list:
     return urls
 
 
-def get_name_urls_from_file(path: str, format_name_flag: bool = False) -> dict[str, list]:
+def get_name_urls_from_file(path: str | list, format_name_flag: bool = False) -> dict[str, list]:
     """
-    Get the name and urls from file
+    Get the name and urls from file or list of files.
+    - path: single file path or list of file paths.
+    - format_name_flag: whether to format the channel name.
     """
-    real_path = get_real_path(resource_path(path))
+    paths = path if isinstance(path, (list, tuple)) else [path]
     name_urls = defaultdict(list)
-    if os.path.exists(real_path):
-        with open(real_path, "r", encoding="utf-8") as f:
-            for line in f:
+
+    for p in paths:
+        real_path = resource_path(p)
+        if not os.path.exists(real_path):
+            continue
+
+        try:
+            with open(real_path, "r", encoding="utf-8") as f:
+                content = f.read()
+        except Exception:
+            continue
+
+        filename = os.path.basename(real_path)
+        m3u_type = filename.lower().endswith(".m3u") or ("#EXTM3U" in content.upper())
+
+        if m3u_type:
+            pattern = constants.multiline_m3u_pattern
+            open_headers_flag = config.open_headers
+            data = get_name_value(content, pattern=pattern, open_headers=open_headers_flag)
+
+            for item in data:
+                name = format_name(item["name"]) if format_name_flag else item["name"]
+                url = item["value"]
+                if url and url not in name_urls[name]:
+                    name_urls[name].append(url)
+        else:
+            for line in content.splitlines():
                 line = line.strip()
-                if line.startswith("#"):
+                if not line or line.startswith("#"):
                     continue
                 name_value = get_name_value(line, pattern=constants.txt_pattern)
                 if name_value and name_value[0]:
                     name = format_name(name_value[0]["name"]) if format_name_flag else name_value[0]["name"]
                     url = name_value[0]["value"]
-                    if url not in name_urls[name]:
+                    if url and url not in name_urls[name]:
                         name_urls[name].append(url)
+
     return name_urls
 
 
@@ -835,3 +864,40 @@ def parse_times(times_str: str):
         except Exception:
             continue
     return times
+
+
+def build_path_list(
+        dir_path: Union[str, Path],
+        exts: Optional[Union[str, Iterable[str]]] = None,
+        recursive: bool = True,
+        include_hidden: bool = False
+) -> List[str]:
+    """
+    Build a list of file paths from a directory with filtering options.
+    :param dir_path: The directory path to search.
+    :param exts: Optional; A string or iterable of file extensions to filter by (e.g., '.txt', 'jpg'). Case-insensitive.
+    :param recursive: Whether to search subdirectories recursively.
+    :param include_hidden: Whether to include hidden files (those starting with a dot).
+    :return: A sorted list of file paths matching the criteria.
+    """
+    p = Path(dir_path)
+    if not p.exists() or not p.is_dir():
+        return []
+
+    exts_set = None
+    if exts:
+        if isinstance(exts, str):
+            exts = [exts]
+        exts_set = {e.lower() if e.startswith('.') else f".{e.lower()}" for e in exts}
+
+    iterator = p.rglob("*") if recursive else p.glob("*")
+    paths = []
+    for f in iterator:
+        if not f.is_file():
+            continue
+        if not include_hidden and f.name.startswith("."):
+            continue
+        if exts_set and f.suffix.lower() not in exts_set:
+            continue
+        paths.append(str(f.resolve()))
+    return sorted(paths)

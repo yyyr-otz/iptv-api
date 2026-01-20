@@ -9,6 +9,10 @@ output_dir = "output"
 
 hls_path = os.path.join(config_dir, "hls")
 
+local_dir_path = os.path.join(config_dir, "local")
+
+local_path = os.path.join(config_dir, "local.txt")
+
 alias_path = os.path.join(config_dir, "alias.txt")
 
 epg_path = os.path.join(config_dir, "epg.txt")

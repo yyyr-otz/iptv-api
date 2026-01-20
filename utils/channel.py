@@ -38,7 +38,7 @@ from utils.tools import (
     custom_print,
     get_name_uri_from_dir,
     get_resolution_value,
-    get_public_url
+    get_public_url, build_path_list, get_real_path
 )
 from utils.types import ChannelData, OriginType, CategoryChannelData, WhitelistMaps
 from utils.whitelist import is_url_whitelisted, get_whitelist_url, get_whitelist_total_count
@@ -173,7 +173,8 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
     hls_data = None
     if config.open_rtmp:
         hls_data = get_name_uri_from_dir(constants.hls_path)
-    local_data = get_name_urls_from_file(config.local_file)
+    local_paths = build_path_list(constants.local_dir_path)
+    local_data = get_name_urls_from_file([get_real_path(constants.local_path)] + local_paths)
     whitelist_count = get_whitelist_total_count(whitelist_maps)
     blacklist_count = len(blacklist)
     if whitelist_count:

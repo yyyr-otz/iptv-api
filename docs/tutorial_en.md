@@ -142,7 +142,9 @@ Adjust the configuration as needed, here is the default configuration descriptio
 
 - Local sources（`config/local.txt`）
 
-  The channel interface data comes from local files, and the program will read the channel interface data in sequence.
+  Channel interface data comes from local files. If there are multiple local source files, you can create a `local`
+  directory under `config` to store them; the program will read the channel interface data from them in order. Supports
+  `txt` and `m3u` files.
 
 
 - EPG Source (`config/epg.txt`)

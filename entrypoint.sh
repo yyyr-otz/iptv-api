@@ -9,7 +9,7 @@ for file in /iptv-api-config/*; do
   fi
 done
 
-. /.venv/bin/activate
+. $APP_WORKDIR/.venv/bin/activate
 
 : "${APP_PORT:=$APP_PORT}"
 : "${NGINX_HTTP_PORT:=$NGINX_HTTP_PORT}"
