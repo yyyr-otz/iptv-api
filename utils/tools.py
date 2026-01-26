@@ -901,3 +901,21 @@ def build_path_list(
             continue
         paths.append(str(f.resolve()))
     return sorted(paths)
+
+
+def to_serializable(obj):
+    """
+    Convert an object to a serializable form.
+    Handles dicts, lists, tuples, sets, and other iterables recursively.
+    Non-serializable objects are returned as-is.
+    """
+    if isinstance(obj, dict):
+        return {k: to_serializable(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple, set)):
+        return [to_serializable(i) for i in obj]
+    try:
+        if not isinstance(obj, (str, bytes)) and hasattr(obj, "__iter__"):
+            return [to_serializable(i) for i in obj]
+    except Exception:
+        pass
+    return obj
