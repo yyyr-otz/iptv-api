@@ -191,7 +191,7 @@ class UpdateSource:
             first_channel_name=self.channel_names[0] if self.channel_names else None,
             ipv6_support=self.ipv6_support,
             write_interval=2.0,
-            last_full_sorted=cache,
+            result=cache,
         )
         await self.aggregator.start()
 
@@ -315,7 +315,7 @@ class UpdateSource:
 
             finally:
                 if config.open_history:
-                    self._save_cache(self.aggregator.last_full_sorted)
+                    self._save_cache(self.aggregator.result)
                     frozen.save(constants.frozen_path)
                 await self._stop_aggregator()
 
