@@ -1266,11 +1266,6 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 靖天资讯,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp6LOH6KiK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
 靖天资讯,https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv065
 靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
-靖天资讯,https://hls-gateway.vpstv.net/streams/476258.m3u8
-靖天资讯,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv065
-靖天资讯,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp6LOH6KiK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
-靖天资讯,https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv065
-靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 
@@ -1398,8 +1393,6 @@ NewTV动作电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/
 经典电影,http://wouu.net:9977/udp/239.93.0.57:9024
 经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
-IPTV经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
-IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 天映经典,https://hls-gateway.vpstv.net/streams/709488.m3u8
