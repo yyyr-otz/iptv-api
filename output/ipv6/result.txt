@@ -1355,6 +1355,7 @@ NewTV惊悚悬疑,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/
 NewTV动作电影,http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8
 NewTV动作电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 NewTV动作电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+NewTV动作电影,http://cdnrrs.gx.chinamobile.com/PLTV/77777777/224/3221225703/index.m3u8?servicetype=1
 纬来电影,https://hls-gateway.vpstv.net/streams/477063.m3u8
 纬来电影,https://smart.pendy.dpdns.org/Smart.php?id=videolandmovie
 纬来电影,https://smt.iktv.ddns-ip.net/Smart.php?id=videolandmovie
@@ -1506,6 +1507,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 新动漫,https://tv.iill.top/migu/xdm&token=5e1e0665ab28c6b396cfe65196076812fddb1605c28ea3a97faf40c908fbfe06
 新动漫,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 新动漫,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+新动漫,http://qyong.site:1234/961930269
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
 青春动漫,https://live.metshop.top/bestv.php?id=qcdm8m/8000000
@@ -1675,6 +1677,8 @@ CCTV-15,http://k.061899.xyz/m.php?id=cctv15
 风云音乐,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
 风云音乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 风云音乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+风云音乐,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221226083/1/index.m3u8?fmt=ts2hls
+风云音乐,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221225698/1/index.m3u8?fmt=ts2hls
 音乐现场,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 音乐现场,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 音乐之声,https://radio.0472.org/?id=641
