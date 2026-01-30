@@ -53,10 +53,14 @@
 - [⚖️ License](#license)
 
 > [!IMPORTANT]
-> 1. Go to the `Govin` WeChat public account and reply with `cdn` to get an acceleration address to improve access speed
+> 1. ⚠️ Due to an excessive number of forks, GitHub resource usage has reached its limit, and the workflow has been
+     changed to manual trigger. Please update [main.yml](./.github/workflows/main.yml) as soon as possible to remove the
+     scheduled task; otherwise the workflow may be disabled!
+> 2. Go to the `Govin` WeChat public account and reply with `cdn` to get an acceleration address to improve access speed
      for subscription sources and channel logos.
-> 2. This project does not provide data sources. Please add your own before generating results.
-> 3. The quality of generated results depends on the data sources and network conditions; please adjust
+> 3. This project does not provide data sources. Please add your own before generating
+     results. ([How to add data sources?](./docs/tutorial_en.md#Add-data-sources-and-more))
+> 4. The quality of generated results depends on the data sources and network conditions; please adjust
      the [configuration](#Config) accordingly to obtain results that better meet your needs.
 
 ## Core Features
