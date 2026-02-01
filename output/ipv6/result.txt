@@ -1403,6 +1403,7 @@ NewTV动作电影,http://cdnrrs.gx.chinamobile.com/PLTV/77777777/224/3221225703/
 经典电影,http://wouu.net:9977/udp/239.93.0.57:9024
 经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+经典电影,http://czkeji.vip:9000/rtp/239.252.220.139:5140
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 天映经典,https://hls-gateway.vpstv.net/streams/709488.m3u8
@@ -1514,6 +1515,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 新动漫,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 新动漫,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 新动漫,http://qyong.site:1234/961930269
+新动漫,http://czkeji.vip:9000/rtp/239.252.220.132:5140
 青春动漫,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
 青春动漫,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
 青春动漫,https://live.metshop.top/bestv.php?id=qcdm8m/8000000
