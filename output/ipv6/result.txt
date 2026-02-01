@@ -1588,6 +1588,7 @@ CN卡通,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/head
 浙江少儿,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221233011/1/index.m3u8?fmt=ts2hls
 浙江少儿,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 浙江少儿,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+浙江少儿,http://ali-xwl.cztv.com/live/channel08720Plxw.m3u8
 河北少儿科教,https://event.pull.hebtv.com/jishi/shaoerkejiao.m3u8
 河北少儿科教,https://www.nettvpro.xyz/hls/hebei.php?id=hbse
 河北少儿科教,http://kictoc.top:7000/rtp/239.254.200.21:6000
@@ -1687,6 +1688,7 @@ CCTV-15,http://k.061899.xyz/m.php?id=cctv15
 风云音乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 风云音乐,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221226083/1/index.m3u8?fmt=ts2hls
 风云音乐,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221225698/1/index.m3u8?fmt=ts2hls
+风云音乐,http://czkeji.vip:9000/rtp/239.252.219.87:5140
 音乐现场,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 音乐现场,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 音乐之声,https://radio.0472.org/?id=641
