@@ -21,7 +21,7 @@ class ResultAggregator:
             first_channel_name: Optional[str] = None,
             ipv6_support: bool = True,
             write_interval: float = 5.0,
-            min_items_before_flush: int = 10,
+            min_items_before_flush: int = config.urls_limit,
             flush_debounce: Optional[float] = None,
             sort_logger=None,
             stat_logger=None,
@@ -172,12 +172,16 @@ class ResultAggregator:
                 new_sorted = defaultdict(lambda: defaultdict(list))
 
         merged = defaultdict(lambda: defaultdict(list))
-        for cate, names in self.result.items():
-            merged[cate].update({k: list(v) for k, v in names.items()})
+
+        for cate, names in self.base_data.items():
+            for name in names.keys():
+                merged[cate][name] = list(self.result.get(cate, {}).get(name, []))
 
         for cate, names in new_sorted.items():
+            if cate not in self.base_data:
+                continue
             for name, vals in names.items():
-                if vals:
+                if name in self.base_data.get(cate, {}) and vals:
                     merged[cate][name] = list(vals)
 
         loop = asyncio.get_running_loop()
