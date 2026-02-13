@@ -86,16 +86,6 @@ class ResultAggregator:
         if is_channel_last:
             self._finished_channels.add((cate, name))
 
-        try:
-            self.sort_logger.info(
-                f"Name: {name}, URL: {item.get('url')}, From: {item.get('origin')}, "
-                f"IPv_Type: {item.get('ipv_type')}, Location: {item.get('location')}, ISP: {item.get('isp')}, "
-                f"Date: {item.get('date')}, Delay: {item.get('delay') or -1} ms, "
-                f"Speed: {(item.get('speed') or 0):.2f} M/s, Resolution: {item.get('resolution')}"
-            )
-        except Exception:
-            pass
-
         if is_channel_last:
             try:
                 generate_channel_statistic(self.stat_logger, cate, name, self.test_results[cate][name])
