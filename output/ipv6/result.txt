@@ -1234,6 +1234,7 @@ TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe
 纬来体育,https://live.catvod.com/live.php?id=videolandsport
 纬来体育,https://hls.iill.top/api/wlty/index.m3u8
 纬来体育,https://tv1288.xyz/tw.php?id=wlty
+纬来体育,https://iptv.vip-tptv.xyz/tv.php?id=7
 纬来育乐,https://hls-gateway.vpstv.net/streams/477081.m3u8
 纬来育乐,https://smart.pendy.dpdns.org/Smart.php?id=videolandyule
 纬来育乐,https://smart.946985.filegear-sg.me/smart.php?id=videolandyule
