@@ -63,6 +63,15 @@ def get_logger(path, level=logging.ERROR, init=False):
     ):
         logger.addHandler(handler)
 
+    has_stream = any(isinstance(h, logging.StreamHandler) for h in logger.handlers)
+    if not has_stream:
+        try:
+            stream_handler = logging.StreamHandler(sys.stdout)
+            stream_handler.setLevel(level)
+            logger.addHandler(stream_handler)
+        except Exception:
+            pass
+
     logger.setLevel(level)
     return logger
 
@@ -410,6 +419,8 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
             current_group = None
             logo_url = get_logo_url()
             from_fanmingming = "https://raw.githubusercontent.com/fanmingming/live/main/tv" in logo_url
+            name_id_map = {}
+            next_id = 1
             for line in file:
                 trimmed_line = line.strip()
                 if trimmed_line != "":
@@ -432,7 +443,13 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
                                           + ("+" if m.group(3) else ""),
                                 use_name,
                             )
-                        m3u_output += f'#EXTINF:-1 tvg-name="{processed_channel_name}" tvg-logo="{join_url(logo_url, f'{processed_channel_name}.{config.logo_type}')}"'
+                        tvg_id = name_id_map.get(processed_channel_name)
+                        if tvg_id is None:
+                            tvg_id = next_id
+                            name_id_map[processed_channel_name] = tvg_id
+                            next_id += 1
+
+                        m3u_output += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{processed_channel_name}" tvg-logo="{join_url(logo_url, f"{processed_channel_name}.{config.logo_type}")}"'
                         if current_group:
                             m3u_output += f' group-title="{current_group}"'
                         item_data = {}

@@ -30,14 +30,17 @@
 - 新增 HTTP 代理配置（`http_proxy`），增强在受限网络环境下的获取能力。
 - 支持识别并过滤过期/无效的 EPG 数据，提高 EPG 质量。
 - 支持语言切换（`language`），可选 `zh_CN` / `en`，界面与实时日志可切换语言输出。
+- 新增M3U`tvg-id`以适配更多播放器合并频道源。
 
 ### 🐛 优化与修复
 
+- 优化降低程序运行时的内存占用。
 - 优化 CCTV 类频道别名匹配与 4K 频道识别（匹配规则改进）。
 - 优化推流首播体验、转码兼容性与 Docker 推流监控。
 - 优化接口冻结流程，智能管理与解冻判断。
 - 更新 IP 归属库与运营商数据，提高归属地过滤准确性。
 - 若干测速与过滤逻辑优化，减少误判与提升效率。
+- 调整Docker日志实时无缓冲输出。
 
 ### ⚙️ 配置项说明（新增 / 重点变更）
 
@@ -97,14 +100,17 @@
 - Added HTTP proxy configuration (`http_proxy`) to improve fetching in restricted network environments.
 - Support identification and filtering of expired/invalid EPG data to improve EPG quality.
 - Support language switching (`language`), optional `zh_CN` / `en`, enabling UI and real-time log language switching.
+- Added M3U `tvg-id` to support merging channel sources in more players.
 
 ### 🐛 Optimizations & fixes
 
+- Optimized to reduce the memory usage during program runtime.
 - Improved alias matching for CCTV-type channels and 4K channel recognition (matching rules refined).
 - Improved first-play streaming experience, transcoding compatibility, and Docker streaming monitoring.
 - Optimized interface freezing process with smarter management and unfreeze judgment.
 - Updated IP attribution and carrier data to improve accuracy of location-based filtering.
 - Several speed test and filtering logic optimizations to reduce false positives and improve efficiency.
+- Adjust Docker logs to output in real-time without buffering.
 
 ### ⚙️ Configuration items (new / important changes)
 

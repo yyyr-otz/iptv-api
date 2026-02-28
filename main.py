@@ -310,6 +310,7 @@ class UpdateSource:
                     clear_cache()
                     await self._run_speed_test()
                 else:
+                    self.aggregator.test_results = self.channel_data
                     self.aggregator.is_last = True
                     await self.aggregator.flush_once(force=True)
 
