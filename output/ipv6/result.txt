@@ -1245,6 +1245,7 @@ TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe
 纬来育乐,https://live.catvod.com/live.php?id=videolandmax
 纬来育乐,https://tv1288.xyz/tw.php?id=wlyl
 纬来育乐,http://free.cnlive.club/channel/581c988d/index.m3u8
+纬来育乐,https://nimabi.goiptv.de5.net/videolandyule.m3u8
 J2,http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
 Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
@@ -1268,6 +1269,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森超视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 东森超视,https://live.catvod.com/live.php?id=ettvsuper
 东森超视,http://free.cnlive.club/channel/4210df69/index.m3u8
+东森超视,https://nimabi.goiptv.de5.net/ettvsuper.m3u8
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
@@ -1282,6 +1284,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森电影,https://hls.iill.top/api/dsdy/index.m3u8
 东森电影,https://tv1288.xyz/tw.php?id=dsdy
 东森电影,http://free.cnlive.club/channel/n5502f4/index.m3u8
+东森电影,https://nimabi.goiptv.de5.net/ettvmovie.m3u8
 靖天资讯,https://hls-gateway.vpstv.net/streams/476258.m3u8
 靖天资讯,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv065
 靖天资讯,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp6LOH6KiK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
@@ -1477,6 +1480,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森电影,https://hls.iill.top/api/dsdy/index.m3u8
 东森电影,https://tv1288.xyz/tw.php?id=dsdy
 东森电影,http://free.cnlive.club/channel/n5502f4/index.m3u8
+东森电影,https://nimabi.goiptv.de5.net/ettvmovie.m3u8
 龙祥电影,https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
 龙祥电影,https://smt.go-iptv.ggff.net/smart.php?id=lungxiangtime_twn&token=Goiptv
 龙祥电影,http://thunderbolt-40gbps.com/live/qtTNEdtW/JdEZiDM5/54678.ts
@@ -1493,6 +1497,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森洋片,https://tv.iill.top/x/dsyp
 东森洋片,https://hls.iill.top/api/dsyp/index.m3u8
 东森洋片,http://free.cnlive.club/channel/n7160b4.m3u8
+东森洋片,https://nimabi.goiptv.de5.net/ettvwestern.m3u8
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
@@ -1500,6 +1505,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森超视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 东森超视,https://live.catvod.com/live.php?id=ettvsuper
 东森超视,http://free.cnlive.club/channel/4210df69/index.m3u8
+东森超视,https://nimabi.goiptv.de5.net/ettvsuper.m3u8
 
 🪁动画频道,#genre#
 少儿动画,http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
