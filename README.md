@@ -306,6 +306,8 @@ docker run -d -p 80:8080 guovern/iptv-api
 | /hls/ipv6/m3u | 推流ipv6 m3u接口 |
 | /stat         | 推流状态统计接口     |
 
+[如何使用推流？](./docs/tutorial.md#推流使用教程)
+
 ## 更新日志
 
 [更新日志](./CHANGELOG.md)

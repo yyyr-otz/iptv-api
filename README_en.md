@@ -319,6 +319,8 @@ generated result files directly on the host. Append the following options to the
 | /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint      |
 | /stat              | Streaming status statistics endpoint |
 
+[How to use streaming?](./docs/tutorial_en.md#Streaming-Usage-Tutorial)
+
 ## Changelog
 
 [Changelog](./CHANGELOG.md)
