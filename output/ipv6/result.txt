@@ -1647,6 +1647,7 @@ CN卡通,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/head
 猫和老鼠,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 猫和老鼠,https://live.metshop.top/huya/11352879
 猫和老鼠,https://yang-1989.eu.org/live/huya/11352879
+猫和老鼠,https://lbds.us.ci/11352879
 经典动漫,https://www.goodiptv.club/yy/22777075
 经典动漫,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 经典动漫,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
