@@ -2485,6 +2485,8 @@ https://tv1288.xyz/tw.php?id=wlyl
 http://free.cnlive.club/channel/581c988d/index.m3u8
 #EXTINF:-1 tvg-id="65" tvg-name="纬来育乐" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来育乐.png" group-title="🌊港·澳·台",纬来育乐
 https://nimabi.goiptv.de5.net/videolandyule.m3u8
+#EXTINF:-1 tvg-id="65" tvg-name="纬来育乐" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来育乐.png" group-title="🌊港·澳·台",纬来育乐
+https://smt.goiptv.us.ci/videolandyule/playlist.m3u8
 #EXTINF:-1 tvg-id="66" tvg-name="J2" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/J2.png" group-title="🌊港·澳·台",J2
 http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
 #EXTINF:-1 tvg-id="67" tvg-name="Viutv" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/Viutv.png" group-title="🌊港·澳·台",Viutv
@@ -2533,6 +2535,8 @@ https://live.catvod.com/live.php?id=ettvsuper
 http://free.cnlive.club/channel/4210df69/index.m3u8
 #EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
 https://nimabi.goiptv.de5.net/ettvsuper.m3u8
+#EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
+https://smt.goiptv.us.ci/ettvsuper/playlist.m3u8
 #EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
 https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 #EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
@@ -2563,6 +2567,8 @@ https://tv1288.xyz/tw.php?id=dsdy
 http://free.cnlive.club/channel/n5502f4/index.m3u8
 #EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
 https://nimabi.goiptv.de5.net/ettvmovie.m3u8
+#EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
+https://smt.goiptv.us.ci/ettvmovie/playlist.m3u8
 #EXTINF:-1 tvg-id="73" tvg-name="靖天资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天资讯.png" group-title="🌊港·澳·台",靖天资讯
 https://hls-gateway.vpstv.net/streams/476258.m3u8
 #EXTINF:-1 tvg-id="73" tvg-name="靖天资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天资讯.png" group-title="🌊港·澳·台",靖天资讯
@@ -2951,6 +2957,8 @@ https://tv1288.xyz/tw.php?id=dsdy
 http://free.cnlive.club/channel/n5502f4/index.m3u8
 #EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🎬电影频道",东森电影
 https://nimabi.goiptv.de5.net/ettvmovie.m3u8
+#EXTINF:-1 tvg-id="72" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🎬电影频道",东森电影
+https://smt.goiptv.us.ci/ettvmovie/playlist.m3u8
 #EXTINF:-1 tvg-id="93" tvg-name="龙祥电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/龙祥电影.png" group-title="🎬电影频道",龙祥电影
 https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
 #EXTINF:-1 tvg-id="93" tvg-name="龙祥电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/龙祥电影.png" group-title="🎬电影频道",龙祥电影
@@ -2985,6 +2993,8 @@ https://hls.iill.top/api/dsyp/index.m3u8
 http://free.cnlive.club/channel/n7160b4.m3u8
 #EXTINF:-1 tvg-id="94" tvg-name="东森洋片" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森洋片.png" group-title="🎬电影频道",东森洋片
 https://nimabi.goiptv.de5.net/ettvwestern.m3u8
+#EXTINF:-1 tvg-id="94" tvg-name="东森洋片" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森洋片.png" group-title="🎬电影频道",东森洋片
+https://smt.goiptv.us.ci/ettvwestern/playlist.m3u8
 #EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
 https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 #EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
@@ -3001,6 +3011,8 @@ https://live.catvod.com/live.php?id=ettvsuper
 http://free.cnlive.club/channel/4210df69/index.m3u8
 #EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
 https://nimabi.goiptv.de5.net/ettvsuper.m3u8
+#EXTINF:-1 tvg-id="71" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
+https://smt.goiptv.us.ci/ettvsuper/playlist.m3u8
 #EXTINF:-1 tvg-id="95" tvg-name="少儿动画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/少儿动画.png" group-title="🪁动画频道",少儿动画
 http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
 #EXTINF:-1 tvg-id="95" tvg-name="少儿动画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/少儿动画.png" group-title="🪁动画频道",少儿动画
