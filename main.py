@@ -279,10 +279,6 @@ class UpdateSource:
         try:
             main_start_time = time()
 
-            if not config.open_update:
-                self._notify_ui_finished(main_start_time)
-                return
-
             self._prepare_channel_data()
 
             if not self.channel_names:
@@ -340,6 +336,11 @@ class UpdateSource:
 
         self.update_progress = callback or default_callback
         self.run_ui = True if callback else False
+
+        if not config.open_update:
+            if self.run_ui:
+                self.update_progress(t("msg.update_disabled"), 0, finished=True)
+            return
 
         if self.run_ui:
             self.update_progress(t("msg.check_ipv6_support"), 0)
@@ -413,7 +414,10 @@ class UpdateSource:
 if __name__ == "__main__":
     info = get_version_info()
     print(t("msg.version_info").format(name=info["name"], version=info["version"]))
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    update_source = UpdateSource()
-    loop.run_until_complete(update_source.start())
+    if not config.open_update:
+        print(t("msg.update_disabled"))
+    else:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        update_source = UpdateSource()
+        loop.run_until_complete(update_source.start())

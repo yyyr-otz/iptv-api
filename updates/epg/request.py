@@ -14,7 +14,7 @@ from utils.channel import format_channel_name
 from utils.config import config
 from utils.i18n import t
 from utils.retry import retry_func
-from utils.tools import get_pbar_remaining, get_urls_from_file, opencc_t2s, join_url
+from utils.tools import get_pbar_remaining, get_urls_from_file, opencc_t2s, join_url, github_blob_to_raw
 
 
 def parse_epg(epg_content):
@@ -62,7 +62,8 @@ async def get_epg(names=None, callback=None):
     if not urls:
         return {}
     if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
-        urls = [join_url(config.cdn_url, url) if "raw.githubusercontent.com" in url else url
+        urls = [join_url(config.cdn_url, github_blob_to_raw(url)) if "raw.githubusercontent.com" in github_blob_to_raw(
+            url) else url
                 for url in urls]
     urls_len = len(urls)
     pbar = tqdm_asyncio(
