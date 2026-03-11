@@ -72,12 +72,12 @@
 |:------------------------------|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Custom templates**          |    ✅    | Generate custom channel playlists                                                                                                                           |
 | **Channel aliases**           |    ✅    | Improve channel matching and accuracy, supports regular expressions                                                                                         |
-| **Multi-source aggregation**  |    ✅    | Local sources and subscription sources                                                                                                                      |
-| **Stream relay**              |    ✅    | Improve playback on weak networks, supports direct browser playback                                                                                         |
+| **Multi-source aggregation**  |    ✅    | Local sources and subscription sources (supports setting the User-Agent header)                                                                             |
+| **Stream relay**              |    ✅    | Improve playback on weak networks, supports direct browser playback, and automatic transcoding/adaptation                                                   |
 | **Replay/VOD interfaces**     |    ✅    | Fetching and generating replay/VOD interfaces                                                                                                               |
 | **EPG**                       |    ✅    | Fetch and display channel program guides                                                                                                                    |
 | **Channel logos**             |    ✅    | Custom channel logos, supports local additions or a remote library                                                                                          |
-| **Speed test & validation**   |    ✅    | Obtain latency, bitrate, resolution; filter invalid interfaces; supports real-time output                                                                   |
+| **Speed test & validation**   |    ✅    | Obtain latency, bitrate, resolution, fps; filter invalid interfaces; supports real-time output                                                              |
 | **Advanced preferences**      |    ✅    | Rate, resolution, blacklist/whitelist, location and ISP custom filters                                                                                      |
 | **Results management**        |    ✅    | Categorized storage and access of results, log recording, unmatched channel records, statistical analysis, freeze filtering/unfreeze rollback, data caching |
 | **Scheduled tasks**           |    ✅    | Scheduled or interval updates                                                                                                                               |

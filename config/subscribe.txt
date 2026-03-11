@@ -1,5 +1,7 @@
 # 这是订阅源列表，每行一个订阅地址
+# 支持设置UA：https://xxx.com/subscribe.m3u UA="xxx"
 # This is a list of subscription sources, with one subscription address per line
+# Supports setting UA: https://xxx.com/subscribe.m3u UA="xxx"
 
 https://raw.githubusercontent.com/Guovin/iptv-database/master/result.txt
 https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u

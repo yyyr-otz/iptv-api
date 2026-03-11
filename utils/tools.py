@@ -1077,3 +1077,63 @@ def save_url_content(category: str, url: str, content: str) -> None:
                 f.write(str(content))
     except Exception as e:
         print(f"Failed to save content for {url} into {category}: {e}")
+
+
+def get_subscribe_entries(path: str = "config/subscribe.txt") -> tuple[list, list]:
+    """
+    Parse the subscribe file and return two lists of entries (inside [WHITELIST], outside).
+    Each entry is a dict: {"url": <url>, "headers": {<Header-Name>: <value>, ...}} where headers is optional.
+
+    Supported line format (simple):
+        <url> KEY=VALUE KEY2="value with spaces" KEY3='another'
+    KEY `UA` or `User-Agent` will be mapped to the `User-Agent` header.
+    """
+    real_path = get_real_path(resource_path(path))
+    inside = []
+    outside = []
+    if not os.path.exists(real_path):
+        return inside, outside
+
+    header_re = re.compile(r"^\[.*\]$")
+    in_section = False
+    kv_re = re.compile(r"(?P<k>\w+)=((?P<q>\".*?\"|'.*?')|(?P<v>\S+))")
+
+    with open(real_path, "r", encoding="utf-8") as f:
+        for raw in f:
+            line = raw.rstrip("\n")
+            s = line.strip()
+            if not s:
+                continue
+            if header_re.match(s):
+                in_section = s.upper() == "[WHITELIST]"
+                continue
+            if s.startswith("#"):
+                continue
+
+            match = constants.url_pattern.search(s)
+            if not match:
+                continue
+            url = match.group().strip()
+            remainder = s[match.end():].strip()
+            headers = {}
+            for m in kv_re.finditer(remainder):
+                key = m.group('k')
+                val = m.group('q') or m.group('v')
+                if not val:
+                    continue
+                val = val.strip()
+                if (val.startswith('"') and val.endswith('"')) or (val.startswith("'") and val.endswith("'")):
+                    val = val[1:-1]
+                if key.lower() == 'ua' or key.lower() == 'useragent' or key.lower() == 'user-agent':
+                    headers['User-Agent'] = val
+                else:
+                    headers[key] = val
+
+            entry = {'url': url}
+            if headers:
+                entry['headers'] = headers
+
+            target = inside if in_section else outside
+            target.append(entry)
+
+    return inside, outside
