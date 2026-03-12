@@ -10,6 +10,7 @@ from functools import lru_cache
 
 import utils.constants as constants
 from utils.config import config
+from utils.db import ensure_result_data_schema
 from utils.db import get_db_connection, return_db_connection
 from utils.ffmpeg import probe_url
 from utils.i18n import t
@@ -36,59 +37,6 @@ _hls_monitor_started_evt = threading.Event()
 _hls_monitor_lock = threading.Lock()
 
 
-def _is_copy_compatible(meta: dict) -> bool:
-    """
-    Decide whether stream copy is safe.
-    """
-    try:
-        if not meta:
-            return False
-
-        def _norm(name: str | None, is_video: bool = True) -> str | None:
-            if not name:
-                return None
-            n = name.lower()
-            video_aliases = {
-                'h265': 'hevc',
-                'x265': 'hevc',
-                'h.265': 'hevc',
-                'avc1': 'h264',
-            }
-            audio_aliases = {
-                'mpa': 'mp2',
-                'mpeg2': 'mp2',
-                'aac_latm': 'aac',
-                'ac-3': 'ac3',
-                'eac3': 'ac3',
-            }
-            if is_video:
-                return video_aliases.get(n, n)
-            else:
-                return audio_aliases.get(n, n)
-
-        video_codec = _norm(meta.get('video_codec'), is_video=True)
-        audio_codec = _norm(meta.get('audio_codec'), is_video=False)
-
-        browser_video = {"h264", "avc1"}
-        browser_audio = {"aac", "mp3"}
-
-        player_video = {"h264", "hevc", "vp8", "vp9", "av1", "mpeg2", "mpeg1"}
-        player_audio = {"aac", "mp3", "mp2", "ac3", "opus", "vorbis"}
-
-        if video_codec and video_codec in browser_video and (audio_codec is None or audio_codec in browser_audio):
-            return True
-
-        if video_codec and video_codec in player_video and (audio_codec is None or audio_codec in player_audio):
-            if meta.get('force_player_copy') or meta.get('extra_info') and 'force_player_copy' in str(
-                    meta.get('extra_info')):
-                return True
-            return False
-        return False
-    except Exception:
-        pass
-    return False
-
-
 def _save_probe_metadata_to_db(channel_id: str, url: str, headers: dict | None, meta: dict | None):
     """
     Save probe metadata into result_data table (create full schema if needed).
@@ -96,6 +44,7 @@ def _save_probe_metadata_to_db(channel_id: str, url: str, headers: dict | None, 
     if not meta:
         return
     try:
+        ensure_result_data_schema(constants.rtmp_data_path)
         conn = get_db_connection(constants.rtmp_data_path)
     except Exception as e:
         print(t("msg.write_error").format(info=f"open rtmp db error: {e}"))
@@ -197,26 +146,33 @@ def _get_video_encoder_candidates():
     return candidates
 
 
-def start_hls_to_rtmp(host, channel_id):
+def start_hls_to_rtmp(host, channel_id, client_user_agent: str | None = None):
+    """
+    Start a HLS -> RTMP forwarding process for a given channel.
+    Optimized: clearer early returns, reduced duplicated checks, use wait(timeout)
+    to detect quick ffmpeg failures instead of manual poll loops.
+    """
     ensure_hls_idle_monitor_started()
 
     if not host:
         return None
     if not channel_id:
-        return print(t("msg.error_channel_id_not_found"))
+        print(t("msg.error_channel_id_not_found"))
+        return None
 
     data = get_channel_data(channel_id)
     url = data.get("url", "")
     if not url:
-        return print(t("msg.error_channel_url_not_found"))
+        print(t("msg.error_channel_url_not_found"))
+        return None
 
     with STREAMS_LOCK:
-        if channel_id in hls_running_streams:
-            process = hls_running_streams[channel_id]
-            if process.poll() is None:
-                return print(t("msg.rtmp_hls_stream_already_running"))
-            else:
-                del hls_running_streams[channel_id]
+        existing = hls_running_streams.get(channel_id)
+        if existing and existing.poll() is None:
+            print(t("msg.rtmp_hls_stream_already_running"))
+            hls_last_access[channel_id] = time.time()
+            return existing
+        hls_running_streams.pop(channel_id, None)
 
     cleanup_streams(hls_running_streams)
 
@@ -230,7 +186,7 @@ def start_hls_to_rtmp(host, channel_id):
         'fps': data.get('fps'),
     }
 
-    if not meta.get('video_codec') and not meta.get('audio_codec') and config.open_rtmp:
+    if config.open_rtmp and (not meta.get('video_codec') or not meta.get('audio_codec')):
         try:
             probed = None
             try:
@@ -250,13 +206,23 @@ def start_hls_to_rtmp(host, channel_id):
         except Exception:
             pass
 
-    use_copy = _is_copy_compatible(meta)
+    def _client_needs_transcode_for_codec(user_agent: str | None, video_codec: str | None) -> bool:
+        if not user_agent or not video_codec:
+            return False
+        ua = user_agent.lower()
+        vc = (video_codec or '').lower()
+        if vc in {'hevc', 'h265', 'x265', 'av1'}:
+            if any(k in ua for k in ('iphone', 'ipad', 'mobile safari')) or ('safari' in ua and 'chrome' not in ua):
+                return True
+            if any(k in ua for k in ('chrome', 'firefox', 'edge')):
+                return True
+        return False
 
-    base_cmd = [
-        'ffmpeg',
-        '-loglevel', 'error',
-        '-re',
-    ]
+    client_forces_transcode = bool(
+        client_user_agent and _client_needs_transcode_for_codec(client_user_agent, meta.get('video_codec')))
+
+    devnull = subprocess.DEVNULL
+    base_cmd = ['ffmpeg', '-loglevel', 'error', '-re']
 
     local_loop = False
     try:
@@ -283,76 +249,104 @@ def start_hls_to_rtmp(host, channel_id):
 
     base_cmd += ['-i', url_input]
 
-    if use_copy:
-        cmd = base_cmd + [
-            '-c:v', 'copy',
-            '-c:a', 'copy',
-            '-f', 'flv',
-            '-flvflags', 'no_duration_filesize',
-            join_url(host, channel_id)
-        ]
-        target_video_codec = meta.get('video_codec') or t('name.unknown')
-        target_audio_codec = meta.get('audio_codec') or t('name.unknown')
-        target_mode = 'copy'
+    output_url = join_url(host, channel_id)
+
+    rest_args = ['-c:a', 'aac', '-b:a', '128k', '-f', 'flv', '-flvflags', 'no_duration_filesize', output_url]
+
+    def _build_copy_cmd(copy_audio: bool = True):
+        if copy_audio:
+            return base_cmd + ['-c:v', 'copy', '-c:a', 'copy', '-f', 'flv', '-flvflags', 'no_duration_filesize',
+                               output_url]
+        else:
+            return base_cmd + ['-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-f', 'flv', '-flvflags',
+                               'no_duration_filesize', output_url]
+
+    def _audio_compatible_with_flv(audio_codec: str | None) -> bool:
+        if not audio_codec:
+            return False
+        return (audio_codec or '').lower() in {'aac', 'mp3'}
+
+    def _register_process(proc, mode, video_codec, audio_codec):
         try:
-            process = subprocess.Popen(
-                cmd,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                stdin=subprocess.DEVNULL
-            )
             print(
                 t("msg.rtmp_publish").format(channel_id=channel_id, source=url)
-                + f", {t('name.fps')}: {meta.get('fps') or t('name.unknown')}, [{target_mode}]: {t('name.video_codec')}: {target_video_codec}, {t('name.audio_codec')}: {target_audio_codec}"
+                + f", {t('name.fps')}: {meta.get('fps') or t('name.unknown')}, [{mode}]: {t('name.video_codec')}: {video_codec}, {t('name.audio_codec')}: {audio_codec}"
             )
-        except Exception as e:
-            return print(t("msg.error_start_ffmpeg_failed").format(info=e))
+        except Exception:
+            pass
 
         threading.Thread(
             target=monitor_stream_process,
-            args=(hls_running_streams, process, channel_id),
+            args=(hls_running_streams, proc, channel_id),
             daemon=True
         ).start()
 
         with STREAMS_LOCK:
-            hls_running_streams[channel_id] = process
-        return
+            hls_running_streams[channel_id] = proc
+            hls_last_access[channel_id] = time.time()
+
+    def _start_copy_trial(wait_seconds=3, copy_audio: bool = True):
+        cmd = _build_copy_cmd(copy_audio=copy_audio)
+        try:
+            copy_p = subprocess.Popen(cmd, stdout=devnull, stderr=devnull, stdin=devnull)
+        except Exception as copy_e:
+            print(t("msg.error_start_ffmpeg_failed").format(info=copy_e))
+            return None, False
+
+        try:
+            copy_p.wait(timeout=wait_seconds)
+            copy_succeeded = False
+        except subprocess.TimeoutExpired:
+            copy_succeeded = True
+
+        if not copy_succeeded or copy_p.poll() is not None:
+            try:
+                _terminate_process_safe(copy_p)
+            except Exception:
+                pass
+            return None, False
+
+        _vid_codec = meta.get('video_codec') or t('name.unknown')
+        _aud_codec = 'aac' if not copy_audio else (meta.get('audio_codec') or t('name.unknown'))
+        mode_name = 'copy' if copy_audio else 'copy(video)+transcode(audio)'
+        _register_process(copy_p, mode_name, _vid_codec, _aud_codec)
+        return copy_p, True
+
+    if not client_forces_transcode:
+        _v = (meta.get('video_codec') or '').lower()
+        if _v == 'avc1':
+            _v = 'h264'
+        _a = (meta.get('audio_codec') or '').lower() if meta.get('audio_codec') else None
+
+        if _v == 'h264':
+            if _a and _audio_compatible_with_flv(_a):
+                p, ok = _start_copy_trial(copy_audio=True)
+                if ok:
+                    return p
+            p, ok = _start_copy_trial(copy_audio=False)
+            if ok:
+                return p
 
     candidates = _get_video_encoder_candidates()
-    rest_args = [
-        '-c:a', 'aac',
-        '-b:a', '128k',
-        '-f', 'flv',
-        '-flvflags', 'no_duration_filesize',
-        join_url(host, channel_id)
-    ]
-
     process = None
     chosen_encoder = None
     grace_seconds = 3
 
     for enc_args in candidates:
-        enc_name = enc_args[1]
+        enc_name = enc_args[1] if len(enc_args) > 1 else str(enc_args)
         print(t("msg.rtmp_try_encoder").format(encoder=enc_name, channel_id=channel_id))
         cmd_try = base_cmd + enc_args + rest_args
         try:
-            p = subprocess.Popen(
-                cmd_try,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                stdin=subprocess.DEVNULL
-            )
+            p = subprocess.Popen(cmd_try, stdout=devnull, stderr=devnull, stdin=devnull)
         except Exception as e:
             print(t("msg.rtmp_encoder_start_failed").format(encoder=enc_name, info=e))
             continue
 
-        start_time = time.time()
-        succeeded = True
-        while time.time() - start_time < grace_seconds:
-            if p.poll() is not None:
-                succeeded = False
-                break
-            time.sleep(0.2)
+        try:
+            p.wait(timeout=grace_seconds)
+            succeeded = False
+        except subprocess.TimeoutExpired:
+            succeeded = True
 
         if succeeded and p.poll() is None:
             process = p
@@ -366,26 +360,17 @@ def start_hls_to_rtmp(host, channel_id):
             print(t("msg.rtmp_encoder_quick_fail").format(encoder=enc_name))
 
     if not process:
-        all_failed_msg = t("msg.rtmp_all_encoders_failed")
-        return print(t("msg.error_start_ffmpeg_failed").format(info=all_failed_msg))
+        print(t("msg.rtmp_all_encoders_failed"))
+        p, ok = _start_copy_trial()
+        if ok:
+            return p
+        return None
 
     target_video_codec = chosen_encoder or 'libx264'
     target_audio_codec = 'aac'
     target_mode = 'transcode'
-
-    print(
-        t("msg.rtmp_publish").format(channel_id=channel_id, source=url)
-        + f", {t('name.fps')}: {meta.get('fps') or t('name.unknown')}, [{target_mode}]: {t('name.video_codec')}: {target_video_codec}, {t('name.audio_codec')}: {target_audio_codec}"
-    )
-
-    threading.Thread(
-        target=monitor_stream_process,
-        args=(hls_running_streams, process, channel_id),
-        daemon=True
-    ).start()
-
-    with STREAMS_LOCK:
-        hls_running_streams[channel_id] = process
+    _register_process(process, target_mode, target_video_codec, target_audio_codec)
+    return process
 
 
 def _terminate_process_safe(process):
@@ -408,11 +393,13 @@ def cleanup_streams(streams):
                 to_delete.append(channel_id)
         for channel_id in to_delete:
             streams.pop(channel_id, None)
+            hls_last_access.pop(channel_id, None)
 
         while len(streams) > MAX_STREAMS:
             try:
                 oldest_channel_id, oldest_proc = streams.popitem(last=False)
                 _terminate_process_safe(oldest_proc)
+                hls_last_access.pop(oldest_channel_id, None)
             except KeyError:
                 break
 
@@ -425,6 +412,7 @@ def monitor_stream_process(streams, process, channel_id):
     with STREAMS_LOCK:
         if channel_id in streams and streams[channel_id] is process:
             del streams[channel_id]
+            hls_last_access.pop(channel_id, None)
 
 
 def hls_idle_monitor():
@@ -450,22 +438,24 @@ def hls_idle_monitor():
 
 
 def get_channel_data(channel_id):
+    ensure_result_data_schema(constants.rtmp_data_path)
     conn = get_db_connection(constants.rtmp_data_path)
     channel_data = {}
     try:
         cursor = conn.cursor()
         cursor.execute(
             "SELECT url, headers, video_codec, audio_codec, resolution, fps FROM result_data WHERE id=?",
-            (channel_id,))
+            (channel_id,)
+        )
         data = cursor.fetchone()
         if data:
             channel_data = {
                 'url': data[0],
                 'headers': json.loads(data[1]) if data[1] else None,
-                'video_codec': data[2],
-                'audio_codec': data[3],
-                'resolution': data[4],
-                'fps': data[5]
+                'video_codec': data[2] if len(data) > 2 else None,
+                'audio_codec': data[3] if len(data) > 3 else None,
+                'resolution': data[4] if len(data) > 4 else None,
+                'fps': data[5] if len(data) > 5 else None,
             }
     except Exception as e:
         print(t("msg.error_get_channel_data_from_database").format(info=e))
@@ -483,6 +473,7 @@ def stop_stream(channel_id):
             except Exception as e:
                 print(t("msg.error_stop_channel_stream").format(channel_id=channel_id, info=e))
         hls_running_streams.pop(channel_id, None)
+        hls_last_access.pop(channel_id, None)
 
 
 def start_rtmp_service():

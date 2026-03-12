@@ -14,6 +14,7 @@ from typing import cast
 import utils.constants as constants
 from utils.alias import Alias
 from utils.config import config
+from utils.db import ensure_result_data_schema
 from utils.db import get_db_connection, return_db_connection
 from utils.ffmpeg import check_ffmpeg_installed_status
 from utils.frozen import is_url_frozen, mark_url_bad, mark_url_good
@@ -627,7 +628,8 @@ async def test_speed(data, ipv6=False, callback=None, on_task_complete=None):
                 origin = merged.get('origin')
                 origin_name = t(f"name.{origin}") if origin else origin
                 result_logger.info(
-                    f"{t('name.name')}: {name}, {t('pbar.url')}: {merged.get('url')}, {t('name.from')}: {origin_name}, "
+                    f"ID: {merged.get('id')}, {t('name.name')}: {name}, "
+                    f"{t('pbar.url')}: {merged.get('url')}, {t('name.from')}: {origin_name}, "
                     f"{t('name.ipv_type')}: {merged.get('ipv_type')}, {t('name.location')}: {merged.get('location')}, "
                     f"{t('name.isp')}: {merged.get('isp')}, "
                     f"{t('name.delay')}: {merged.get('delay') or -1} ms, {t('name.speed')}: {(merged.get('speed') or 0):.2f} M/s, "
@@ -844,6 +846,7 @@ def process_write_content(
             os.makedirs(db_dir, exist_ok=True)
 
         try:
+            ensure_result_data_schema(constants.rtmp_data_path)
             conn = get_db_connection(constants.rtmp_data_path)
         except Exception as e:
             print(t("msg.write_error").format(info=f"open rtmp db error: {e}"))
@@ -868,8 +871,6 @@ def process_write_content(
                             )
                         )
                 conn.commit()
-            except Exception as e:
-                print(t("msg.write_error").format(info=f"insert rtmp data error: {e}"))
             finally:
                 return_db_connection(constants.rtmp_data_path, conn)
     try:
