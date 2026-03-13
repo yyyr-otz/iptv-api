@@ -893,6 +893,21 @@ CCTV-15,http://115.52.127.45:880/CH015.m3u8
 
 ð¥å¤®è§ä»è´¹é¢é,#genre#
 
+ç¬¬ä¸å§åº,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dyjc
+çµè§æå,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dszn
+é£äºå§åº,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyjc
+é£äºé³ä¹,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
+é£äºè¶³ç,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq
+ææ§å§åº,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc
+ä¸çå°ç,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sjdl
+å¤®è§å°ç,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ystq
+å«çå¥åº·,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk
+é«å°å¤«ç½ç,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gefwq
+å¤®è§æåç²¾å,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ysjp
+èæäº,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lgs
+åç°ä¹æ,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fxzl
+
+
 å«çå¥åº·,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub
 å¤®è§å°ç,http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
 ç¬¬ä¸å§åº,http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
