@@ -294,11 +294,14 @@ def run_service():
             if config.open_rtmp and sys.platform == "win32":
                 start_rtmp_service()
             public_url = get_public_url()
-            base_api = f"{public_url}/hls" if config.open_rtmp else public_url
-            print(t("msg.statistic_log_path").format(path=f"{public_url}/log/statistic"))
-            print(t("msg.ipv4_api").format(api=f"{base_api}/ipv4"))
-            print(t("msg.ipv6_api").format(api=f"{base_api}/ipv6"))
-            print(t("msg.full_api").format(api=base_api))
+            mode = [t("name.direct_connection")]
+            if config.open_rtmp:
+                mode.append(t("name.push_streaming"))
+            for m in mode:
+                if m == t("name.push_streaming"):
+                    print(t("msg.rtmp_full_api").format(mode=m, api=f"{public_url}/hls"))
+                else:
+                    print(t("msg.full_api").format(mode=m, api=public_url))
             app.run(host="127.0.0.1", port=config.app_port)
     except Exception as e:
         print(t("msg.error_service_start_failed").format(info=e))
