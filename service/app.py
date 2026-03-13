@@ -23,7 +23,7 @@ log.setLevel(logging.ERROR)
 @app.route("/")
 def show_index():
     return get_result_file_content(
-        path=constants.hls_result_path if config.open_rtmp else config.final_file,
+        path=config.final_file,
         file_type="m3u" if config.open_m3u_result else "txt"
     )
 
@@ -113,7 +113,7 @@ def show_ipv4_m3u():
 @app.route("/ipv4")
 def show_ipv4_result():
     return get_result_file_content(
-        path=constants.hls_ipv4_result_path if config.open_rtmp else constants.ipv4_result_path,
+        path=constants.ipv4_result_path,
         file_type="m3u" if config.open_m3u_result else "txt"
     )
 
@@ -134,7 +134,7 @@ def show_ipv6_m3u():
 @app.route("/ipv6")
 def show_ipv6_result():
     return get_result_file_content(
-        path=constants.hls_ipv6_result_path if config.open_rtmp else constants.ipv6_result_path,
+        path=constants.ipv6_result_path,
         file_type="m3u" if config.open_m3u_result else "txt"
     )
 
@@ -160,7 +160,7 @@ def show_hls_ipv6_m3u():
 @app.route("/content")
 def show_content():
     return get_result_file_content(
-        path=constants.hls_result_path if config.open_rtmp else config.final_file,
+        path=config.final_file,
         file_type="m3u" if config.open_m3u_result else "txt",
         show_content=True
     )
