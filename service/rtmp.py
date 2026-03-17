@@ -1,4 +1,3 @@
-import asyncio
 import json
 import os
 import subprocess
@@ -12,7 +11,7 @@ import utils.constants as constants
 from utils.config import config
 from utils.db import ensure_result_data_schema
 from utils.db import get_db_connection, return_db_connection
-from utils.ffmpeg import probe_url
+from utils.ffmpeg import probe_url_sync
 from utils.i18n import t
 from utils.tools import join_url, resource_path, render_nginx_conf
 
@@ -188,18 +187,7 @@ def start_hls_to_rtmp(host, channel_id, client_user_agent: str | None = None):
 
     if config.open_rtmp and (not meta.get('video_codec') or not meta.get('audio_codec')):
         try:
-            probed = None
-            try:
-                probed = asyncio.run(probe_url(url, headers, timeout=10))
-            except RuntimeError:
-                loop = asyncio.new_event_loop()
-                try:
-                    probed = loop.run_until_complete(probe_url(url, headers, timeout=10))
-                finally:
-                    try:
-                        loop.close()
-                    except Exception:
-                        pass
+            probed = probe_url_sync(url, headers, timeout=10)
             if probed:
                 meta.update(probed)
                 _save_probe_metadata_to_db(channel_id, url, headers, probed)
@@ -326,6 +314,16 @@ def start_hls_to_rtmp(host, channel_id, client_user_agent: str | None = None):
             p, ok = _start_copy_trial(copy_audio=False)
             if ok:
                 return p
+
+    if config.rtmp_transcode_mode == 'copy':
+        p, ok = _start_copy_trial(copy_audio=True)
+        if ok:
+            return p
+        p, ok = _start_copy_trial(copy_audio=False)
+        if ok:
+            return p
+        print(t("msg.rtmp_all_encoders_failed"))
+        return None
 
     candidates = _get_video_encoder_candidates()
     process = None
