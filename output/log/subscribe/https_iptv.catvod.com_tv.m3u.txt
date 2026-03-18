@@ -27,8 +27,6 @@ https://iptv.catvod.com/live.php?id=CCTV12&line=6
 https://iptv.catvod.com/live.php?id=CCTV12&line=7
 #EXTINF:-1 tvg-id="CCTV12" tvg-logo="https://logo.catvod.com/CCTV12.png" group-title="央视",🎁 CCTV12
 https://iptv.catvod.com/live.php?id=CCTV12&line=8
-#EXTINF:-1 tvg-id="CCTV12" tvg-logo="https://logo.catvod.com/CCTV12.png" group-title="央视",🎁 CCTV12
-https://iptv.catvod.com/live.php?id=CCTV12&line=9
 #EXTINF:-1 tvg-id="CCTV4欧洲" tvg-name="CCTV4欧洲" tvg-logo="http://wapx.cmvideo.cn:8080/publish/poms/image/2200/179/315/202204010055_1626831010992_H32_1080.webp" group-title="央视",🎁 CCTV4欧洲
 https://iptv.catvod.com/live.php?id=CCTV4%E6%AC%A7%E6%B4%B2&line=1
 #EXTINF:-1 tvg-id="CCTV4欧洲" tvg-name="CCTV4欧洲" tvg-logo="http://wapx.cmvideo.cn:8080/publish/poms/image/2200/179/315/202204010055_1626831010992_H32_1080.webp" group-title="央视",🎁 CCTV4欧洲
