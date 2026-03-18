@@ -302,7 +302,7 @@ def run_service():
                     print(t("msg.rtmp_full_api").format(mode=m, api=f"{public_url}/hls"))
                 else:
                     print(t("msg.full_api").format(mode=m, api=public_url))
-            app.run(host="127.0.0.1", port=config.app_port)
+            app.run(host="0.0.0.0", port=config.app_port)
     except Exception as e:
         print(t("msg.error_service_start_failed").format(info=e))
 

@@ -134,7 +134,6 @@ async def get_channels_by_subscribe_urls(
             if error_print:
                 print(f"Error on {subscribe_url}: {e}")
         finally:
-            close_logger_handlers(logger)
             pbar.update()
             if callback:
                 callback(
@@ -154,5 +153,6 @@ async def get_channels_by_subscribe_urls(
         ]
         for future in futures:
             subscribe_results = merge_objects(subscribe_results, future.result())
-    pbar.close()
-    return subscribe_results
+        pbar.close()
+        close_logger_handlers(logger)
+        return subscribe_results
