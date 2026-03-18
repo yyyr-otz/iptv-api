@@ -9,7 +9,7 @@ from aiohttp import ClientSession, TCPConnector
 
 import utils.constants as constants
 from utils.config import config
-from utils.ffmpeg import probe_url, ffmpeg_url, get_resolution_ffprobe
+from utils.ffmpeg import probe_url, ffmpeg_url
 from utils.i18n import t
 from utils.requests.tools import headers as request_headers
 from utils.tools import get_resolution_value
@@ -26,6 +26,7 @@ open_supply = config.open_supply
 open_filter_speed = config.open_filter_speed
 min_speed_value = config.min_speed
 resolution_speed_map = config.resolution_speed_map
+speed_test_limit = config.speed_test_limit
 m3u8_headers = ['application/x-mpegurl', 'application/vnd.apple.mpegurl', 'audio/mpegurl', 'audio/x-mpegurl']
 default_ipv6_delay = 0.1
 default_ipv6_resolution = "1920x1080"
@@ -103,7 +104,7 @@ async def get_speed_with_download(url: str, headers: dict = None, session: Clien
         }
 
 
-async def get_headers(url: str, headers: dict = None, session: ClientSession = None, timeout: int = 5) -> dict:
+async def get_headers(url: str, headers: dict = None, session: ClientSession = None, timeout: int = 3) -> dict:
     """
     Get the headers of the url
     """
@@ -177,73 +178,6 @@ def _parse_time_to_seconds(t: str) -> float:
         return 0.0
 
 
-def _try_extract_speed_from_ffmpeg_output(output: str) -> float | None:
-    """
-    Try to extract speed from ffmpeg output
-    """
-
-    def parse_size_value(value_str: str, unit: str | None) -> float:
-        try:
-            val = float(value_str)
-        except Exception:
-            return 0.0
-        if not unit:
-            return val
-        unit_lower = unit.lower()
-        if unit_lower in ("b", "bytes"):
-            return val
-        if unit_lower in ("kib", "k"):
-            return val * 1024.0
-        if unit_lower in ("kb",):
-            return val * 1000.0
-        if unit_lower in ("mib", "mb"):
-            return val * 1024.0 * 1024.0
-        return val
-
-    try:
-        total_bytes = 0.0
-        m_video = re.search(r"video:\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|MiB|kB|B|kb|KB)?", output, re.IGNORECASE)
-        m_audio = re.search(r"audio:\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|MiB|kB|B|kb|KB)?", output, re.IGNORECASE)
-        if m_video:
-            total_bytes += parse_size_value(m_video.group(1), m_video.group(2))
-        if m_audio:
-            total_bytes += parse_size_value(m_audio.group(1), m_audio.group(2))
-
-        m_time = re.search(r"time=\s*([0-9:.]+)", output)
-        if total_bytes > 0 and m_time:
-            secs = _parse_time_to_seconds(m_time.group(1))
-            if secs > 0:
-                return total_bytes / secs / 1024.0 / 1024.0
-    except Exception:
-        pass
-
-    try:
-        m_lsize = re.search(r"Lsize=\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|kB|MiB|B|kb|KB)?", output, re.IGNORECASE)
-        m_size = re.search(r"size=\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|kB|MiB|B|kb|KB)?", output, re.IGNORECASE)
-        m_time = re.search(r"time=\s*([0-9:.]+)", output)
-        size_bytes = 0.0
-        if m_lsize and m_lsize.group(1).upper() != "N/A":
-            size_bytes = parse_size_value(m_lsize.group(1), m_lsize.group(2))
-        elif m_size:
-            size_bytes = parse_size_value(m_size.group(1), m_size.group(2))
-        if size_bytes > 0 and m_time:
-            secs = _parse_time_to_seconds(m_time.group(1))
-            if secs > 0:
-                return size_bytes / secs / 1024.0 / 1024.0
-    except Exception:
-        pass
-
-    try:
-        m_bitrate = re.search(r"bitrate=\s*([0-9.]+)\s*k?bits/s", output)
-        if m_bitrate:
-            kbps = float(m_bitrate.group(1))
-            return kbps / 8.0 / 1024.0
-    except Exception:
-        pass
-
-    return None
-
-
 async def get_result(url: str, headers: dict = None, resolution: str = None,
                      filter_resolution: bool = config.open_filter_resolution,
                      timeout: int = speed_test_timeout) -> dict[str, float | None]:
@@ -256,6 +190,8 @@ async def get_result(url: str, headers: dict = None, resolution: str = None,
         url = quote(url, safe=':/?$&=@[]%').partition('$')[0]
         async with ClientSession(connector=TCPConnector(ssl=False), trust_env=True) as session:
             res_headers = await get_headers(url, headers, session)
+            if not res_headers:
+                return info
             location = res_headers.get('Location')
             if location:
                 info.update(await get_result(location, headers, resolution, filter_resolution, timeout))
@@ -280,7 +216,8 @@ async def get_result(url: str, headers: dict = None, resolution: str = None,
                     res_info = await get_speed_with_download(url, headers, session, timeout)
                     info.update({'speed': res_info['speed'], 'delay': res_info['delay']})
                 start_time = time()
-                tasks = [get_speed_with_download(ts_url, headers, session, timeout) for ts_url in segment_urls[:5]]
+                sampled_segment_urls = sample_segment_urls(segment_urls, speed_test_limit)
+                tasks = [get_speed_with_download(ts_url, headers, session, timeout) for ts_url in sampled_segment_urls]
                 results = await asyncio.gather(*tasks, return_exceptions=True)
                 total_size = sum(result['size'] for result in results if isinstance(result, dict))
                 total_time = sum(result['time'] for result in results if isinstance(result, dict))
@@ -290,27 +227,37 @@ async def get_result(url: str, headers: dict = None, resolution: str = None,
                     if round(info['speed'], 2) == 0 and info['delay'] != -1:
                         ff_out = await ffmpeg_url(url, headers, timeout)
                         if ff_out:
-                            parsed_speed = _try_extract_speed_from_ffmpeg_output(ff_out)
-                            if parsed_speed is not None and parsed_speed > 0:
-                                info['speed'] = float(parsed_speed)
                             try:
-                                _, parsed_resolution = get_video_info(ff_out)
-                                if parsed_resolution:
-                                    info['resolution'] = parsed_resolution
+                                parsed = get_video_info(ff_out)
+                                if parsed:
+                                    parsed_speed = parsed.get('speed')
+                                    parsed_resolution = parsed.get('resolution')
+                                    parsed_fps = parsed.get('fps')
+                                    parsed_video_codec = parsed.get('video_codec')
+                                    parsed_audio_codec = parsed.get('audio_codec')
+                                    if parsed_speed:
+                                        info['speed'] = parsed_speed
+                                    if parsed_resolution:
+                                        info['resolution'] = parsed_resolution
+                                    if parsed_fps:
+                                        info['fps'] = parsed_fps
+                                    if parsed_video_codec:
+                                        info['video_codec'] = parsed_video_codec
+                                    if parsed_audio_codec:
+                                        info['audio_codec'] = parsed_audio_codec
                             except Exception:
                                 pass
+
                 except Exception:
                     pass
     except:
         pass
     finally:
-        if not info.get('resolution') and filter_resolution and not location and info.get('delay') != -1:
+        if filter_resolution and not location and not info.get('resolution') and info.get('delay') != -1:
             try:
                 probed = await probe_url(url, headers, timeout=timeout)
                 if probed:
-                    res = probed.get('resolution')
-                    if res:
-                        info['resolution'] = res
+                    info['resolution'] = probed.get('resolution')
                     info['fps'] = probed.get('fps')
                     info['video_codec'] = probed.get('video_codec')
                     info['audio_codec'] = probed.get('audio_codec')
@@ -344,38 +291,146 @@ async def get_delay_requests(url, timeout=speed_test_timeout, proxy=None):
 
 def get_video_info(video_info):
     """
-    Get the video info
+    Get the video info from ffmpeg stderr and return a dict with keys:
+      - resolution: str or None (e.g. '1280x720')
+      - fps: float or None
+      - video_codec: str or None
+      - audio_codec: str or None
+      - speed: float or None
     """
-    frame_size = -1
     resolution = None
+    fps = None
+    video_codec = None
+    audio_codec = None
     if video_info is not None:
-        info_data = video_info.replace(" ", "")
-        matches = re.findall(r"frame=(\d+)", info_data)
-        if matches:
-            frame_size = int(matches[-1])
         match = re.search(r"(\d{3,4}x\d{3,4})", video_info)
         if match:
             resolution = match.group(0)
-    return frame_size, resolution
+        m_fps = re.search(r"(\d+(?:\.\d+)?)\s*fps", video_info, re.IGNORECASE)
+        if not m_fps:
+            m_fps = re.search(r"(\d+(?:\.\d+)?)\s*tbr", video_info, re.IGNORECASE)
+        if not m_fps:
+            m_fps = re.search(r"(\d+(?:\.\d+)?)\s*tbn", video_info, re.IGNORECASE)
+        if m_fps:
+            try:
+                fps = float(m_fps.group(1))
+            except Exception:
+                fps = None
+        m_vc = re.search(r"Video:\s*([^,\n\r(]+)", video_info, re.IGNORECASE)
+        if m_vc:
+            vc = m_vc.group(1).strip()
+            vc = vc.split(',')[0].split()[0]
+            if vc:
+                video_codec = vc
+        m_ac = re.search(r"Audio:\s*([^,\n\r(]+)", video_info, re.IGNORECASE)
+        if m_ac:
+            ac = m_ac.group(1).strip()
+            ac = ac.split(',')[0].split()[0]
+            if ac:
+                audio_codec = ac
 
+    def parse_size_value(value_str: str, unit: str | None) -> float:
+        try:
+            val = float(value_str)
+        except Exception:
+            return 0.0
+        if not unit:
+            return val
+        unit_lower = unit.lower()
+        if unit_lower in ("b", "bytes"):
+            return val
+        if unit_lower in ("kib", "k"):
+            return val * 1024.0
+        if unit_lower in ("kb",):
+            return val * 1000.0
+        if unit_lower in ("mib", "mb"):
+            return val * 1024.0 * 1024.0
+        return val
 
-async def check_stream_delay(url_info):
-    """
-    Check the stream delay
-    """
+    speed_val = None
     try:
-        url = url_info["url"]
-        video_info = await ffmpeg_url(url)
-        if video_info is None:
-            return -1
-        frame, resolution = get_video_info(video_info)
-        if frame is None or frame == -1:
-            return -1
-        url_info["resolution"] = resolution
-        return url_info, frame
-    except Exception as e:
-        print(e)
-        return -1
+        total_bytes = 0.0
+        m_video_size = re.search(r"video:\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|MiB|kB|B|kb|KB)?", video_info, re.IGNORECASE)
+        m_audio_size = re.search(r"audio:\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|MiB|kB|B|kb|KB)?", video_info, re.IGNORECASE)
+        if m_video_size:
+            total_bytes += parse_size_value(m_video_size.group(1), m_video_size.group(2))
+        if m_audio_size:
+            total_bytes += parse_size_value(m_audio_size.group(1), m_audio_size.group(2))
+
+        m_time = re.search(r"time=\s*([0-9:.]+)", video_info)
+        if total_bytes > 0 and m_time:
+            secs = _parse_time_to_seconds(m_time.group(1))
+            if secs > 0:
+                speed_val = total_bytes / secs / 1024.0 / 1024.0
+    except Exception:
+        pass
+
+    if speed_val is None:
+        try:
+            m_lsize = re.search(r"Lsize=\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|kB|MiB|B|kb|KB)?", video_info, re.IGNORECASE)
+            m_size = re.search(r"size=\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|kB|MiB|B|kb|KB)?", video_info, re.IGNORECASE)
+            m_time = re.search(r"time=\s*([0-9:.]+)", video_info)
+            size_bytes = 0.0
+            if m_lsize and m_lsize.group(1).upper() != "N/A":
+                size_bytes = parse_size_value(m_lsize.group(1), m_lsize.group(2))
+            elif m_size:
+                size_bytes = parse_size_value(m_size.group(1), m_size.group(2))
+            if size_bytes > 0 and m_time:
+                secs = _parse_time_to_seconds(m_time.group(1))
+                if secs > 0:
+                    speed_val = size_bytes / secs / 1024.0 / 1024.0
+        except Exception:
+            pass
+
+    if speed_val is None:
+        try:
+            m_bitrate = re.search(r"bitrate=\s*([0-9.]+)\s*k?bits/s", video_info)
+            if m_bitrate:
+                kbps = float(m_bitrate.group(1))
+                speed_val = kbps / 8.0 / 1024.0
+        except Exception:
+            pass
+
+    return {
+        'resolution': resolution,
+        'fps': fps,
+        'video_codec': video_codec,
+        'audio_codec': audio_codec,
+        'speed': speed_val,
+    }
+
+
+def sample_segment_urls(segment_urls: list, limit: int) -> list:
+    """
+    Sample up to `limit` segment URLs from `segment_urls` evenly across the playlist.
+    If `limit` >= len(segment_urls) the original list is returned.
+    """
+    if not segment_urls:
+        return []
+    try:
+        limit = int(limit) if limit is not None else 0
+    except Exception:
+        limit = 0
+    total = len(segment_urls)
+    if limit <= 0 or limit >= total:
+        return list(segment_urls)
+    if limit == 1:
+        return [segment_urls[total // 2]]
+    indices = []
+    for i in range(limit):
+        idx = round(i * (total - 1) / (limit - 1))
+        indices.append(idx)
+    seen = set()
+    sampled = []
+    for idx in indices:
+        if idx < 0:
+            idx = 0
+        if idx >= total:
+            idx = total - 1
+        if idx not in seen:
+            seen.add(idx)
+            sampled.append(segment_urls[idx])
+    return sampled
 
 
 def get_avg_result(result) -> TestResult:
@@ -394,7 +449,7 @@ def get_speed_result(key: str) -> TestResult:
     if key in cache:
         return get_avg_result(cache[key])
     else:
-        return {'speed': 0, 'delay': -1, 'resolution': 0}
+        return {'speed': 0, 'delay': -1, 'resolution': None}
 
 
 async def get_speed(data, headers=None, ipv6_proxy=None, filter_resolution=open_filter_resolution,
@@ -414,12 +469,22 @@ async def get_speed(data, headers=None, ipv6_proxy=None, filter_resolution=open_
             if data['ipv_type'] == "ipv6" and ipv6_proxy:
                 result.update(default_ipv6_result)
             elif constants.rt_url_pattern.match(url) is not None:
-                start_time = time()
-                if not result['resolution'] and filter_resolution:
-                    result['resolution'] = await get_resolution_ffprobe(url, headers, timeout)
-                result['delay'] = int(round((time() - start_time) * 1000))
-                if result['resolution'] is not None:
-                    result['speed'] = float("inf")
+                rt_headers = await get_headers(url, headers)
+                if rt_headers:
+                    start_time = time()
+                    ff_out = await ffmpeg_url(url, headers, timeout)
+                    if ff_out:
+                        try:
+                            parsed = get_video_info(ff_out)
+                            if parsed:
+                                result['delay'] = int(round((time() - start_time) * 1000))
+                                result['speed'] = parsed['speed']
+                                result['resolution'] = parsed['resolution']
+                                result['fps'] = parsed['fps']
+                                result['video_codec'] = parsed['video_codec']
+                                result['audio_codec'] = parsed['audio_codec']
+                        except Exception:
+                            pass
             else:
                 result.update(await get_result(url, headers, resolution, filter_resolution, timeout))
             if cache_key:
