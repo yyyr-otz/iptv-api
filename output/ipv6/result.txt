@@ -1942,8 +1942,10 @@ NewTV武搏世界,http://mov.mtoo.vip:8333/udp/239.77.0.216:5146
 大湾区卫视,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236327/index.m3u8
 大湾区卫视,http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221227278/1.m3u8
 大湾区卫视,http://gslbmgsplive.miguvideo.com/wd_r3/2018/nfmedia/nfws/1000/index.m3u8?msisdn=20260319200019df3d00ce54cd48cb884ba1f1adb2d721&mdspid=&spid=699054&netType=0&sid=2200322852&pid=2028597139&timestamp=20260319200019&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=608917627&ParentNodeID=-99&assertID=2200322852&client_ip=43.139.160.244&SecurityKey=20260319200019&promotionId=&mvid=2200322852&mcid=500020&playurlVersion=WX-A1-9.2.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=384d0b31481c6b9801fc5de6c94edc55&ddCalcu=5358ec41dd8e004b93c164e8d15cc6fb1908
+大湾区卫视,http://gslbmgsplive.miguvideo.com/wd_r3/2018/nfmedia/nfws/1000/index.m3u8?msisdn=20260320040013d8e2c50fcf5c4fbd9499981081fd024e&mdspid=&spid=699054&netType=0&sid=2200322852&pid=2028597139&timestamp=20260320040013&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=608917627&ParentNodeID=-99&assertID=2200322852&client_ip=43.139.160.244&SecurityKey=20260320040013&promotionId=&mvid=2200322852&mcid=500020&playurlVersion=ZQ-A1-9.3.1-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=45d15f0100095180a77165a5e968636c&ddCalcu=c465e3d26188506f90e150a05069157178a0
 海峡卫视,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236416/index.m3u8
 中国农林卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/zgnlws/50/20250804/index.m3u8?msisdn=2026031920002096bc3a50bf394aa5b1afa0657c4f854d&mdspid=&spid=600572&netType=0&sid=5910022186&pid=2028597139&timestamp=20260319200020&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956904896&ParentNodeID=-99&assertID=5910022186&client_ip=43.139.160.244&SecurityKey=20260319200020&promotionId=&mvid=5900006709&mcid=500020&playurlVersion=WX-A1-9.2.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c22026d0876df18f292989f03870cb05&ddCalcu=5c02eb21c06020768d3008f7968d9f21982f
+中国农林卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/zgnlws/50/20250804/index.m3u8?msisdn=2026032004001493f58a618a0841e68937d1a8a4919d71&mdspid=&spid=600572&netType=0&sid=5910022186&pid=2028597139&timestamp=20260320040014&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956904896&ParentNodeID=-99&assertID=5910022186&client_ip=43.139.160.244&SecurityKey=20260320040014&promotionId=&mvid=5900006709&mcid=500020&playurlVersion=ZQ-A1-9.3.1-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f0e6ac126e399d6be02ca6b86b09de53&ddCalcu=3f50eee2d669a00cb16286be63a9c92d06eb
 兵团卫视,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001066/index.m3u8
 兵团卫视,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226439/index.m3u8
 兵团卫视,http://k.061899.xyz/m.php?id=btws
@@ -1970,6 +1972,7 @@ NewTV武搏世界,http://mov.mtoo.vip:8333/udp/239.77.0.216:5146
 兵团卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/btws/50/20250804/index.m3u8?msisdn=2026031920002000f563bbb6c0417796266120ba076ded&mdspid=&spid=600697&netType=0&sid=5910022192&pid=2028597139&timestamp=20260319200020&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956923145&ParentNodeID=-99&assertID=5910022192&client_ip=43.139.160.244&SecurityKey=20260319200020&promotionId=&mvid=5900006716&mcid=500020&playurlVersion=WX-A1-9.2.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c3900799703e301ebedeb037c836ba98&ddCalcu=8c93ea91b066003789c9773003bee3d0e1be
 兵团卫视,http://www.xinxuzhen.com:8000/udp/239.77.1.80:5146
 兵团卫视,http://mov.mtoo.vip:8333/udp/239.77.1.80:5146
+兵团卫视,http://gslbmgsplive.miguvideo.com/migu/kailu/btws/50/20250804/index.m3u8?msisdn=2026032004001441fa7ca1d7c944a28bc2a43b2dec5afb&mdspid=&spid=600697&netType=0&sid=5910022192&pid=2028597139&timestamp=20260320040014&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956923145&ParentNodeID=-99&assertID=5910022192&client_ip=43.139.160.244&SecurityKey=20260320040014&promotionId=&mvid=5900006716&mcid=500020&playurlVersion=ZQ-A1-9.3.1-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=59553084b99ea5a2502e4e2d2ebcc367&ddCalcu=7569e352c56c30b0e824db29e94eea250a52
 上海新闻综合,http://gslbmgsplive.miguvideo.com/wd_r4/dfl/xinwenzonghehd/1200/index.m3u8?msisdn=20250919080134d0a4f61e680b4d1b8d2460b858ff1fec&mdspid=&spid=699212&netType=0&sid=5500002275&pid=2028597139&timestamp=20250919080134&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=651632657&ParentNodeID=-99&assertID=5500002275&client_ip=106.13.250.88&SecurityKey=20250919080134&promotionId=&mvid=5100001716&mcid=500020&playurlVersion=WX-A1-8.9.1-RELEASE&userid=&jmhm=&videocodec=h264&bean=mgspad&tid=android&conFee=0&puData=c6e37e6787e81aeb250c874ff8533137&ddCalcu=7c36e1e13313705e86f7f8477e88c10a5e2b
 上海新闻综合,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001014/index.m3u8
 上海新闻综合,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000011000031110/1.m3u8?channel-id=bestzb&Contentid=5000000011000031110&livemode=1&stbId=m
@@ -2985,6 +2988,7 @@ BRTV卡酷少儿,https://zby.130519.xyz/PLTV/11/224/3221226019/index.m3u8
 象视界,http://tvcdn.stream3.hndt.com/tv/d34d1a2b0178100022de972e00000000_transios/playlist.m3u8?wsSecret=35d988a6e779229d6556302295b0a052&wsTime=1772294415
 象视界,http://tvcdn.stream3.hndt.com/tv/d34d1a2b0178100022de972e00000000_transios/playlist.m3u8?wsSecret=0c680a0e588af231f77464108e7d8b83&wsTime=1773878283
 象视界,http://tvcdn.stream3.hndt.com/tv/d34d1a2b0178100022de972e00000000_transios/playlist.m3u8?wsSecret=7ba968245e6bdde215bb8173395e3db4&wsTime=1773899990
+象视界,http://tvcdn.stream3.hndt.com/tv/d34d1a2b0178100022de972e00000000_transios/playlist.m3u8?wsSecret=bd355a2481a2a544b2c125eb8feb4290&wsTime=1773964708
 海南自贸,http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000116/1.m3u8
 海南公共,http://[2409:8087:5e00:24::1e]:6060/000000001000/460000100000000057/1.m3u8
 海南文旅,http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000113/1.m3u8
@@ -3602,6 +3606,7 @@ BS-TBS,https://hls-gateway.vpstv.net/streams/709230.m3u8
 欢腾购物,http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=0b161424421c3e64a835854aa5c38de5&wsTime=1773943116
 欢腾购物,http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=5ac434c109375c8ed865f971693d05cf&wsTime=1773878283
 欢腾购物,http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=dde057c9a7034175e65e703a14a6e079&wsTime=1773899990
+欢腾购物,http://tvcdn.stream3.hndt.com/tv/65ba653b017e1000d4ee41c700000000_transios/playlist.m3u8?wsSecret=ee5de007c89cd1a06d7afc0e2874ecd8&wsTime=1773964708
 洛阳综合,http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226542/index.m3u8
 鹤壁综合,http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226563/index.m3u8
 焦作综合,http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226604/index.m3u8
@@ -3704,12 +3709,19 @@ Asia Travel,https://smt.goiptv.us.ci/asiatravel_twn/playlist.m3u8
 AFC 亚洲旅游台,https://smt.goiptv.us.ci/asiatravel_twn/playlist.m3u8
 Astro Sunmusic,https://smt.goiptv.us.ci/Sunmusic/playlist.m3u8
 新闻频道,http://tvcdn.stream3.hndt.com/tv/65bb6966017e100059b75a8500000000_transios/playlist.m3u8?wsSecret=bfe6d013a885fb3ac12ee77a85fb914a&wsTime=1773943116
+新闻频道,http://tvcdn.stream3.hndt.com/tv/65bb6966017e100059b75a8500000000_transios/playlist.m3u8?wsSecret=3ddd7b041c02549da965c23b7ae591e3&wsTime=1773964708
 都市频道,http://tvcdn.stream3.hndt.com/tv/65c3fbc5017e1000fde13faa00000000_transios/playlist.m3u8?wsSecret=30f7fabdd3acc4623cb9f8046c7c16fd&wsTime=1773943116
+都市频道,http://tvcdn.stream3.hndt.com/tv/65c3fbc5017e1000fde13faa00000000_transios/playlist.m3u8?wsSecret=e252191adbd0f25f97d1aa7f903e35cb&wsTime=1773964708
 民生频道,http://tvcdn.stream3.hndt.com/tv/65bef28a017e10009c49d5f900000000_transios/playlist.m3u8?wsSecret=0f2f898489dcedfa59f5853d94c9d7fb&wsTime=1773943116
+民生频道,http://tvcdn.stream3.hndt.com/tv/65bef28a017e10009c49d5f900000000_transios/playlist.m3u8?wsSecret=7cca8581c3933baaa14ede4465a0b274&wsTime=1773964708
 法治频道,http://tvcdn.stream3.hndt.com/tv/65be54a9017e1000af59fb4800000000_transios/playlist.m3u8?wsSecret=ff5287a325737b7392561886a712f642&wsTime=1773943116
+法治频道,http://tvcdn.stream3.hndt.com/tv/65be54a9017e1000af59fb4800000000_transios/playlist.m3u8?wsSecret=946193248ba44d2064627a1618ed88a7&wsTime=1773964708
 公共频道,http://tvcdn.stream3.hndt.com/tv/65b93894017e10000ae6b07d00000000_transios/playlist.m3u8?wsSecret=7056f469b30369712c92fa2ec2ea2a94&wsTime=1773943116
+公共频道,http://tvcdn.stream3.hndt.com/tv/65b93894017e10000ae6b07d00000000_transios/playlist.m3u8?wsSecret=400d5b369e42680626b1220e1826ac21&wsTime=1773964708
 河南乡村频道,http://tvcdn.stream3.hndt.com/tv/65b8302b017e100019dc540f00000000_transios/playlist.m3u8?wsSecret=5af50c4775a4ea34578c3fa7cf5edd34&wsTime=1773943116
+河南乡村频道,http://tvcdn.stream3.hndt.com/tv/65b8302b017e100019dc540f00000000_transios/playlist.m3u8?wsSecret=28f107b8ab644d4c07fe2700825f459e&wsTime=1773964708
 电视剧频道,http://tvcdn.stream3.hndt.com/tv/65bd329b017e1000648cd2ed00000000_transios/playlist.m3u8?wsSecret=a686f63c2624acd6837032b171f6015b&wsTime=1773943116
+电视剧频道,http://tvcdn.stream3.hndt.com/tv/65bd329b017e1000648cd2ed00000000_transios/playlist.m3u8?wsSecret=8fd50125f2f57e5f62a4950a3c6ed631&wsTime=1773964708
 宿迁公共,http://ott.mobaibox.com/PLTV/4/224/3221226939/index.m3u8
 宿迁公共,http://ott.mobaibox.com/PLTV/3/224/3221226939/index.m3u8
 常州公共,http://ott.mobaibox.com/PLTV/3/224/3221227772/index.m3u8
