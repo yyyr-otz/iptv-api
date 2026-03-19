@@ -217,8 +217,12 @@ class UpdateSource:
         """
         Run speed test on the channel data and return the test results.
         """
-        urls_total = get_urls_len(self.channel_data)
-        test_data = copy.deepcopy(self.channel_data)
+        test_data = {
+            category: copy.deepcopy(items)
+            for category, items in self.channel_data.items()
+            if category != t("content.unmatch_channel")
+        }
+        urls_total = get_urls_len(test_data)
 
         process_nested_dict(
             test_data,

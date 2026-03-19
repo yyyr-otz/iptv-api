@@ -379,7 +379,7 @@ generated result files directly on the host. Append the following options to the
 | /log/result     | Log of valid results                            |
 | /log/speed-test | Log of all interfaces involved in speed testing |
 | /log/statistic  | Log of statistics results                       |
-| /log/nomatch    | Log of unmatched channels                       |
+| /log/unmatch    | Log of unmatched channels                       |
 
 **RTMP Streaming:**
 

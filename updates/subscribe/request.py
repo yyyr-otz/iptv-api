@@ -69,7 +69,10 @@ async def get_channels_by_subscribe_urls(
             t("pbar.getting_name").format(name=mode_name),
             0,
         )
-    logger = get_logger(constants.nomatch_log_path, level=INFO, init=True)
+    logger = get_logger(constants.unmatch_log_path, level=INFO, init=True)
+    request_timeout = config.request_timeout
+    open_headers = config.open_headers
+    open_unmatch_category = config.open_unmatch_category
 
     def process_subscribe_channels(subscribe_info: str | dict) -> defaultdict:
         subscribe_url = subscribe_info.get('url') if isinstance(subscribe_info, dict) else subscribe_info
@@ -80,10 +83,10 @@ async def get_channels_by_subscribe_urls(
             response = None
             try:
                 if retry:
-                    response = retry_func(lambda: get_soup_requests(subscribe_url, timeout=config.request_timeout,
+                    response = retry_func(lambda: get_soup_requests(subscribe_url, timeout=request_timeout,
                                                                     headers_override=headers), name=subscribe_url)
                 else:
-                    response = get_soup_requests(subscribe_url, timeout=config.request_timeout,
+                    response = get_soup_requests(subscribe_url, timeout=request_timeout,
                                                  headers_override=headers)
             except Exception as e:
                 print(f"{subscribe_url}: {e}")
@@ -105,7 +108,7 @@ async def get_channels_by_subscribe_urls(
                         if m3u_type
                         else constants.multiline_txt_pattern
                     ),
-                    open_headers=config.open_headers if m3u_type else False
+                    open_headers=open_headers if m3u_type else False
                 )
                 for item in data:
                     data_name = item.get("name", "").strip()
@@ -114,7 +117,8 @@ async def get_channels_by_subscribe_urls(
                         name = format_channel_name(data_name)
                         if names and name not in names:
                             logger.info(f"{data_name},{url}")
-                            continue
+                            if not open_unmatch_category:
+                                continue
                         url_partition = url.partition("$")
                         url = url_partition[0]
                         info = url_partition[2]

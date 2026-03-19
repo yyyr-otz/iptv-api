@@ -342,7 +342,7 @@ docker run -d -p 80:8080 guovern/iptv-api
 | /log/result     | 有效结果的日志     |
 | /log/speed-test | 所有参与测速接口的日志 |
 | /log/statistic  | 统计结果的日志     |
-| /log/nomatch    | 未匹配频道的日志    |
+| /log/unmatch    | 未匹配频道的日志    |
 
 **RTMP 推流：**
 

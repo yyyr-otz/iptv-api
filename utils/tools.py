@@ -1,6 +1,7 @@
 import copy
 import datetime
 import hashlib
+import ipaddress
 import json
 import logging
 import os
@@ -189,7 +190,13 @@ def get_resolution_value(resolution_str):
     return 0
 
 
-def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_prefer, rtmp_type=None) -> list:
+def get_total_urls(
+        info_list: list[ChannelData],
+        ipv_type_prefer,
+        origin_type_prefer,
+        rtmp_type=None,
+        apply_limit: bool = True,
+) -> list:
     """
     Get the total urls from info list
     """
@@ -239,21 +246,25 @@ def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_pr
         else:
             categorized_urls[origin]["all"].append(info)
 
-    urls_limit = config.urls_limit
+    urls_limit = config.urls_limit if apply_limit else None
     for origin in origin_type_prefer:
-        if len(total_urls) >= urls_limit:
+        if urls_limit is not None and len(total_urls) >= urls_limit:
             break
         for ipv_type in ipv_type_prefer:
-            if len(total_urls) >= urls_limit:
+            if urls_limit is not None and len(total_urls) >= urls_limit:
                 break
             urls = categorized_urls[origin].get(ipv_type, [])
             if not urls:
                 continue
-            remaining = urls_limit - len(total_urls)
-            limit_urls = urls[:remaining]
-            total_urls.extend(limit_urls)
+            if urls_limit is None:
+                total_urls.extend(urls)
+            else:
+                remaining = urls_limit - len(total_urls)
+                limit_urls = urls[:remaining]
+                total_urls.extend(limit_urls)
 
-    total_urls = total_urls[:urls_limit]
+    if urls_limit is not None:
+        total_urls = total_urls[:urls_limit]
 
     return total_urls
 
@@ -1147,3 +1158,20 @@ def close_logger_handlers(logger) -> None:
         except Exception:
             pass
         logger.removeHandler(h)
+
+
+def fast_get_ipv_type(host: str | None) -> str | None:
+    """
+    Infer the IPv type from a host string without DNS resolution.
+    """
+    if not host:
+        return None
+
+    normalized_host = host.strip().strip("[]")
+    if "%" in normalized_host:
+        normalized_host = normalized_host.split("%", 1)[0]
+
+    try:
+        return f"ipv{ipaddress.ip_address(normalized_host).version}"
+    except ValueError:
+        return "ipv4"

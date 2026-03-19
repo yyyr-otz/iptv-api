@@ -212,10 +212,10 @@ def show_statistic_log():
     return response
 
 
-@app.route("/log/nomatch")
-def show_nomatch_log():
-    if os.path.exists(constants.nomatch_log_path):
-        with open(constants.nomatch_log_path, "r", encoding="utf-8") as file:
+@app.route("/log/unmatch")
+def show_unmatch_log():
+    if os.path.exists(constants.unmatch_log_path):
+        with open(constants.unmatch_log_path, "r", encoding="utf-8") as file:
             content = file.read()
     else:
         content = constants.waiting_tip

@@ -114,5 +114,6 @@
   "name.push_streaming": "Push Streaming",
   "content.no_result_channel": "\uD83C\uDE33No result channel",
   "content.update_time": "\uD83D\uDD58\uFE0FUpdate time",
-  "content.update_running": "\uD83D\uDD58\uFE0F Update in progress, refresh to get the latest results"
+  "content.update_running": "\uD83D\uDD58\uFE0F Update in progress, refresh to get the latest results",
+  "content.unmatch_channel": "♻\uFE0FNo match channel"
 }

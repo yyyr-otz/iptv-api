@@ -85,6 +85,7 @@ async def get_epg(names=None, callback=None):
     result = defaultdict(list)
     all_result_verify = set()
     session = Session()
+    open_unmatch_category = config.open_unmatch_category
 
     def process_run(entry):
         nonlocal all_result_verify, result
@@ -106,7 +107,7 @@ async def get_epg(names=None, callback=None):
                     channels, programmes = parse_epg(content)
                     for channel_id, display_name in channels.items():
                         display_name = format_channel_name(display_name)
-                        if names and display_name not in names:
+                        if not open_unmatch_category and names and display_name not in names:
                             continue
                         if channel_id not in all_result_verify and display_name not in all_result_verify:
                             if not channel_id.isdigit():

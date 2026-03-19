@@ -51,7 +51,7 @@ result_log_path = os.path.join(output_dir, "log/result.log")
 
 statistic_log_path = os.path.join(output_dir, "log/statistic.log")
 
-nomatch_log_path = os.path.join(output_dir, "log/nomatch.log")
+unmatch_log_path = os.path.join(output_dir, "log/unmatch.log")
 
 log_path = os.path.join(output_dir, "log/log.log")
 

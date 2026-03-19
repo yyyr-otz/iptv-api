@@ -114,5 +114,6 @@
   "name.push_streaming": "推流",
   "content.no_result_channel": "\uD83C\uDE33无结果频道",
   "content.update_time": "\uD83D\uDD58\uFE0F更新时间",
-  "content.update_running": "\uD83D\uDD58\uFE0F正在更新中，刷新获取最新结果"
+  "content.update_running": "\uD83D\uDD58\uFE0F正在更新中，刷新获取最新结果",
+  "content.unmatch_channel": "♻\uFE0F未匹配频道"
 }

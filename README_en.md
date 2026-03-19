@@ -93,6 +93,7 @@
 | Configuration Item     | Description                                                                                                                                                                                                                                                                                                                                 | Default Value                            |
 |:-----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
 | open_update            | Enable updates, used to control whether to update interfaces. If disabled, all working modes (getting interfaces and speed tests) stop.                                                                                                                                                                                                     | True                                     |
+| open_unmatch_category  | Enable unmatched channel category. Channels not matched by `source_file` will be written directly into this category and will not participate in speed testing                                                                                                                                                                              | True                                     |
 | open_empty_category    | Enable empty category, channels without results will automatically be classified to the bottom.                                                                                                                                                                                                                                             | False                                    |
 | open_update_time       | Enable display of update time.                                                                                                                                                                                                                                                                                                              | True                                     |
 | open_url_info          | Enable to display interface description information, used to control whether to display interface source, resolution, protocol type and other information (content after `$`). The player uses this information to describe the interface. If some players (such as PotPlayer) do not support parsing and cannot play, you can turn it off. | False                                    |
@@ -177,7 +178,7 @@ iptv-api/                  # Project root directory
         └── result.log     # Valid result log
         └── speed_test.log # Speed test log
         └── statistic.log  # Statistics result log
-        └── nomatch.log    # Unmatched channel records
+        └── unmatch.log    # Unmatched channel records
 ```
 
 ### Workflow
@@ -298,7 +299,7 @@ generated result files directly on the host. Append the following options to the
 | /log/result     | Log of valid results                            |
 | /log/speed-test | Log of all interfaces involved in speed testing |
 | /log/statistic  | Log of statistics results                       |
-| /log/nomatch    | Log of unmatched channels                       |
+| /log/unmatch    | Log of unmatched channels                       |
 
 **RTMP Streaming:**
 
