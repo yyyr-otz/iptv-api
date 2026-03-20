@@ -8,6 +8,18 @@ from utils.tools import get_real_path, resource_path
 from utils.types import WhitelistMaps
 
 
+def _dedupe_preserve_order(values: List[str]) -> List[str]:
+    seen = set()
+    deduped: List[str] = []
+    for value in values:
+        item = value.strip()
+        if not item or item in seen:
+            continue
+        seen.add(item)
+        deduped.append(item)
+    return deduped
+
+
 def load_whitelist_maps(path: str = constants.whitelist_path) -> WhitelistMaps:
     """
     Load whitelist maps from the given path.
@@ -32,7 +44,7 @@ def load_whitelist_maps(path: str = constants.whitelist_path) -> WhitelistMaps:
             if not s or s.startswith("#"):
                 continue
 
-            if re.match(r"^\[.*\]$", s):
+            if re.match(r"^\[.*]$", s):
                 in_keyword_section = s.upper() == "[KEYWORDS]"
                 continue
 
@@ -100,14 +112,7 @@ def get_whitelist_url(data_map: WhitelistMaps, channel_name: str | None = None) 
     """
     exact_map, _ = data_map
     channel_key = channel_name or ""
-    whitelist_urls = set()
-
-    for candidate in exact_map.get(channel_key, []) + exact_map.get("", []):
-        c = candidate.strip()
-        if c:
-            whitelist_urls.add(c)
-
-    return list(whitelist_urls)
+    return _dedupe_preserve_order(exact_map.get(channel_key, []) + exact_map.get("", []))
 
 
 def get_whitelist_total_count(data_map: WhitelistMaps) -> int:
@@ -141,7 +146,7 @@ def get_section_entries(path: str = constants.whitelist_path, section: str = "WH
     inside: List[str] = []
     outside: List[str] = []
     in_section = False
-    header_re = re.compile(r"^\[.*\]$")
+    header_re = re.compile(r"^\[.*]$")
 
     with open(real_path, "r", encoding="utf-8") as f:
         for raw in f:
@@ -166,4 +171,4 @@ def get_section_entries(path: str = constants.whitelist_path, section: str = "WH
                 else:
                     target.append(s)
 
-    return inside, outside
+    return _dedupe_preserve_order(inside), _dedupe_preserve_order(outside)

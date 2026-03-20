@@ -1,12 +1,13 @@
 import asyncio
 import gzip
+import hashlib
 import json
 import math
 import os
 import pickle
 import re
 import tempfile
-from collections import defaultdict, Counter
+from collections import defaultdict, Counter, OrderedDict
 from itertools import chain
 from logging import INFO
 from typing import cast
@@ -64,6 +65,72 @@ open_history = config.open_history
 open_local = config.open_local
 open_rtmp = config.open_rtmp
 retain_origin = ["whitelist", "hls"]
+
+_TOTAL_URLS_CACHE_MAX_SIZE = 2048
+_TOTAL_URLS_CACHE = OrderedDict()
+
+
+def _build_total_urls_signature(info_list: list[ChannelData]) -> str:
+    """
+    Build a stable signature for a channel info list.
+    """
+    hasher = hashlib.sha1()
+    for info in info_list or []:
+        if not isinstance(info, dict):
+            hasher.update(repr(info).encode("utf-8", errors="ignore"))
+            hasher.update(b"\x1e")
+            continue
+
+        origin = info.get("origin") or ""
+        extra_info = info.get("extra_info") or ""
+        if origin not in retain_origin and not extra_info:
+            extra_info = constants.origin_map.get(origin, "")
+
+        hasher.update(
+            "\x1f".join((
+                str(info.get("id", "")),
+                info.get("url") or "",
+                origin,
+                info.get("ipv_type") or "",
+                extra_info,
+            )).encode("utf-8", errors="ignore")
+        )
+        hasher.update(b"\x1e")
+
+    return hasher.hexdigest()
+
+
+def _get_total_urls_cached(
+        info_list: list[ChannelData],
+        ipv_type_prefer,
+        origin_type_prefer,
+        rtmp_type=None,
+        apply_limit: bool = True,
+) -> tuple:
+    """
+    Cached wrapper for `get_total_urls()`.
+    """
+    ipv_key = tuple(ipv_type_prefer or ())
+    origin_key = tuple(origin_type_prefer or ())
+    rtmp_key = tuple(rtmp_type or ())
+    cache_key = (
+        _build_total_urls_signature(info_list),
+        ipv_key,
+        origin_key,
+        rtmp_key,
+        bool(apply_limit),
+        config.urls_limit,
+    )
+    cached = _TOTAL_URLS_CACHE.get(cache_key)
+    if cached is not None:
+        _TOTAL_URLS_CACHE.move_to_end(cache_key)
+        return cached
+
+    total_urls = tuple(get_total_urls(info_list, ipv_type_prefer, origin_type_prefer, rtmp_type, apply_limit))
+    _TOTAL_URLS_CACHE[cache_key] = total_urls
+    if len(_TOTAL_URLS_CACHE) > _TOTAL_URLS_CACHE_MAX_SIZE:
+        _TOTAL_URLS_CACHE.popitem(last=False)
+    return total_urls
 
 
 def format_channel_data(url: str, origin: OriginType) -> ChannelData:
@@ -126,7 +193,7 @@ def get_channel_data_from_file(channels, file, whitelist_maps, blacklist,
     for line in file:
         line = line.strip()
         if "#genre#" in line:
-            current_category = line.partition(",")[0]
+            current_category = re.split(r"[，,]", line, maxsplit=1)[0]
         else:
             name_value = get_name_value(
                 line, pattern=constants.demo_txt_pattern, check_value=False
@@ -935,7 +1002,7 @@ def process_write_content(
         channel_obj_keys = channel_obj.keys()
         for i, name in enumerate(channel_obj_keys):
             info_list = data.get(cate, {}).get(name, [])
-            channel_urls = get_total_urls(
+            channel_urls = _get_total_urls_cached(
                 info_list,
                 ipv_type_prefer,
                 origin_type_prefer,
@@ -964,13 +1031,13 @@ def process_write_content(
         update_time_item = next(
             (urls[0] for channel_obj in data.values()
              for info_list in channel_obj.values()
-             if (urls := get_total_urls(
-                 info_list,
-                 ipv_type_prefer,
-                 origin_type_prefer,
-                 rtmp_type,
-                 apply_limit=True,
-             ))),
+             if (urls := _get_total_urls_cached(
+                info_list,
+                ipv_type_prefer,
+                origin_type_prefer,
+                rtmp_type,
+                apply_limit=True,
+            ))),
             {"id": "id", "url": "url"}
         )
         now = get_datetime_now()

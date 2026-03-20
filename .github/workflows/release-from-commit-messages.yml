@@ -1,0 +1,203 @@
+name: Release from commit messages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+          update-environment: true
+          cache: 'pipenv'
+
+      - name: Install pipenv
+        shell: pwsh
+        run: python -m pip install --upgrade pip pipenv
+
+      - name: Install dependencies with pipenv
+        shell: pwsh
+        run: |
+          pipenv --python 3.13
+          pipenv install --dev
+
+      - name: Build the application
+        shell: pwsh
+        run: pipenv run pyinstaller --clean --noconfirm tkinter_ui/tkinter_ui.spec
+
+      - name: Read version info
+        id: version
+        shell: pwsh
+        run: |
+          if (-not (Test-Path -Path version.json)) {
+            Write-Error 'version.json not found.'
+            exit 1
+          }
+
+          $json = Get-Content version.json -Raw | ConvertFrom-Json
+          if (-not $json.name -or -not $json.version) {
+            Write-Error 'version.json must contain name and version.'
+            exit 1
+          }
+
+          Add-Content -Path $env:GITHUB_ENV -Value "name=$($json.name)"
+          Add-Content -Path $env:GITHUB_ENV -Value "version=$($json.version)"
+          Add-Content -Path $env:GITHUB_ENV -Value "release_tag=$($json.version)"
+          Add-Content -Path $env:GITHUB_ENV -Value "release_title=v$($json.version)"
+
+      - name: Validate release tag does not already exist
+        shell: pwsh
+        run: |
+          $tag = $env:release_tag
+          if (-not $tag) {
+            Write-Error 'release_tag is empty.'
+            exit 1
+          }
+
+          $existingTag = git tag --list $tag
+          if ($existingTag) {
+            Write-Error "Tag '$tag' already exists. Bump version.json before releasing."
+            exit 1
+          }
+
+      - name: Generate release notes from commit messages
+        id: notes
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $versionCommits = @(git log --format=%H -- version.json)
+          $baseCommit = ''
+
+          if ($versionCommits.Count -ge 2) {
+            $baseCommit = $versionCommits[1].Trim()
+          } elseif ($versionCommits.Count -eq 1) {
+            $baseCommit = $versionCommits[0].Trim()
+          }
+
+          if (-not $baseCommit) {
+            try {
+              $baseCommit = (git describe --tags --abbrev=0).Trim()
+            } catch {
+              $baseCommit = ''
+            }
+          }
+
+          if (-not $baseCommit) {
+            $baseCommit = (git rev-list --max-parents=0 HEAD | Select-Object -First 1).Trim()
+          }
+
+          $rawMessages = git log --reverse --format=%s "$baseCommit..HEAD"
+
+          $skipPatterns = @(
+            '^(?i)release:\s*v?\d',
+            '^(?i)release\b',
+            '^(?i)chore:\s*version\b',
+            '^(?i)chore(?:\(.+\))?:\s*bump\s+version\b',
+            '^(?i)bump\s+version\b',
+            '^(?i)version\s+update\b',
+            '^(?i)merge\s+pull\s+request\b',
+            '^(?i)merge\b'
+          )
+
+          $notesLines = New-Object System.Collections.Generic.List[string]
+          foreach ($line in $rawMessages) {
+            $message = $line.Trim()
+            if (-not $message) { continue }
+
+            $skip = $false
+            foreach ($pattern in $skipPatterns) {
+              if ($message -match $pattern) {
+                $skip = $true
+                break
+              }
+            }
+
+            if ($skip) { continue }
+            $notesLines.Add("- $message")
+          }
+
+          $notesPath = Join-Path $PWD 'release-notes.md'
+          $content = New-Object System.Collections.Generic.List[string]
+          $content.AddRange($notesLines)
+          $content | Set-Content -Path $notesPath -Encoding utf8
+
+          Add-Content -Path $env:GITHUB_ENV -Value "base_commit=$baseCommit"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "notes_path=$notesPath"
+
+      - name: Summarize release notes
+        shell: pwsh
+        run: |
+          Write-Host "Release notes generated from base commit: $env:base_commit"
+          Get-Content "${{ steps.notes.outputs.notes_path }}" | ForEach-Object {
+            Write-Host $_
+          }
+
+      - name: Package dist into zip
+        id: package
+        shell: pwsh
+        run: |
+          $zipName = "$($env:name)-v$($env:version).zip"
+          $zipPath = Join-Path $PWD $zipName
+
+          if (-not (Test-Path -Path dist)) {
+            Write-Error 'dist directory not found. Build failed.'
+            exit 1
+          }
+
+          if (Test-Path $zipPath) {
+            Remove-Item $zipPath -Force
+          }
+
+          Compress-Archive -Path dist\* -DestinationPath $zipPath
+
+          if (-not (Test-Path $zipPath)) {
+            Write-Error 'Zip creation failed.'
+            exit 1
+          }
+
+          $size = (Get-Item $zipPath).Length
+          if ($size -gt 2147483648) {
+            Write-Error "Zip size ($size bytes) exceeds GitHub's 2 GB limit."
+            exit 1
+          }
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "zip_path=$zipPath"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "zip_name=$zipName"
+
+      - name: Publish GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $tag = $env:release_tag
+          $title = $env:release_title
+          $zipPath = "${{ steps.package.outputs.zip_path }}"
+          $notesPath = "${{ steps.notes.outputs.notes_path }}"
+
+          if (-not $env:GH_TOKEN) {
+            Write-Error 'GH_TOKEN is not available.'
+            exit 1
+          }
+
+          gh release create $tag $zipPath --title $title --notes-file $notesPath --target $env:GITHUB_SHA
+
+      - name: Confirm release
+        shell: pwsh
+        run: |
+          Write-Host "Released version $env:version with asset ${{ steps.package.outputs.zip_name }}."
+
+
+

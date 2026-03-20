@@ -31,7 +31,8 @@ from utils.tools import (
     get_public_url,
     parse_times,
     to_serializable,
-    get_subscribe_entries
+    get_subscribe_entries,
+    count_disabled_urls,
 )
 from utils.types import CategoryChannelData
 from utils.whitelist import load_whitelist_maps
@@ -129,6 +130,7 @@ class UpdateSource:
     # ----------------------------
     async def _fetch_subscribe(self, channel_names: list[str]):
         whitelist_entries, default_entries = get_subscribe_entries(constants.subscribe_path)
+        disabled_count = count_disabled_urls(constants.subscribe_path)
 
         seen = set()
         subscribe_entries = []
@@ -143,6 +145,7 @@ class UpdateSource:
             t("msg.subscribe_urls_whitelist_total").format(
                 default_count=len(default_entries),
                 whitelist_count=len(whitelist_entries),
+                disabled_count=disabled_count,
                 total=len(subscribe_entries),
             )
         )

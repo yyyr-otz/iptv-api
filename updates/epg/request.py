@@ -1,9 +1,11 @@
+import gzip
 import os
 import re
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
+from threading import Lock
 from time import time
 
 from requests import Session, exceptions
@@ -14,7 +16,33 @@ from utils.channel import format_channel_name
 from utils.config import config
 from utils.i18n import t
 from utils.retry import retry_func
-from utils.tools import get_pbar_remaining, opencc_t2s, join_url, github_blob_to_raw, get_subscribe_entries
+from utils.tools import (
+    get_pbar_remaining,
+    opencc_t2s,
+    join_url,
+    github_blob_to_raw,
+    get_subscribe_entries,
+    count_disabled_urls,
+    disable_urls_in_file,
+)
+
+
+def _normalize_epg_content(content, request_url=None, response=None):
+    if not content:
+        return None
+
+    if isinstance(content, str):
+        return content
+
+    if isinstance(content, bytearray):
+        content = bytes(content)
+
+    if isinstance(content, bytes) and content.startswith(b"\x1f\x8b"):
+        content = gzip.decompress(content)
+
+    if isinstance(content, bytes):
+        return content.decode("utf-8", errors="replace")
+    return content
 
 
 def parse_epg(epg_content):
@@ -23,7 +51,11 @@ def parse_epg(epg_content):
         root = ET.fromstring(epg_content, parser=parser)
     except ET.ParseError as e:
         print(f"Error parsing XML: {e}")
-        print(f"Problematic content: {epg_content[:500]}")
+        if isinstance(epg_content, (bytes, bytearray)):
+            preview = bytes(epg_content[:500]).decode("utf-8", errors="replace")
+        else:
+            preview = epg_content[:500]
+        print(f"Problematic content: {preview}")
         return {}, defaultdict(list)
 
     channels = {}
@@ -60,6 +92,15 @@ def parse_epg(epg_content):
 async def get_epg(names=None, callback=None):
     whitelist_entries, default_entries = get_subscribe_entries(constants.epg_path)
     entries = whitelist_entries + default_entries
+    disabled_count = count_disabled_urls(constants.epg_path)
+    print(
+        t("msg.epg_urls_whitelist_total").format(
+            default_count=len(default_entries),
+            whitelist_count=len(whitelist_entries),
+            disabled_count=disabled_count,
+            total=len(entries),
+        )
+    )
     if not entries:
         return {}
     if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
@@ -70,9 +111,10 @@ async def get_epg(names=None, callback=None):
         def _map_entry(e):
             if isinstance(e, dict):
                 e = e.copy()
+                e.setdefault('source_url', e.get('url'))
                 e['url'] = _map_raw(e.get('url'))
                 return e
-            return _map_raw(e)
+            return {'url': _map_raw(e), 'source_url': e}
 
         entries = [_map_entry(e) for e in entries]
 
@@ -86,37 +128,62 @@ async def get_epg(names=None, callback=None):
     all_result_verify = set()
     session = Session()
     open_unmatch_category = config.open_unmatch_category
+    open_auto_disable_source = config.open_auto_disable_source
+    disabled_urls = set()
+    disabled_lock = Lock()
+
+    def _mark_disabled(source_url: str, reason: str):
+        if not open_auto_disable_source or not source_url:
+            return
+        with disabled_lock:
+            disabled_urls.add(source_url)
+        print(t("msg.auto_disable_source").format(name=t("name.epg"), url=source_url, reason=reason))
 
     def process_run(entry):
         nonlocal all_result_verify, result
+        disable_reason = None
+        request_url = entry.get('url') if isinstance(entry, dict) else entry
+        source_url = None
         try:
-            entry_url = entry.get('url') if isinstance(entry, dict) else entry
+            source_url = entry.get('source_url', request_url) if isinstance(entry, dict) else request_url
             headers = entry.get('headers') if isinstance(entry, dict) else None
             response = None
             try:
                 response = retry_func(
-                    lambda: session.get(entry_url, timeout=config.request_timeout, headers=headers),
-                    name=entry_url,
+                    lambda: session.get(request_url, timeout=config.request_timeout, headers=headers),
+                    name=request_url,
                 )
             except exceptions.Timeout:
-                print(t("msg.request_timeout").format(name=entry_url))
+                print(t("msg.request_timeout").format(name=request_url))
+                disable_reason = t("msg.auto_disable_request_failed")
             if response:
-                response.encoding = "utf-8"
-                content = response.text
+                content = _normalize_epg_content(response.content, request_url=request_url, response=response)
                 if content:
                     channels, programmes = parse_epg(content)
+                    entry_matched = False
                     for channel_id, display_name in channels.items():
                         display_name = format_channel_name(display_name)
                         if not open_unmatch_category and names and display_name not in names:
                             continue
+                        entry_matched = True
                         if channel_id not in all_result_verify and display_name not in all_result_verify:
                             if not channel_id.isdigit():
                                 all_result_verify.add(channel_id)
                             all_result_verify.add(display_name)
                             result[display_name] = programmes[channel_id]
+                    if not entry_matched and not disable_reason:
+                        disable_reason = t("msg.auto_disable_no_match")
+                elif not disable_reason:
+                    disable_reason = t("msg.auto_disable_empty_content")
+            elif not disable_reason:
+                disable_reason = t("msg.auto_disable_request_failed")
         except Exception as e:
-            print(t("msg.error_name_info").format(name=entry_url, info=e))
+            print(t("msg.error_name_info").format(name=request_url, info=e))
+            if not disable_reason:
+                disable_reason = t("msg.auto_disable_request_failed")
         finally:
+            if disable_reason:
+                _mark_disabled(source_url, disable_reason)
             pbar.update()
             if callback:
                 callback(
@@ -133,4 +200,8 @@ async def get_epg(names=None, callback=None):
             executor.submit(process_run, entry)
     session.close()
     pbar.close()
+    if disabled_urls:
+        disabled_count = disable_urls_in_file(constants.epg_path, disabled_urls)
+        if disabled_count:
+            print(t("msg.auto_disable_source_done").format(name=t("name.epg"), count=disabled_count))
     return result
