@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from threading import Lock
 from time import time
 
-from requests import Session, exceptions
+from requests import Session
 from tqdm.asyncio import tqdm_asyncio
 
 import utils.constants as constants
@@ -153,8 +153,8 @@ async def get_epg(names=None, callback=None):
                     lambda: session.get(request_url, timeout=config.request_timeout, headers=headers),
                     name=request_url,
                 )
-            except exceptions.Timeout:
-                print(t("msg.request_timeout").format(name=request_url))
+            except Exception as e:
+                print(e)
                 disable_reason = t("msg.auto_disable_request_failed")
             if response:
                 content = _normalize_epg_content(response.content, request_url=request_url, response=response)
@@ -200,8 +200,12 @@ async def get_epg(names=None, callback=None):
             executor.submit(process_run, entry)
     session.close()
     pbar.close()
+    active_count = len(entries)
+    disabled_count = 0
     if disabled_urls:
-        disabled_count = disable_urls_in_file(constants.epg_path, disabled_urls)
-        if disabled_count:
-            print(t("msg.auto_disable_source_done").format(name=t("name.epg"), count=disabled_count))
+        counts = disable_urls_in_file(constants.epg_path, disabled_urls)
+        active_count = counts["active"]
+        disabled_count = counts["disabled"]
+    print(t("msg.auto_disable_source_done").format(name=t("name.epg"), active_count=active_count,
+                                                   disabled_count=disabled_count))
     return result
