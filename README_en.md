@@ -7,6 +7,8 @@
     ⚡️ IPTV live-source automatic update platform — 🤖 fully automated collection, filtering, speed-testing, and generation 🚀. Supports extensive personalized configuration; paste the resulting address into a player to watch.
 </p>
 
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/govin)
+
 <p align="center">
     <br>
     <a href="https://trendshift.io/repositories/12327" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12327" alt="Guovin%2Fiptv-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
@@ -354,6 +356,8 @@ Contact via email: `360996299@qq.com`
 ## Donations
 
 <div>Development and maintenance are not easy, please buy me a coffee ~</div>
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/govin)
 
 | Alipay                                | Wechat                                    |
 |---------------------------------------|-------------------------------------------|

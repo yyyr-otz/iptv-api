@@ -7,6 +7,8 @@
   ⚡️IPTV直播源自动更新平台，『🤖全自动采集、筛选、测速、生成🚀』，支持丰富的个性化配置，将结果地址输入播放器即可观看
 </p>
 
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/govin)
+
 <p align="center">
   <br>
   <a href="https://trendshift.io/repositories/12327" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12327" alt="Guovin%2Fiptv-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
@@ -341,6 +343,8 @@ docker run -d -p 80:8080 guovern/iptv-api
 ## 捐赠
 
 <div>开发维护不易，请我喝杯咖啡☕️吧~</div>
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/govin)
 
 | 支付宝                                  | 微信                                      |
 |--------------------------------------|-----------------------------------------|
