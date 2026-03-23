@@ -971,6 +971,7 @@ def custom_print(*args, **kwargs):
     Custom print
     """
     if not custom_print.disable:
+        kwargs.setdefault("flush", True)
         print(*args, **kwargs)
 
 

@@ -1100,12 +1100,12 @@ def process_write_content(
             with open(path, "w", encoding="utf-8") as f:
                 f.write(content)
         except Exception as e:
-            print(t("msg.write_error").format(info=e))
+            print(t("msg.write_error").format(info=e), flush=True)
             return
     try:
         convert_to_m3u(path, first_channel_name, data=result_data)
     except Exception as e:
-        print(t("msg.write_error").format(info=f"convert m3u error: {e}"))
+        print(t("msg.write_error").format(info=f"convert m3u error: {e}"), flush=True)
 
 
 def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=False, is_last=False):
@@ -1114,7 +1114,7 @@ def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=
     """
     try:
         if not skip_print:
-            print(t("msg.writing_result"))
+            print(t("msg.writing_result"), flush=True)
         open_empty_category = config.open_empty_category
         ipv_type_prefer = list(config.ipv_type_prefer)
         if any(pref == "auto" for pref in ipv_type_prefer):
@@ -1156,6 +1156,6 @@ def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=
                 is_last=is_last
             )
         if not skip_print:
-            print(t("msg.write_success"))
+            print(t("msg.write_success"), flush=True)
     except Exception as e:
-        print(t("msg.write_error").format(info=e))
+        print(t("msg.write_error").format(info=e), flush=True)

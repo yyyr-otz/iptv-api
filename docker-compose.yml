@@ -3,6 +3,8 @@ services:
     image: guovern/iptv-api:latest
     container_name: iptv-api
     restart: unless-stopped
+    tty: true
+    stdin_open: true
 
     ports:
       - "80:8080"
