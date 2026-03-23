@@ -646,19 +646,14 @@ def get_name_value(content, pattern, open_headers=False, check_value=True):
     :param check_value: bool, whether to validate the presence of a URL.
     """
     result = []
-    for match in pattern.finditer(content):
-        group_dict = match.groupdict()
-        name = (group_dict.get("name", "") or "").strip()
-        value = (group_dict.get("value", "") or "").strip()
+
+    def append_item(name, value, attributes):
         if not name or (check_value and not value):
-            continue
-        data = {"name": name, "value": value}
-        attributes = {**get_headers_key_value(group_dict.get("options", "")),
-                      **get_headers_key_value(group_dict.get("attributes", ""))}
+            return
         headers = {
             "User-Agent": attributes.get("useragent", ""),
             "Referer": attributes.get("referer", ""),
-            "Origin": attributes.get("origin", "")
+            "Origin": attributes.get("origin", ""),
         }
         catchup = {
             "catchup": attributes.get("catchup", ""),
@@ -667,11 +662,88 @@ def get_name_value(content, pattern, open_headers=False, check_value=True):
         headers = {k: v for k, v in headers.items() if v}
         catchup = {k: v for k, v in catchup.items() if v}
         if not open_headers and headers:
-            continue
+            return
+        item = {"name": name, "value": value, "catchup": catchup}
         if open_headers:
-            data["headers"] = headers
-        data["catchup"] = catchup
-        result.append(data)
+            item["headers"] = headers
+        result.append(item)
+
+    if pattern is constants.multiline_m3u_pattern:
+        lines = content.splitlines()
+        index = 0
+        total = len(lines)
+
+        while index < total:
+            raw_line = lines[index]
+            stripped = raw_line.strip()
+            if not stripped.startswith("#EXTINF:-1"):
+                index += 1
+                continue
+
+            remainder = stripped[len("#EXTINF:-1"):].strip()
+            if not remainder:
+                index += 1
+                continue
+
+            in_quote = None
+            separator_index = None
+            for pos, char in enumerate(remainder):
+                if char in ('"', "'"):
+                    if in_quote == char:
+                        in_quote = None
+                    elif in_quote is None:
+                        in_quote = char
+                elif char == ',' and in_quote is None:
+                    separator_index = pos
+                    break
+
+            if separator_index is None:
+                separator_index = remainder.rfind(',')
+                if separator_index < 0:
+                    index += 1
+                    continue
+
+            attributes_text = remainder[:separator_index].strip()
+            name = remainder[separator_index + 1:].strip()
+            index += 1
+
+            options_lines = []
+            value = ""
+            while index < total:
+                candidate_raw = lines[index]
+                candidate = candidate_raw.strip()
+
+                if not candidate:
+                    index += 1
+                    continue
+
+                if candidate.startswith("#EXTVLCOPT:"):
+                    options_lines.append(candidate)
+                    index += 1
+                    continue
+
+                if candidate.startswith("#EXTINF:-1"):
+                    break
+
+                value = candidate
+                index += 1
+                break
+
+            if not name or (check_value and not value):
+                continue
+
+            attributes = get_headers_key_value("\n".join([part for part in [attributes_text, *options_lines] if part]))
+            append_item(name, value, attributes)
+
+        return result
+
+    for match in pattern.finditer(content):
+        group_dict = match.groupdict()
+        name = (group_dict.get("name", "") or "").strip()
+        value = (group_dict.get("value", "") or "").strip()
+        attributes = {**get_headers_key_value(group_dict.get("options", "")),
+                      **get_headers_key_value(group_dict.get("attributes", ""))}
+        append_item(name, value, attributes)
     return result
 
 

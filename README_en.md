@@ -74,7 +74,7 @@
 |:------------------------------|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Custom templates**          |    ✅    | Generate custom channel playlists                                                                                                                           |
 | **Channel aliases**           |    ✅    | Improve channel matching and accuracy, supports regular expressions                                                                                         |
-| **Multi-source aggregation**  |    ✅    | Local sources and subscription sources (supports setting the User-Agent header)                                                                             |
+| **Multi-source aggregation**  |    ✅    | Local sources and subscription sources (supports UA configuration, detects invalid addresses and automatically disables them)                               |
 | **Stream relay**              |    ✅    | Improve playback on weak networks, supports direct browser playback, and automatic transcoding/adaptation                                                   |
 | **Replay/VOD interfaces**     |    ✅    | Fetching and generating replay/VOD interfaces                                                                                                               |
 | **EPG**                       |    ✅    | Fetch and display channel program guides                                                                                                                    |
