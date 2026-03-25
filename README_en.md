@@ -89,6 +89,9 @@
 > The following configuration items are located in `config/config.ini` and can be modified via the configuration file or
 > environment variables. Save changes and restart to apply.
 
+<details>
+<summary>Click to expand configuration parameters</summary>
+
 | Configuration Item       | Description                                                                                                                                                                                                                                                                                                                                 | Default Value                            |
 |:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
 | open_update              | Enable updates, used to control whether to update interfaces. If disabled, all working modes (getting interfaces and speed tests) stop.                                                                                                                                                                                                     | True                                     |
@@ -143,12 +146,14 @@
 | subscribe_num            | Preferred number of subscription source interfaces in the result.                                                                                                                                                                                                                                                                           | 10                                       |
 | logo_url                 | Channel logo library URL.                                                                                                                                                                                                                                                                                                                   |                                          |
 | logo_type                | Channel logo file type.                                                                                                                                                                                                                                                                                                                     | png                                      |
-| open_rtmp                | Enable RTMP push function. Requires FFmpeg installed, uses local bandwidth to improve playback experience.                                                                                                                                                                                                                                  | True                                     |
+| open_rtmp                | Enable RTMP push function. Recommended only for owned or authorized content. Requires FFmpeg installed and uses local bandwidth to improve playback experience.                                                                                                                                                                            | True                                     |
 | nginx_http_port          | Nginx HTTP service port, used for the HTTP service of RTMP push forwarding.                                                                                                                                                                                                                                                                 | 8080                                     |
 | nginx_rtmp_port          | Nginx RTMP service port, used for the RTMP service of RTMP push forwarding.                                                                                                                                                                                                                                                                 | 1935                                     |
 | rtmp_idle_timeout        | RTMP channel idle stop-streaming timeout in seconds. When no one watches for longer than this duration, streaming is stopped, helping reduce server resource usage.                                                                                                                                                                         | 300                                      |
 | rtmp_max_streams         | Maximum number of concurrent RTMP push streams. Controls how many channels can be pushed at the same time. Larger values increase server load; tune to optimize resource usage.                                                                                                                                                             | 10                                       |
 | rtmp_transcode_mode      | Push streaming transcoding mode. `copy` means no transcoding — output is copied to save CPU consumption as much as possible. `auto` means adaptive transcoding to match players; this increases CPU usage but can improve compatibility.                                                                                                    | copy                                     |
+
+</details>
 
 ## Quick Start
 
@@ -307,9 +312,13 @@ generated result files directly on the host. Append the following options to the
 > 1. If deploying on a server, be sure to set the `PUBLIC_DOMAIN` environment variable to the server's domain name or IP
      address and the `PUBLIC_PORT` environment variable to the public port; otherwise the streaming addresses will not
      be accessible.
-> 2. When streaming is enabled, obtained interfaces (e.g., subscription sources) will be streamed by default.
+> 2. When streaming is enabled, obtained interfaces (e.g., subscription sources) will be streamed by default; only use
+     this for content you own, are explicitly authorized to redistribute, or need for closed/internal testing.
 > 3. To stream local video sources, create an `hls` folder under the `config` directory and place video files named
      after the channel; the program will automatically stream them to the corresponding channels.
+> 4. When using this project in Mainland China, make sure the content authorization, copyright, network-audiovisual,
+     and broadcasting-related compliance requirements are satisfied. Do not use it to distribute, relay, or publicly
+     expose unauthorized live streams or program sources.
 
 | Streaming Endpoint | Description                          |
 |:-------------------|:-------------------------------------|
@@ -362,16 +371,19 @@ Contact via email: `360996299@qq.com`
 
 ## Disclaimer
 
-- This project is provided as a tool/framework only; it does not include or provide any live streams, copyrighted
-  programs, or other third-party content. Users must add their own data sources and ensure that the data sources used
-  and their use comply with applicable laws and regulations in their jurisdiction.
-- Users are solely responsible for any content obtained, distributed, or played through this project. Do not use it to
-  distribute, share, or watch copyrighted content without authorization.
+- This project is provided as a tool/framework only; it does not include, host, cache, or guarantee any live streams,
+  copyrighted programs, or other third-party content. Users must add their own data sources and ensure that the data
+  sources used and their use comply with applicable laws and regulations in their jurisdiction.
+- Users are solely responsible for any content obtained, distributed, relayed, or played through this project. Do not
+  use it to distribute, share, relay, or watch copyrighted content without authorization, especially in Mainland China
+  where content authorization, licensing, filing/permit, and other regulatory requirements may apply.
+- The RTMP/HLS push features are intended only for owned content, explicitly authorized content, or closed-environment
+  technical testing. If you cannot verify authorization, disable `open_rtmp` and do not expose the related endpoints to
+  the public internet.
 - When using this project, comply with local laws, regulations, and supervisory requirements. The author is not liable
   for any legal responsibility arising from users' use of this project.
-- For commercial, corporate, or production use, it is recommended to consult legal counsel and perform a compliance
-  review.
+- For commercial, corporate, or production use, consult compliance/legal counsel and complete a review.
 
 ## License
 
-[MIT](./LICENSE) License &copy; 2024-PRESENT [Govin](https://github.com/guovin)
+[AGPL-3.0](./LICENSE) License &copy; 2024-PRESENT [Govin](https://github.com/guovin)
