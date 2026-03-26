@@ -1,59 +1,16 @@
-https://tmxk.pp.ua/iptv-cn.m3u
- https://www.iyouhun.com/tv/zb
- https://live.zbds.top/tv/iptv4.txt
- https://3043.kstore.space/bhvip/bhzb.txt
- https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt
- https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u
- https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u
- https://live.zbds.top/tv/iptv4.txt
- https://live.zbds.top/tv/iptv4.m3u
- https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
- https://raw.githubusercontent.com/vamoschuck/TV/main/M3U
  # https://live.zbds.top/tv/iptv6.txt
  # https://live.zbds.top/tv/iptv6.m3u
- https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
- https://live.fanmingming.cn/tv/m3u/ipv6.m3u
- https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u
- https://gitee.com/xxy002/zhiboyuan/raw/master/dsy
- https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
- https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/release/Gather.m3u
  # https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
-
-https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/user_result.txt
-https://d.kstore.dev/download/12792/ln.txt
 # http://156.238.248.80/2099.php
-http://txt.gt.tc/users/HKTV.txt
 # https://live.catvod.com/tv.m3u
 # http://iptv.cqshushu.com/jiekou.php?jk=txt&token=263b9cc89eb51ce670b1043b52f2b2d3
-http://rihou.cc:555/gggg.nzk
 # https://d.kstore.dev/download/12792/d.txt
 # https://iptv.catvod.com/tv.m3u
 # https://gitee.com/mytv-android/iptv-api/raw/master/output/result.m3u
 # https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian
 # https://gitea.com/tzk/t/raw/branch/main/b.txt
-https://raw.githubusercontent.com/lihansong888/ys/main/lib/ZB.php
-https://raw.githubusercontent.com/tzk426/iptv-api/master/output/result.txt
-https://raw.githubusercontent.com/judy-gotv/iptv/main/smart.m3u
-https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt
-https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
-https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
-https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/国内电视台202509.m3u
-https://raw.githubusercontent.com/kimwang1978/collect-txt/main/bbxx.m3u
-https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8
-https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all_status.m3u8
-https://raw.githubusercontent.com/mzky/checklist/master/itvlist.m3u
 # https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt
-https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/山东移动.m3u
-https://raw.githubusercontent.com/lxxcp/live/main/qwt.txt
-https://raw.githubusercontent.com/lxxcp/live/main/jiudian.txt
 # https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
-https://raw.githubusercontent.com/wucaizhong2828/ceshi/main/tv.txt
-https://raw.githubusercontent.com/l19270149853/zm/main/y.txt
-https://raw.githubusercontent.com/jinlaoshu/TV/main/live.txt
-https://raw.githubusercontent.com/tvzb/tvzb.github.io/main/live.txt
-https://raw.githubusercontent.com/hyf1966/mytv/main/gggg.nzk
-https://raw.githubusercontent.com/qy1987/TV1999/main/outputs/ipv4.txt
-
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/9688
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/1698
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/9908
@@ -61,19 +18,6 @@ https://raw.githubusercontent.com/qy1987/TV1999/main/outputs/ipv4.txt
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/QWT.txt
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/WSD.txt
 # https://raw.githubusercontent.com/gitgordon85/Gordon85_IPTV/master/config/sztw
-
-https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt
-https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt2
-https://raw.githubusercontent.com/fuyu33788/FZYI/main/lt
-https://raw.githubusercontent.com/fuyu33788/FZYI/main/yd
-
-https://raw.githubusercontent.com/zuomy2021/tv/main/iTV.txt
-https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.m3u
-https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.txt
-https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc.htm
-https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc2.htm
-https://raw.githubusercontent.com/zuomy2021/tv/main/test1.txt
-
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/huuc_ipv6.m3u
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/ipv6_merged.m3u
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/kakaxi-1_ipv6.m3u
@@ -91,19 +35,9 @@ https://raw.githubusercontent.com/zuomy2021/tv/main/test1.txt
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/1698
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/9688
 # https://raw.githubusercontent.com/ioptu/IPTV.txt2m3u.player/main/9908
-
-https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
-https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv6.txt
-https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
 # https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.txt
-https://raw.githubusercontent.com/hll2022-tea/tv_yuan/main/tvbox_live_release
-https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
-https://raw.githubusercontent.com/kimwang1978/collect-txt/main/others_output.txt
-https://raw.githubusercontent.com/zxmlxw520/5566/main/dsjcs7.txt
-https://raw.githubusercontent.com/hero1898/hero1898.github.io/main/tv.txt
 # https://raw.githubusercontent.com/l19270149853/ZBY/main/tv1.txt
 # https://raw.githubusercontent.com/l19270149853/ZBY/main/h1.txt
-
 # 这是订阅源列表，每行一个订阅地址
 # This is a list of subscription sources, with one subscription address per line
 # https://8815.kstore.vip/tvbox/TV/lzxw03.txt
@@ -115,7 +49,67 @@ https://raw.githubusercontent.com/hero1898/hero1898.github.io/main/tv.txt
 # https://raw.githubusercontent.com/wind005/TVlive/main/%E4%BB%A3%E7%90%86%E6%BA%90/%E7%A6%8F%E5%BB%BA%E7%A7%BB%E5%8A%A8-dl.txt
 # https://raw.githubusercontent.com/wind005/TVlive/main/%E4%BB%A3%E7%90%86%E6%BA%90/%E4%B8%8A%E6%B5%B7%E7%A7%BB%E5%8A%A8-dl.txt
 # https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/output/result.txt
-https://raw.githubusercontent.com/q1017673817/iptvz/62feb02f32ea7a3eb2939a24bb01cd4eebbe4ee3/txt/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.txt
 # https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/config/866-898-9898
 #IPTV-GO 项目
+https://tmxk.pp.ua/iptv-cn.m3u
+ https://www.iyouhun.com/tv/zb
+ https://live.zbds.top/tv/iptv4.txt
+ https://3043.kstore.space/bhvip/bhzb.txt
+ https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt
+ https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u
+ https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u
+ https://live.zbds.top/tv/iptv4.txt
+ https://live.zbds.top/tv/iptv4.m3u
+ https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
+ https://raw.githubusercontent.com/vamoschuck/TV/main/M3U
+ https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
+ https://live.fanmingming.cn/tv/m3u/ipv6.m3u
+ https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u
+ https://gitee.com/xxy002/zhiboyuan/raw/master/dsy
+ https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/release/Gather.m3u
+https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/user_result.txt
+https://d.kstore.dev/download/12792/ln.txt
+http://txt.gt.tc/users/HKTV.txt
+http://rihou.cc:555/gggg.nzk
+https://raw.githubusercontent.com/lihansong888/ys/main/lib/ZB.php
+https://raw.githubusercontent.com/tzk426/iptv-api/master/output/result.txt
+https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt
+https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
+https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8
+https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all_status.m3u8
+https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/山东移动.m3u
+https://raw.githubusercontent.com/lxxcp/live/main/qwt.txt
+https://raw.githubusercontent.com/wucaizhong2828/ceshi/main/tv.txt
+https://raw.githubusercontent.com/jinlaoshu/TV/main/live.txt
+https://raw.githubusercontent.com/qy1987/TV1999/main/outputs/ipv4.txt
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt2
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/lt
+https://raw.githubusercontent.com/fuyu33788/FZYI/main/yd
+https://raw.githubusercontent.com/zuomy2021/tv/main/iTV.txt
+https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.m3u
+https://raw.githubusercontent.com/zuomy2021/tv/main/iptv.txt
+https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc.htm
+https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc2.htm
+https://raw.githubusercontent.com/zuomy2021/tv/main/test1.txt
+https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
+https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv6.txt
+https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+https://raw.githubusercontent.com/hll2022-tea/tv_yuan/main/tvbox_live_release
+https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
+https://raw.githubusercontent.com/kimwang1978/collect-txt/main/others_output.txt
+https://raw.githubusercontent.com/zxmlxw520/5566/main/dsjcs7.txt
+https://raw.githubusercontent.com/hero1898/hero1898.github.io/main/tv.txt
+https://raw.githubusercontent.com/q1017673817/iptvz/62feb02f32ea7a3eb2939a24bb01cd4eebbe4ee3/txt/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.txt
 https://raw.githubusercontent.com/yewengood/yahu/main/speedtest/gddx_fofa.txt
+
+ # https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+# https://raw.githubusercontent.com/judy-gotv/iptv/main/smart.m3u
+# https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/国内电视台202509.m3u
+# https://raw.githubusercontent.com/kimwang1978/collect-txt/main/bbxx.m3u
+# https://raw.githubusercontent.com/mzky/checklist/master/itvlist.m3u
+# https://raw.githubusercontent.com/lxxcp/live/main/jiudian.txt
+# https://raw.githubusercontent.com/l19270149853/zm/main/y.txt
+# https://raw.githubusercontent.com/tvzb/tvzb.github.io/main/live.txt
+# https://raw.githubusercontent.com/hyf1966/mytv/main/gggg.nzk
+# https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt
