@@ -51,10 +51,19 @@
 # https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/output/result.txt
 # https://raw.githubusercontent.com/gitgordon85/IPTV-Check/master/config/866-898-9898
 #IPTV-GO 项目
+ # https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+# https://raw.githubusercontent.com/judy-gotv/iptv/main/smart.m3u
+# https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/国内电视台202509.m3u
+# https://raw.githubusercontent.com/kimwang1978/collect-txt/main/bbxx.m3u
+# https://raw.githubusercontent.com/mzky/checklist/master/itvlist.m3u
+# https://raw.githubusercontent.com/lxxcp/live/main/jiudian.txt
+# https://raw.githubusercontent.com/l19270149853/zm/main/y.txt
+# https://raw.githubusercontent.com/tvzb/tvzb.github.io/main/live.txt
+# https://raw.githubusercontent.com/hyf1966/mytv/main/gggg.nzk
+# https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt
 https://tmxk.pp.ua/iptv-cn.m3u
  https://www.iyouhun.com/tv/zb
  https://live.zbds.top/tv/iptv4.txt
- https://3043.kstore.space/bhvip/bhzb.txt
  https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt
  https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u
  https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u
@@ -103,13 +112,4 @@ https://raw.githubusercontent.com/hero1898/hero1898.github.io/main/tv.txt
 https://raw.githubusercontent.com/q1017673817/iptvz/62feb02f32ea7a3eb2939a24bb01cd4eebbe4ee3/txt/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.txt
 https://raw.githubusercontent.com/yewengood/yahu/main/speedtest/gddx_fofa.txt
 
- # https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
-# https://raw.githubusercontent.com/judy-gotv/iptv/main/smart.m3u
-# https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/国内电视台202509.m3u
-# https://raw.githubusercontent.com/kimwang1978/collect-txt/main/bbxx.m3u
-# https://raw.githubusercontent.com/mzky/checklist/master/itvlist.m3u
-# https://raw.githubusercontent.com/lxxcp/live/main/jiudian.txt
-# https://raw.githubusercontent.com/l19270149853/zm/main/y.txt
-# https://raw.githubusercontent.com/tvzb/tvzb.github.io/main/live.txt
-# https://raw.githubusercontent.com/hyf1966/mytv/main/gggg.nzk
-# https://raw.githubusercontent.com/fuyu33788/FZYI/main/qt
+ # https://3043.kstore.space/bhvip/bhzb.txt
