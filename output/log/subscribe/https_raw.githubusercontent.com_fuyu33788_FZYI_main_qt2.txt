@@ -160,6 +160,16 @@ CCTV16-4K,http://39.134.52.153/huaweicdn.hb.chinamobile.com/PLTV/88888888/224/32
 北京影视,http://bjtv.fzyi.cc.cd/btime_worker?id=btvys
 北京财经,http://bjtv.fzyi.cc.cd/btime_worker?id=btvcj
 北京生活,http://bjtv.fzyi.cc.cd/btime_worker?id=btvsh
+山东卫视,http://sdtv.fzyi.cc.cd/btime_worker?id=sdws
+山东新闻,http://sdtv.fzyi.cc.cd/btime_worker?id=xwpd
+齐鲁频道,http://sdtv.fzyi.cc.cd/btime_worker?id=qlpd
+体育休闲,http://sdtv.fzyi.cc.cd/btime_worker?id=tyxx
+生活频道,http://sdtv.fzyi.cc.cd/btime_worker?id=shpd
+山东综艺,http://sdtv.fzyi.cc.cd/btime_worker?id=shpd
+山东文旅,http://sdtv.fzyi.cc.cd/btime_worker?id=wlpd
+山东农科,http://sdtv.fzyi.cc.cd/btime_worker?id=nkpd
+山东少儿,http://sdtv.fzyi.cc.cd/btime_worker?id=sepd
+
 
 
 ❀营口高码,#genre#
