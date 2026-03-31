@@ -160,15 +160,15 @@ CCTV16-4K,http://39.134.52.153/huaweicdn.hb.chinamobile.com/PLTV/88888888/224/32
 北京影视,http://bjtv.fzyi.cc.cd/btime_worker?id=btvys
 北京财经,http://bjtv.fzyi.cc.cd/btime_worker?id=btvcj
 北京生活,http://bjtv.fzyi.cc.cd/btime_worker?id=btvsh
-山东卫视,http://sdtv.fzyi.cc.cd/btime_worker?id=sdws
-山东新闻,http://sdtv.fzyi.cc.cd/btime_worker?id=xwpd
-齐鲁频道,http://sdtv.fzyi.cc.cd/btime_worker?id=qlpd
-体育休闲,http://sdtv.fzyi.cc.cd/btime_worker?id=tyxx
-生活频道,http://sdtv.fzyi.cc.cd/btime_worker?id=shpd
-山东综艺,http://sdtv.fzyi.cc.cd/btime_worker?id=shpd
-山东文旅,http://sdtv.fzyi.cc.cd/btime_worker?id=wlpd
-山东农科,http://sdtv.fzyi.cc.cd/btime_worker?id=nkpd
-山东少儿,http://sdtv.fzyi.cc.cd/btime_worker?id=sepd
+山东卫视,https://tstreamlive302.iqilu.com/21/cb1628e9b65a4cfd985b1760809696ee/playlist.m3u8?k=bc4d95e36dcb2bbca0aed90b5e75bcb8&t=1774947690&
+山东新闻,https://streamlive302.iqilu.com/21/ae3cd441fafb45f29168af2a3bf8e116/playlist.m3u8?n=2b53aaadab1905f66a4b21684b6835e8&m=1774947519&
+齐鲁频道,https://tstreamlive302.iqilu.com/291/5de861e29cdd4f9589327c8dd783172a/playlist.m3u8?k=cda461de3d220d983c97d8cb0bc34a0d&t=1774947547&
+山东体育休闲,https://tstreamlive302.iqilu.com/291/d9c0aba79a944b41a7f4f1ac422d9808/playlist.m3u8?k=f4e187bf7c46b2976b87ddbfc84e27d8&t=1774947573&
+山东生活频道,https://tstreamlive302.iqilu.com/291/6e9efb8f95a543db8246f1cf06ba960b/playlist.m3u8?k=19a75b1e8bee73615df17a7ca16e4dd5&t=1774947599&
+山东综艺,https://tstreamlive302.iqilu.com/291/dad8e4743fcf48ed925d01e64868cc7c/playlist.m3u8?k=12c985c251d5b80b1fabfa9a7c751e35&t=1774947620&
+山东文旅,https://tstreamlive302.iqilu.com/291/71637943d1f841c78edd6abfa120bee2/playlist.m3u8?k=4d77241f73f71e7bd15848fc87137125&t=1774947636&
+山东农科,https://tstreamlive302.iqilu.com/291/9664dd18b42b4b129a71fbfb68a80e3b/playlist.m3u8?k=20544bc35b84cc8ee998ccd3cd3f1a07&t=1774947657&
+山东少儿,https://tstreamlive302.iqilu.com/21/990de3c3748848848daf5a96743f9c57/playlist.m3u8?k=188a2e6fcbcd8020dc9ab493aba6eaa8&t=1774947669&
 
 
 
