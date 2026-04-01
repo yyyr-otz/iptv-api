@@ -27,6 +27,7 @@ from utils.i18n import t
 from utils.types import ChannelData
 
 opencc_t2s = OpenCC("t2s")
+_channel_alias_instance = None
 
 
 def get_logger(path, level=logging.ERROR, init=False):
@@ -421,6 +422,22 @@ def get_logo_url():
     return logo_url
 
 
+def get_channel_epg_id(name: str | None) -> str:
+    """
+    Get a stable channel id shared by generated M3U tvg-id and EPG channel id.
+    """
+    if not name:
+        return ""
+
+    global _channel_alias_instance
+    if _channel_alias_instance is None:
+        from utils.alias import Alias
+
+        _channel_alias_instance = Alias()
+
+    return _channel_alias_instance.get_primary(name)
+
+
 def convert_to_m3u(path=None, first_channel_name=None, data=None):
     """
     Convert result txt to m3u format
@@ -431,8 +448,6 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
             current_group = None
             logo_url = get_logo_url()
             from_fanmingming = "https://raw.githubusercontent.com/fanmingming/live/main/tv" in logo_url
-            name_id_map = {}
-            next_id = 1
             for line in file:
                 trimmed_line = line.strip()
                 if trimmed_line != "":
@@ -455,11 +470,7 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
                                           + ("+" if m.group(3) else ""),
                                 use_name,
                             )
-                        tvg_id = name_id_map.get(processed_channel_name)
-                        if tvg_id is None:
-                            tvg_id = next_id
-                            name_id_map[processed_channel_name] = tvg_id
-                            next_id += 1
+                        tvg_id = get_channel_epg_id(use_name) or processed_channel_name
 
                         m3u_output += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{processed_channel_name}" tvg-logo="{join_url(logo_url, f"{processed_channel_name}.{config.logo_type}")}"'
                         if current_group:

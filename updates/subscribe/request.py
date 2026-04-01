@@ -34,6 +34,7 @@ async def get_channels_by_subscribe_urls(
     """
     Get the channels by subscribe urls
     """
+    normalized_names = {format_channel_name(name) for name in (names or []) if name}
     if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
         def _map_raw(u):
             raw_u = github_blob_to_raw(u)
@@ -133,7 +134,7 @@ async def get_channels_by_subscribe_urls(
                         url = item.get("value", "").strip()
                         if data_name and url:
                             name = format_channel_name(data_name)
-                            if names and name not in names:
+                            if normalized_names and name not in normalized_names:
                                 logger.info(f"{data_name},{url}")
                                 if not open_unmatch_category:
                                     continue

@@ -91,6 +91,7 @@ def parse_epg(epg_content):
 
 
 async def get_epg(names=None, callback=None):
+    normalized_names = {format_channel_name(name) for name in (names or []) if name}
     whitelist_entries, default_entries = get_subscribe_entries(constants.epg_path)
     entries = whitelist_entries + default_entries
     disabled_count = count_disabled_urls(constants.epg_path)
@@ -168,7 +169,7 @@ async def get_epg(names=None, callback=None):
                     entry_matched = False
                     for channel_id, display_name in channels.items():
                         display_name = format_channel_name(display_name)
-                        if not open_unmatch_category and names and display_name not in names:
+                        if not open_unmatch_category and normalized_names and display_name not in normalized_names:
                             continue
                         entry_matched = True
                         if channel_id not in all_result_verify and display_name not in all_result_verify:
