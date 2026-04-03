@@ -151,6 +151,7 @@ CCTV16-4K,http://39.134.52.153/huaweicdn.hb.chinamobile.com/PLTV/88888888/224/32
 凤凰中文组,http://www.argon-2025.top:8888/udp/239.93.10.31:8012
 凤凰资讯3,http://www.argon-2025.top:8888/udp/239.93.10.118:8708
 凤凰中文2,http://www.argon.dpdns.org:8888/udp/239.93.10.31:8012
+凤凰资讯,http://cdn6.163189.xyz/163189/fhzx$cdn6163189
 凤凰资讯2,http://www.argon.dpdns.org:8888/udp/239.93.10.118:8708
 重温经典,http://xxwx.yoesun.com/xxw/cwjd.php
 重温经典,http://112.27.235.94:8000/hls/50/index.m3u8$合肥移动酒店$源4
