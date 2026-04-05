@@ -1074,6 +1074,144 @@ CETN-4,http://101.wifi98.com:9001/udp/232.0.0.46:1234
 å±±ä¸æè²å«è§,http://101.wifi98.com:9001/udp/232.0.0.169:1234
 ä¸æ²å«è§,http://101.wifi98.com:9001/udp/232.0.0.184:1234
 
+ð¹å¹¿è¥¿ä¸´æ¶,#genre#
+CCTV-1,http://gxyd.484947.xyz/PLTV/77777777/224/3221225934/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-1,http://gxyd.484947.xyz/PLTV/77777777/224/3221225654/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-2,http://gxyd.484947.xyz/PLTV/77777777/224/3221225948/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-2,http://gxyd.484947.xyz/PLTV/77777777/224/3221225657/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-3,http://gxyd.484947.xyz/PLTV/77777777/224/3221225916/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-3,http://gxyd.484947.xyz/PLTV/77777777/224/3221225713/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-4,http://gxyd.484947.xyz/PLTV/77777777/224/3221225922/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-4,http://gxyd.484947.xyz/PLTV/77777777/224/3221225761/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-5,http://gxyd.484947.xyz/PLTV/77777777/224/3221225801/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-5,http://gxyd.484947.xyz/PLTV/77777777/224/3221225925/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-5,http://gxyd.484947.xyz/PLTV/77777777/224/3221225660/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-5+,http://gxyd.484947.xyz/PLTV/77777777/224/3221225998/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-5+,http://gxyd.484947.xyz/PLTV/77777777/224/3221225712/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-6,http://gxyd.484947.xyz/PLTV/77777777/224/3221225936/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-6,http://gxyd.484947.xyz/PLTV/77777777/224/3221225715/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-7,http://gxyd.484947.xyz/PLTV/77777777/224/3221225892/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-7,http://gxyd.484947.xyz/PLTV/77777777/224/3221225700/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-8,http://gxyd.484947.xyz/PLTV/77777777/224/3221226001/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-8,http://gxyd.484947.xyz/PLTV/77777777/224/3221225716/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-9,http://gxyd.484947.xyz/PLTV/77777777/224/3221225939/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-9,http://gxyd.484947.xyz/PLTV/77777777/224/3221225663/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-10,http://gxyd.484947.xyz/PLTV/77777777/224/3221226004/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-10,http://gxyd.484947.xyz/PLTV/77777777/224/3221225704/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-11,http://gxyd.484947.xyz/PLTV/77777777/224/3221225895/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-11,http://gxyd.484947.xyz/PLTV/77777777/224/3221225739/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-12,http://gxyd.484947.xyz/PLTV/77777777/224/3221226013/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-12,http://gxyd.484947.xyz/PLTV/77777777/224/3221225645/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-13,http://gxyd.484947.xyz/PLTV/77777777/224/3221226046/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-13,http://gxyd.484947.xyz/PLTV/77777777/224/3221225742/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-14,http://gxyd.484947.xyz/PLTV/77777777/224/3221225901/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-14,http://gxyd.484947.xyz/PLTV/77777777/224/3221225648/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-15,http://gxyd.484947.xyz/PLTV/77777777/224/3221225945/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-15,http://gxyd.484947.xyz/PLTV/77777777/224/3221225693/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-16,http://gxyd.484947.xyz/PLTV/77777777/224/3221225937/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-16,http://gxyd.484947.xyz/PLTV/77777777/224/3221225956/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-17,http://gxyd.484947.xyz/PLTV/77777777/224/3221225910/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CCTV-17,http://gxyd.484947.xyz/PLTV/77777777/224/3221225766/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNè±è¯­æ°é»,http://gxyd.484947.xyz/PLTV/77777777/224/3221225816/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNçºªå½é¢é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225707/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNè¥¿ç­çè¯­,http://gxyd.484947.xyz/PLTV/77777777/224/3221225875/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNæ³è¯­é¢é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225878/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNé¿æä¼¯è¯­,http://gxyd.484947.xyz/PLTV/77777777/224/3221225822/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CGTNä¿è¯­é¢é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225825/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çº¯äº«4K,http://gxyd.484947.xyz/PLTV/77777777/224/3221225726/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¹¿è¥¿å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226374/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ¹åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225919/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ¹åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225719/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æµæ±å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225928/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æµæ±å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225731/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¤©æ´¥å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226022/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¤©æ´¥å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225675/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ä¸æ¹å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225942/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ä¸æ¹å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225718/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ±èå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226025/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ±èå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225722/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åäº¬å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225889/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åäº¬å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225651/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¹¿ä¸å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225913/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¹¿ä¸å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225666/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ç æ±å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¤§æ¹¾åºå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225748/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ·±å³å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225951/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ·±å³å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225725/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å±±ä¸å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226010/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å±±ä¸å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225672/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ¹åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225954/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ¹åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225721/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å®å¾½å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225886/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å®å¾½å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225701/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ä¸åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225904/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ±è¥¿å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225957/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åå·å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225757/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+è´µå·å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225770/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éåºå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225898/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éåºå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225745/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æµ·åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225752/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ²³åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225773/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ²³åå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225806/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+è¾½å®å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226007/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+è¾½å®å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225779/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+é»é¾æ±å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226019/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+é»é¾æ±å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225734/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çèå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225764/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éæµ·å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225705/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å±±è¥¿å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225785/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+äºåå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225794/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éè¥¿å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225754/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åæå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225678/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å®å¤å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225782/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åèå¤å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225751/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+æ°çå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225788/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+è¥¿èå«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225800/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+è¥¿èå«è§(èè¯­),http://gxyd.484947.xyz/PLTV/77777777/224/3221225828/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åäº¬çºªå®ç§æ,http://gxyd.484947.xyz/PLTV/77777777/224/3221225995/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å¦é¨å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225823/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åµå¢å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225795/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åº·å·´å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226270/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å»¶è¾¹å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226273/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å®å¤å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226271/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ä¸æ²å«è§,http://gxyd.484947.xyz/PLTV/77777777/224/3221226405/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éé¹°çºªå®,http://gxyd.484947.xyz/PLTV/77777777/224/3221225699/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+éé¹°å¡é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225702/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åä½³å¡é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225797/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+åäº¬å¡é·å°å¿,http://gxyd.484947.xyz/PLTV/77777777/224/3221225730/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+ä¼æ¼«å¡é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225791/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CETV-1,http://gxyd.484947.xyz/PLTV/77777777/224/3221225776/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CETV-2,http://gxyd.484947.xyz/PLTV/77777777/224/3221225881/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+CETV-4,http://gxyd.484947.xyz/PLTV/77777777/224/3221225723/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+å±±ä¸æè²å«å£«,http://gxyd.484947.xyz/PLTV/77777777/224/3221225708/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+é«å°å¤«æ ç½ç,http://gxyd.484947.xyz/PLTV/77777777/224/3221225884/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç²¾åèå® ,http://gxyd.484947.xyz/PLTV/77777777/224/3221225979/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVé»èçµå½±,http://gxyd.484947.xyz/PLTV/77777777/224/3221225740/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVé»èå¨ç»,http://gxyd.484947.xyz/PLTV/77777777/224/3221225710/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVååµèµäº,http://gxyd.484947.xyz/PLTV/77777777/224/3221225760/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVååµçµç«,http://gxyd.484947.xyz/PLTV/77777777/224/3221225880/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVå¤è£å§åº,http://gxyd.484947.xyz/PLTV/77777777/224/3221225706/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVå¨ä½çµå½±,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVåæå§åº,http://gxyd.484947.xyz/PLTV/77777777/224/3221225727/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVå®¶åº­å§åº,http://gxyd.484947.xyz/PLTV/77777777/224/3221225743/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVæææ¬ç,http://gxyd.484947.xyz/PLTV/77777777/224/3221225746/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç­æ­ç²¾é,http://gxyd.484947.xyz/PLTV/77777777/224/3221225763/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç²¾åç»¼å,http://gxyd.484947.xyz/PLTV/77777777/224/3221225733/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç±æåå§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225698/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç²¾åå¤§å§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225737/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVä¸­å½åå¤«,http://gxyd.484947.xyz/PLTV/77777777/224/3221225690/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVè°æå¤§å§,http://gxyd.484947.xyz/PLTV/77777777/224/3221225755/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVåäºè¯è®º,http://gxyd.484947.xyz/PLTV/77777777/224/3221225749/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVåä¸è´å¯,http://gxyd.484947.xyz/PLTV/77777777/224/3221225687/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç½çå§åº,http://gxyd.484947.xyz/PLTV/77777777/224/3221225681/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVæ¡ä¼´å¥åº·,http://gxyd.484947.xyz/PLTV/77777777/224/3221225684/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç²¾åä½è²,http://gxyd.484947.xyz/PLTV/77777777/224/3221225724/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVæ½®å¦è¾£å©,http://gxyd.484947.xyz/PLTV/77777777/224/3221225709/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+NewTVç«èæªæ¥,http://gxyd.484947.xyz/PLTV/77777777/224/3221225973/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çå½©ç«æ,http://gxyd.484947.xyz/PLTV/77777777/224/3221225972/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çå½©ç¯®ç,http://gxyd.484947.xyz/PLTV/77777777/224/3221225961/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çå½©éå°,http://gxyd.484947.xyz/PLTV/77777777/224/3221226055/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
+çå½©å¹¿åºè,http://gxyd.484947.xyz/PLTV/77777777/224/3221226326/index.m3u8?servicetype=3&IASHttpSessionId=OTT $å¹¿è¥¿ç§»å¨
 
 
 
