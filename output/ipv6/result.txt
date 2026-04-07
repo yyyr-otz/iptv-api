@@ -1625,6 +1625,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 青春动漫,https://live.metshop.top/bestv.php?id=qcdm8m/8000000
 青春动漫,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 青春动漫,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+青春动漫,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000011000288008/1.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=m
 爱动漫,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000004000000059/index.m3u8
 爱动漫,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000059/index.m3u8
 爱动漫,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000000/index.m3u8
