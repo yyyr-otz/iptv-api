@@ -71,7 +71,6 @@ CETV4,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1279.m3u8$IPV6
 山东卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1416.m3u8$IPV6•线路2
 北京卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1202.m3u8$IPV6•线路1
 北京卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1407_7500.m3u8$IPV6•线路2
-北京卫视,http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226436/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ElMQ3ov45VmhzipweN5VstQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPg_yZ8DZHTaSU92MIl_o3b%2CEND$IPV6•线路3
 安徽卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1206.m3u8$IPV6•线路1
 安徽卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1418.m3u8$IPV6•线路2
 重庆卫视,http://[2605:6400:20:e33:19c6:b2fe:332b:d62d]:9090/live/1425.m3u8$IPV6•线路1
