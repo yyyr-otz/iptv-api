@@ -66,13 +66,11 @@
 # https://d.kstore.dev/download/12792/ln.txt
  # https://www.iyouhun.com/tv/zb
  # https://gitee.com/xxy002/zhiboyuan/raw/master/dsy
+# https://raw.githubusercontent.com/tzk426/iptv-api/master/output/result.txt
 https://tmxk.pp.ua/iptv-cn.m3u
- https://live.zbds.top/tv/iptv4.txt
  https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt
  https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u
  https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u
- https://live.zbds.top/tv/iptv4.txt
- https://live.zbds.top/tv/iptv4.m3u
  https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
  https://raw.githubusercontent.com/vamoschuck/TV/main/M3U
  https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
@@ -83,7 +81,6 @@ https://raw.githubusercontent.com/yyyr-otz/iptv-api/master/output/user_result.tx
 http://txt.gt.tc/users/HKTV.txt
 https://raw.githubusercontent.com/lihansong888/ys/main/lib/ZB.php
 https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt
-https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
 https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
 https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8
 https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all_status.m3u8
@@ -103,7 +100,6 @@ https://raw.githubusercontent.com/zuomy2021/tv/main/rihou.cc2.htm
 https://raw.githubusercontent.com/zuomy2021/tv/main/test1.txt
 https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
 https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv6.txt
-https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
 https://raw.githubusercontent.com/hll2022-tea/tv_yuan/main/tvbox_live_release
 https://raw.githubusercontent.com/alantang1977/iptv_api/main/output/live_ipv4.txt
 https://raw.githubusercontent.com/kimwang1978/collect-txt/main/others_output.txt
@@ -112,4 +108,8 @@ https://raw.githubusercontent.com/hero1898/hero1898.github.io/main/tv.txt
 https://raw.githubusercontent.com/q1017673817/iptvz/62feb02f32ea7a3eb2939a24bb01cd4eebbe4ee3/txt/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.txt
 https://raw.githubusercontent.com/yewengood/yahu/main/speedtest/gddx_fofa.txt
 
-# https://raw.githubusercontent.com/tzk426/iptv-api/master/output/result.txt
+ # https://live.zbds.top/tv/iptv4.txt
+ # https://live.zbds.top/tv/iptv4.txt
+ # https://live.zbds.top/tv/iptv4.m3u
+# https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+# https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
