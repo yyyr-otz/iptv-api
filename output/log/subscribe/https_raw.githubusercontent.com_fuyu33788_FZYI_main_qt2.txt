@@ -352,7 +352,7 @@ CCTV5,http://39.134.51.147:6410/PLTV/11/224/3221227425/index.m3u8??servicetype=1
 CCTV5+,http://39.134.51.147:6410/PLTV/11/224/3221227555/index.m3u8??servicetype=1
 CCTV6,http://39.134.51.147:6410/PLTV/11/224/3221227422/index.m3u8??servicetype=1
 CCTV6,http://39.134.51.147:6410/PLTV/11/224/3221227428/index.m3u8??servicetype=1
-CCTV7,http://39.134.51.147:6410/PLTV/11/224/3221227350/index.m3u8??servicetype=1
+CCTV7,http://39.134.51.147:6410/PLTV/11/224/3221227528/index.m3u8??servicetype=1
 CCTV8,http://39.134.51.147:6410/PLTV/11/224/3221227431/index.m3u8??servicetype=1
 CCTV9,http://39.134.51.147:6410/PLTV/11/224/3221227434/index.m3u8??servicetype=1
 CCTV10,http://39.134.51.147:6410/PLTV/11/224/3221227440/index.m3u8??servicetype=1
@@ -383,7 +383,7 @@ CCTV17,http://39.134.51.147:6410/PLTV/11/224/3221227552/index.m3u8??servicetype=
 辽宁公共,http://39.134.51.147:6410/PLTV/11/224/3221226766/index.m3u8??servicetype=1
 家庭理财,http://39.134.51.147:6410/PLTV/11/224/3221227596/index.m3u8??servicetype=1
 家庭理财,http://39.134.51.147:6410/PLTV/11/224/3221226754/index.m3u8??servicetype=1
-新动漫,http://39.134.51.147:6410/PLTV/11/224/3221226818/index.m3u8??servicetype=1
+新动漫,http://39.134.51.147:6410/PLTV/11/224/3221227706/index.m3u8??servicetype=1
 沈阳新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221227584/index.m3u8??servicetype=1
 沈阳新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221226895/index.m3u8??servicetype=1
 辽宁移动电视,http://39.134.51.147:6410/PLTV/11/224/3221227664/index.m3u8??servicetype=1
@@ -427,12 +427,13 @@ CHC家庭影院,http://39.134.51.147:6410/PLTV/11/224/3221227727/index.m3u8??ser
 北京纪实科教,http://39.134.51.147:6410/PLTV/11/224/3221227617/index.m3u8??servicetype=1
 CCTV兵器科技,http://39.134.51.147:6410/PLTV/11/224/3221227647/index.m3u8??servicetype=1
 CCTV高尔夫网球,http://39.134.51.147:6410/PLTV/11/224/3221227715/index.m3u8??servicetype=1
-CCTV高尔夫网球,http://39.134.51.147:6410/PLTV/11/224/3221227496/index.m3u8??servicetype=1
+CCTV风云音乐,http://39.134.51.147:6410/PLTV/11/224/3221227641/index.m3u8??servicetype=1
 CCTV第一剧场,http://39.134.51.147:6410/PLTV/11/224/3221227730/index.m3u8??servicetype=1
 CCTV怀旧剧场,http://39.134.51.147:6410/PLTV/11/224/3221227733/index.m3u8??servicetype=1
 CCTV风云剧场,http://39.134.51.147:6410/PLTV/11/224/3221227736/index.m3u8??servicetype=1
 CCTV世界地理,http://39.134.51.147:6410/PLTV/11/224/3221227739/index.m3u8??servicetype=1
 CCTV女性时尚,http://39.134.51.147:6410/PLTV/11/224/3221227742/index.m3u8??servicetype=1
+CCTV央视台球,http://39.134.51.147:6410/PLTV/11/224/3221227711/index.m3u8??servicetype=1
 CCTV电视指南,http://39.134.51.147:6410/PLTV/11/224/3221227748/index.m3u8??servicetype=1
 CCTV央视文化精品,http://39.134.51.147:6410/PLTV/11/224/3221227644/index.m3u8??servicetype=1
 睛彩竞技,http://39.134.51.147:6410/PLTV/11/224/3221227670/index.m3u8??servicetype=1
@@ -454,10 +455,6 @@ CCTV16-4K,http://39.134.51.147:6410/PLTV/11/224/3221227709/index.m3u8??servicety
 深圳卫视4K,http://39.134.51.147:6410/PLTV/11/224/3221227538/index.m3u8??servicetype=1
 浙江卫视4K,http://39.134.51.147:6410/PLTV/11/224/3221227542/index.m3u8??servicetype=1
 CETV1,http://39.134.51.147:6410/PLTV/11/224/3221227593/index.m3u8??servicetype=1
-CETV1高清,http://39.134.51.147:6410/PLTV/11/224/3221226732/index.m3u8??servicetype=1
-嘉佳卡通,http://39.134.51.147:6410/PLTV/11/224/3221226744/index.m3u8??servicetype=1
-优漫卡通,http://39.134.51.147:6410/PLTV/11/224/3221226768/index.m3u8??servicetype=1
-山东教育卫视,http://39.134.51.147:6410/PLTV/11/224/3221227166/index.m3u8??servicetype=1
 山西卫视,http://39.134.51.147:6410/PLTV/11/224/3221227503/index.m3u8??servicetype=1
 陕西卫视,http://39.134.51.147:6410/PLTV/11/224/3221227588/index.m3u8??servicetype=1
 青海卫视,http://39.134.51.147:6410/PLTV/11/224/3221227500/index.m3u8??servicetype=1
@@ -471,6 +468,7 @@ CCTV-老故事,http://39.134.51.147:6410/PLTV/11/224/3221227745/index.m3u8??serv
 盘锦新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221227751/index.m3u8??servicetype=1
 厦门卫视,http://39.134.51.147:6410/PLTV/11/224/3221227591/index.m3u8??servicetype=1
 三沙卫视,http://39.134.51.147:6410/PLTV/11/224/3221227610/index.m3u8??servicetype=1
+快乐垂钓,http://39.134.51.147:6410/PLTV/11/224/3221227632/index.m3u8??servicetype=1
 
 👭付昱代理,#genre#
 北京卫视4K,http://bjtv.fzyi.cc.cd/btime_worker?id=bjws4k
