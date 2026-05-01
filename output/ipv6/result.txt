@@ -1315,6 +1315,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+星卫娱乐,https://live.ottiptv.cc/huya/880203
 
 🎬电影频道,#genre#
 CHC家庭影院,http://z.b.bkpcp.top/m.php?id=chcjtyy
@@ -1466,6 +1467,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://cdn12.178.indevs.in/163189/177d541552f78003
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+星卫娱乐,https://live.ottiptv.cc/huya/880203
 艾尔达娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 艾尔达娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 经典电影,http://goo.bkpcp.top/mg/jdxgdy
