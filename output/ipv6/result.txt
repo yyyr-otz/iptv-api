@@ -1331,6 +1331,7 @@ Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index
 靖天资讯,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp6LOH6KiK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
 靖天资讯,https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv065
 靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
+靖天资讯,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv065&token=https://t.me/GPT_858
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
