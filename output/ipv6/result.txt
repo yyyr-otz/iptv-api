@@ -1577,6 +1577,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森洋片,http://free.cnlive.club/channel/n7160b4.m3u8
 东森洋片,https://nimabi.goiptv.de5.net/ettvwestern.m3u8
 东森洋片,https://smt.goiptv.us.ci/ettvwestern/playlist.m3u8
+东森洋片,http://kaniptv.com/xz/xz_f09181ac93/wwkds.php?id=dsyp
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
