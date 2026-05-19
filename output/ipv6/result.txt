@@ -1531,6 +1531,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 无线星河,https://cdn9.163189.xyz/smt3.1.1.php?id=Xinhe
 无线星河,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 无线星河,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+无线星河,https://cdn6.163189.xyz/163189/tvbxh
 星空卫视,https://hls-gateway.vpstv.net/streams/709267.m3u8
 星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
 星空卫视,http://wouu.net:9977/udp/239.93.1.10:2193
