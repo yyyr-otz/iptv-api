@@ -2561,6 +2561,8 @@ http://kaniptv.com/xz/xz.php?name=%E6%97%A0%E7%BA%BF%E6%96%B0%E9%97%BB&index=0
 http://kaniptv.com/xz/xz_d4d9970b9e/wwkds.php?id=tvbwxxw
 #EXTINF:-1 tvg-id="无线新闻台" tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="🌊港·澳·台",无线新闻
 http://main.light-ott.net:80/play/live.php?extension=ts&mac=00:1A:79:3A:93:FD&stream=1495601
+#EXTINF:-1 tvg-id="无线新闻台" tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="🌊港·澳·台",无线新闻
+https://iptv.852851.xyz/ch/6be62e159f4a470cce4593fc6a780cd5/master.m3u8
 #EXTINF:-1 tvg-id="三立新闻" tvg-name="三立新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/三立新闻.png" group-title="🌊港·澳·台",三立新闻
 https://tv.iill.top/4gtv/229
 #EXTINF:-1 tvg-id="三立新闻" tvg-name="三立新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/三立新闻.png" group-title="🌊港·澳·台",三立新闻
@@ -2969,6 +2971,8 @@ https://cdn12.178.indevs.in/163189/bd4752bd7828b2bf
 https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv055&token=https://t.me/GPT_858
 #EXTINF:-1 tvg-id="靖天映画" tvg-name="靖天映画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天映画.png" group-title="🎬电影频道",靖天映画
 https://cdn.19891230.eu.org/4gtv/4gtv-4gtv055/index.m3u8
+#EXTINF:-1 tvg-id="靖天映画" tvg-name="靖天映画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天映画.png" group-title="🎬电影频道",靖天映画
+https://iptv.852851.xyz/ch/13eaf1f8e1b5a94d2350dccab165849a/master.m3u8
 #EXTINF:-1 tvg-id="靖天戏剧" tvg-name="靖天戏剧" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天戏剧.png" group-title="🎬电影频道",靖天戏剧
 http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058
 #EXTINF:-1 tvg-id="靖天戏剧" tvg-name="靖天戏剧" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天戏剧.png" group-title="🎬电影频道",靖天戏剧
@@ -2987,6 +2991,8 @@ https://cdn12.178.indevs.in/163189/177d541552f78003
 https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv058&token=https://t.me/GPT_858
 #EXTINF:-1 tvg-id="靖天戏剧" tvg-name="靖天戏剧" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天戏剧.png" group-title="🎬电影频道",靖天戏剧
 https://cdn.19891230.eu.org/4gtv/4gtv-4gtv058/index.m3u8
+#EXTINF:-1 tvg-id="靖天戏剧" tvg-name="靖天戏剧" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/靖天戏剧.png" group-title="🎬电影频道",靖天戏剧
+https://iptv.852851.xyz/ch/a0ce5f61da4ba42090cd8a6fb3144126/master.m3u8
 #EXTINF:-1 tvg-id="星卫娱乐" tvg-name="星卫娱乐" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/星卫娱乐.png" group-title="🎬电影频道",星卫娱乐
 https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 #EXTINF:-1 tvg-id="星卫娱乐" tvg-name="星卫娱乐" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/星卫娱乐.png" group-title="🎬电影频道",星卫娱乐
