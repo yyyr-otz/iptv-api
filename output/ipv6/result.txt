@@ -1282,6 +1282,8 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 无线新闻,http://cdn6.163189.xyz/163189/wxxw
 无线新闻,https://smart.946985.filegear-sg.me/smart.php?id=inews_twn
 无线新闻,http://kaniptv.com/xz/xz.php?name=%E6%97%A0%E7%BA%BF%E6%96%B0%E9%97%BB&index=0
+无线新闻,http://kaniptv.com/xz/xz_d4d9970b9e/wwkds.php?id=tvbwxxw
+无线新闻,http://main.light-ott.net:80/play/live.php?extension=ts&mac=00:1A:79:3A:93:FD&stream=1495601
 三立新闻,https://tv.iill.top/4gtv/229
 三立新闻,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8
 三立新闻,https://epg.pw/stream/6b49e3faa38adda85abab446f032dc1e686baa0760a9cfa66e2df8fd6fe3b445.m3u8
@@ -1340,6 +1342,7 @@ Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index
 靖天资讯,https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv065
 靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
 靖天资讯,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv065&token=https://t.me/GPT_858
+靖天资讯,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv065/index.m3u8
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
@@ -1486,6 +1489,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天映画,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 靖天映画,https://cdn12.178.indevs.in/163189/bd4752bd7828b2bf
 靖天映画,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv055&token=https://t.me/GPT_858
+靖天映画,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv055/index.m3u8
 靖天戏剧,http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058
 靖天戏剧,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv058
 靖天戏剧,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp5oiy5YqH5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
@@ -1494,11 +1498,13 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 靖天戏剧,https://cdn12.178.indevs.in/163189/177d541552f78003
 靖天戏剧,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv058&token=https://t.me/GPT_858
+靖天戏剧,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv058/index.m3u8
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
 艾尔达娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 艾尔达娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
+艾尔达娱乐,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv070/index.m3u8
 经典电影,http://goo.bkpcp.top/mg/jdxgdy
 经典电影,https://tv.iill.top/4gtv/201
 经典电影,https://yylunbo.ottiptv.cc/yy/1414812324
