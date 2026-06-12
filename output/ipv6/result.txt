@@ -1257,6 +1257,7 @@ TVBS亚洲,https://4g.158.qzz.io/163189/1bcf344d4a0ea28c
 纬来育乐,http://kaniptv.com/xz/xz.php?name=%E7%BA%AC%E6%9D%A5%E8%82%B2%E4%B9%90&index=0
 纬来育乐,http://kaniptv.com/xz/xz.php?name=%E7%BA%AC%E6%9D%A5%E8%82%B2%E4%B9%90&index=1
 纬来育乐,http://xsmt.ccwu.cc/xsmt/smt.php?id=2470
+纬来育乐,https://cdn.iptv8k.top/dl/jrys.php?id=289&time=20240926215313&ip=111.229.253.40
 J2,http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
 Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
@@ -1301,6 +1302,8 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森综合,http://kaniptv.com/xz/xz.php?name=%E4%B8%9C%E6%A3%AE%E7%BB%BC%E5%90%88&index=2
 东森综合,http://kaniptv.com/xz/xz.php?name=%E4%B8%9C%E6%A3%AE%E7%BB%BC%E5%90%88&index=3
 东森综合,https://3ea9e6-31f5e6.kylintv.tv/live/ebcvtv_iphone.m3u8
+东森综合,https://cdn.iptv8k.top/dl/jrys.php?id=220&time=20240926215313&ip=111.229.253.40
+东森综合,https://cdn.iptv8k.top/dl/jrys.php?id=221&time=20240926215313&ip=111.229.253.40
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
@@ -1311,6 +1314,8 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森超视,https://nimabi.goiptv.de5.net/ettvsuper.m3u8
 东森超视,https://smt.goiptv.us.ci/ettvsuper/playlist.m3u8
 东森超视,http://kaniptv.com/xz/xz.php?name=%E4%B8%9C%E6%A3%AE%E8%B6%85%E8%A7%86&index=0
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=217&time=20240926215313&ip=111.229.253.40
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=216&time=20240926215313&ip=111.229.253.40
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
@@ -1604,6 +1609,8 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森超视,https://nimabi.goiptv.de5.net/ettvsuper.m3u8
 东森超视,https://smt.goiptv.us.ci/ettvsuper/playlist.m3u8
 东森超视,http://kaniptv.com/xz/xz.php?name=%E4%B8%9C%E6%A3%AE%E8%B6%85%E8%A7%86&index=0
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=217&time=20240926215313&ip=111.229.253.40
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=216&time=20240926215313&ip=111.229.253.40
 
 🪁动画频道,#genre#
 少儿动画,http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
