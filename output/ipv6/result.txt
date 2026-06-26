@@ -1258,6 +1258,9 @@ TVBS亚洲,https://4g.158.qzz.io/163189/1bcf344d4a0ea28c
 纬来育乐,http://kaniptv.com/xz/xz.php?name=%E7%BA%AC%E6%9D%A5%E8%82%B2%E4%B9%90&index=1
 纬来育乐,http://xsmt.ccwu.cc/xsmt/smt.php?id=2470
 纬来育乐,https://cdn.iptv8k.top/dl/jrys.php?id=289&time=20240926215313&ip=111.229.253.40
+纬来育乐,http://api.mytv666.top/api/hk.php?id=3330336638356238356263323033303763623537646464323863373231323864267469643d74762669643d3739
+纬来育乐,http://api.mytv666.top/api/hk.php?id=3165616132653636313766396265326639656663626530326530386464616563267469643d77696e74763132332669643d3831
+纬来育乐,http://api.mytv666.top/api/qwt.php?t=台湾频道&id=纬来育乐
 J2,http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
 Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
@@ -1341,9 +1344,11 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 Now剧集,http://kaniptv.com/xz/xz.php?name=Now%E5%89%A7%E9%9B%86%E5%8F%B0&index=0
 Now剧集,http://kaniptv.com/xz/xz.php?name=Now%E5%89%A7%E9%9B%86%E5%8F%B0&index=1
 Now剧集,http://kaniptv.com/xz/xz.php?name=Now%E5%89%A7%E9%9B%86%E5%8F%B0&index=2
+Now剧集,http://api.mytv666.top/api/qwt.php?t=香港频道&id=Now劇集台
 Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index=0
 Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index=1
 Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index=2
+Now华剧,http://api.mytv666.top/api/qwt.php?t=香港频道&id=Now華劇台
 靖天资讯,https://hls-gateway.vpstv.net/streams/476258.m3u8
 靖天资讯,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv065
 靖天资讯,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp6LOH6KiK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
@@ -1351,6 +1356,7 @@ Now华剧,http://kaniptv.com/xz/xz.php?name=Now%E5%8D%8E%E5%89%A7%E5%8F%B0&index
 靖天资讯,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
 靖天资讯,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv065&token=https://t.me/GPT_858
 靖天资讯,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv065/index.m3u8
+靖天资讯,http://api.mytv666.top/api/hk.php?id=6639383065333066306334313662336238356630636437666434343762656663267469643d74762669643d313631
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
@@ -1499,6 +1505,8 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天映画,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv055&token=https://t.me/GPT_858
 靖天映画,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv055/index.m3u8
 靖天映画,https://iptv.852851.xyz/ch/13eaf1f8e1b5a94d2350dccab165849a/master.m3u8
+靖天映画,http://api.mytv666.top/api/hk.php?id=3366353563616434393236663337313533636664313136376136663331626566267469643d74762669643d313636
+靖天映画,http://api.mytv666.top/api/qwt.php?t=台湾频道&id=靖天映画台
 靖天戏剧,http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058
 靖天戏剧,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv058
 靖天戏剧,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp5oiy5YqH5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
@@ -1509,6 +1517,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv058&token=https://t.me/GPT_858
 靖天戏剧,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv058/index.m3u8
 靖天戏剧,https://iptv.852851.xyz/ch/a0ce5f61da4ba42090cd8a6fb3144126/master.m3u8
+靖天戏剧,http://api.mytv666.top/api/hk.php?id=6439376364633336386561313339623337393864633730336461636261613535267469643d74762669643d313334
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
@@ -1588,6 +1597,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 龙祥电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 龙祥电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 龙祥电影,http://free.cnlive.club/channel/67548a4f.m3u8
+龙祥电影,http://api.mytv666.top/api/qwt.php?t=香港频道&id=龙祥电影
 东森洋片,https://hls-gateway.vpstv.net/streams/476997.m3u8
 东森洋片,https://smt.858.qzz.io/Smart.php?id=ettvwestern
 东森洋片,http://php.666230.xyz/smt.php?id=ettvwestern
@@ -1601,6 +1611,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森洋片,https://nimabi.goiptv.de5.net/ettvwestern.m3u8
 东森洋片,https://smt.goiptv.us.ci/ettvwestern/playlist.m3u8
 东森洋片,http://kaniptv.com/xz/xz_f09181ac93/wwkds.php?id=dsyp
+东森洋片,http://api.mytv666.top/api/qwt.php?t=影视频道&id=东森洋片
 东森超视,https://smart.pendy.dpdns.org/Smart.php?id=ettvsuper
 东森超视,https://hls-gateway.vpstv.net/streams/476234.m3u8
 东森超视,https://smart.946985.filegear-sg.me/smart.php?id=ettvsuper
