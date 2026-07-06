@@ -13,7 +13,7 @@ jobs:
       - name: 检出
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整 Git 历史
+          # fetch-depth: 0  # 获取完整 Git 历史
           token: ${{ secrets.MYTOKEN }}
       - name: 合并
         run: |
