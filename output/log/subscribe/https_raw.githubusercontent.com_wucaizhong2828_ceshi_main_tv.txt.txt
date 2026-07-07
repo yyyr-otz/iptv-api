@@ -1,4 +1,122 @@
-# IPTV 直播源 - 生成时间: 2026-07-07 05:46:54
+央视频道,#genre#
+CCTV-1,http://2280.eu.org:1234/608807420
+CCTV-2,http://2280.eu.org:1234/631780532
+CCTV-3,http://2280.eu.org:1234/624878271
+CCTV-4,http://2280.eu.org:1234/631780421
+CCTV-5,http://2280.eu.org:1234/641886683
+CCTV-5+,http://2280.eu.org:1234/641886773
+CCTV-6,http://2280.eu.org:1234/624878396
+CCTV-7,http://2280.eu.org:1234/673168121
+CCTV-8,http://2280.eu.org:1234/624878356
+CCTV-9,http://2280.eu.org:1234/673168140
+CCTV-10,http://2280.eu.org:1234/624878405
+CCTV-11,http://2280.eu.org:1234/667987558
+CCTV-12,http://2280.eu.org:1234/673168185
+CCTV-13,http://2280.eu.org:1234/608807423
+CCTV-14,http://2280.eu.org:1234/624878440
+CCTV-15,http://2280.eu.org:1234/673168223
+CCTV-16,http://139.214.182.224:9901/tsfile/live/1061_1.m3u8?key=txiptv
+CCTV-17,http://2280.eu.org:1234/673168256
+卫视频道,#genre#
+东南卫视,http://2280.eu.org:1234/849116810
+东方卫视,http://2280.eu.org:1234/651632648
+云南卫视,http://175.10.171.199:9901/tsfile/live/0119_1.m3u8?key=txiptv
+兵团卫视,http://2280.eu.org:1234/956923145
+内蒙古卫视,http://175.10.171.199:9901/tsfile/live/0109_1.m3u8?key=txiptv
+北京卫视,http://2280.eu.org:1234/630287636
+吉林卫视,http://2280.eu.org:1234/947472500
+四川卫视,http://61.178.227.57:9901/tsfile/live/0123_1.m3u8?key=txiptv
+天津卫视,http://61.178.227.57:9901/tsfile/live/0135_1.m3u8?key=txiptv
+宁夏卫视,http://2280.eu.org:1234/738910535
+安徽卫视,http://61.178.227.57:9901/tsfile/live/0130_1.m3u8?key=txiptv
+山东卫视,http://61.178.227.57:9901/tsfile/live/0131_1.m3u8?key=txiptv
+山西卫视,http://175.10.171.199:9901/tsfile/live/0118_2.m3u8?key=txiptv
+广东卫视,http://2280.eu.org:1234/608831231
+广西卫视,http://61.143.43.2:9901/tsfile/live/0113_1.m3u8?key=txiptv
+新疆卫视,http://139.214.182.224:9901/tsfile/live/1099_1.m3u8?key=txiptv
+江苏卫视,http://2280.eu.org:1234/623899368
+江西卫视,http://2280.eu.org:1234/783847495
+河北卫视,http://2280.eu.org:1234/962042070
+河南卫视,http://2280.eu.org:1234/790187291
+浙江卫视,http://61.178.227.57:9901/tsfile/live/0124_1.m3u8?key=txiptv
+深圳卫视,http://61.178.227.57:9901/tsfile/live/0126_1.m3u8?key=txiptv
+湖北卫视,http://2280.eu.org:1234/947472496
+湖南卫视,http://61.178.227.57:9901/tsfile/live/0128_1.m3u8?key=txiptv
+甘肃卫视,http://61.178.227.57:9901/tsfile/live/0110_1.m3u8?key=txiptv
+贵州卫视,http://61.178.227.57:9901/tsfile/live/0120_1.m3u8?key=txiptv
+辽宁卫视,http://2280.eu.org:1234/630291707
+重庆卫视,http://2280.eu.org:1234/738910914
+陕西卫视,http://2280.eu.org:1234/738910838
+青海卫视,http://2280.eu.org:1234/947472506
+黑龙江卫视,http://2280.eu.org:1234/738906901
+三沙卫视,http://2280.eu.org:1234/961023778
+大湾区卫视,http://2280.eu.org:1234/608917627
+海南卫视,http://2280.eu.org:1234/849119120
+中数传媒,#genre#
+CHC动作电影,http://139.214.182.224:9901/tsfile/live/1014_1.m3u8?key=txiptv
+CHC家庭影院,http://139.214.182.224:9901/tsfile/live/1016_1.m3u8?key=txiptv
+CHC影迷电影,http://69.30.245.50/live/chcym.m3u8
+世界地理,http://61.178.227.57:9901/tsfile/live/1016_1.m3u8?key=txiptv
+动漫秀场,http://139.214.182.224:9901/tsfile/live/1020_1.m3u8?key=txiptv
+央视台球,http://139.214.182.224:9901/tsfile/live/1035_1.m3u8?key=txiptv
+央视文化精品,http://173.208.212.130:8181/720p/ysjp.m3u8
+央视精品,http://139.214.182.224:9901/tsfile/live/1028_1.m3u8?key=txiptv
+女性时尚,http://139.214.182.224:9901/tsfile/live/1031_1.m3u8?key=txiptv
+快乐垂钓,http://139.214.182.224:9901/tsfile/live/1054_1.m3u8?key=txiptv
+怀旧剧场,http://139.214.182.224:9901/tsfile/live/1026_1.m3u8?key=txiptv
+梨园频道,http://139.214.182.224:9901/tsfile/live/1051_1.m3u8?key=txiptv
+武术世界,http://139.214.182.224:9901/tsfile/live/1022_1.m3u8?key=txiptv
+游戏风云,http://139.214.182.224:9901/tsfile/live/1044_1.m3u8?key=txiptv
+电视指南,http://139.214.182.224:9901/tsfile/live/1027_1.m3u8?key=txiptv
+第一剧场,http://139.214.182.224:9901/tsfile/live/1025_1.m3u8?key=txiptv
+茶频道,http://139.214.182.224:9901/tsfile/live/1056_1.m3u8?key=txiptv
+金色学堂,http://139.214.182.224:9901/tsfile/live/1023_1.m3u8?key=txiptv
+金鹰纪实,http://175.10.171.199:9901/tsfile/live/1001_1.m3u8?key=txiptv
+风云剧场,http://139.214.182.224:9901/tsfile/live/1034_1.m3u8?key=txiptv
+风云足球,http://61.178.227.57:9901/tsfile/live/1017_1.m3u8?key=txiptv
+风云音乐,http://139.214.182.224:9901/tsfile/live/1032_1.m3u8?key=txiptv
+凤凰卫视,#genre#
+凤凰中文,http://61.178.227.57:9901/tsfile/live/1013_1.m3u8?key=txiptv
+凤凰资讯,http://61.178.227.57:9901/tsfile/live/1014_1.m3u8?key=txiptv
+台湾,#genre#
+MOMO親子台,https://ha.msbot.dpdns.org/4gtv_api.php?id=231
+TVBS,https://ha.msbot.dpdns.org/4gtv_api.php?id=477
+三立綜合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=229
+中天新聞台,https://ha.msbot.dpdns.org/4gtv_api.php?id=30
+中視,https://ha.msbot.dpdns.org/4gtv_api.php?id=258
+人間衛視,https://ha.msbot.dpdns.org/4gtv_api.php?id=210
+八大綜合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=172
+公視,https://ha.msbot.dpdns.org/4gtv_api.php?id=7
+寰宇新聞台,https://ha.msbot.dpdns.org/4gtv_api.php?id=280
+東森新聞,https://ha.msbot.dpdns.org/4gtv_api.php?id=211
+民視,https://ha.msbot.dpdns.org/4gtv_api.php?id=24
+華視,https://ha.msbot.dpdns.org/4gtv_api.php?id=34
+鏡電視新聞台,https://ha.msbot.dpdns.org/4gtv_api.php?id=268
+靖天綜合台,https://ha.msbot.dpdns.org/4gtv_api.php?id=82
+台湾儿童,#genre#
+DreamWorks 夢工廠動畫,https://ha.msbot.dpdns.org/4gtv_api.php?id=282
+ELTV生活英語台,https://ha.msbot.dpdns.org/4gtv_api.php?id=490
+LiveABC互動英語頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=188
+Nick Jr. 兒童頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=219
+尼克兒童頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=185
+精選動漫台,https://ha.msbot.dpdns.org/4gtv_api.php?id=204
+經典卡通台,https://ha.msbot.dpdns.org/4gtv_api.php?id=202
+達文西頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=11
+靖洋卡通Nice Bingo,https://ha.msbot.dpdns.org/4gtv_api.php?id=59
+戏剧、电影与纪录片,#genre#
+CinemaWorld,https://ha.msbot.dpdns.org/4gtv_api.php?id=225
+GagaOOLala 精選LGBTQ+好劇,https://ha.msbot.dpdns.org/4gtv_api.php?id=478
+HITS頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=186
+My Cinema Europe HD 我的歐洲電影,https://ha.msbot.dpdns.org/4gtv_api.php?id=463
+ROCK Action,https://ha.msbot.dpdns.org/4gtv_api.php?id=180
+ROCK Xstream搖滾極限頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=485
+amc電影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=39
+影迷數位紀實台,https://ha.msbot.dpdns.org/4gtv_api.php?id=445
+影迷數位電影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=40
+經典電影台,https://ha.msbot.dpdns.org/4gtv_api.php?id=201
+視納華仁紀實頻道,https://ha.msbot.dpdns.org/4gtv_api.php?id=38
+采昌影劇台,https://ha.msbot.dpdns.org/4gtv_api.php?id=25
+金光布袋戲,https://ha.msbot.dpdns.org/4gtv_api.php?id=236
 BRTV 北京卫视 (1080p),http://go.bkpcp.top/mg/bjws
 CCTV+ 1 (600p) [Not 24/7],https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 CCTV+ 2 (600p) [Not 24/7],https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
@@ -16,7 +134,6 @@ CCTV-10 (720p),http://74.91.26.218:82/live/cctv10hd.m3u8
 CCTV-11 (720p),http://74.91.26.218:82/live/cctv11hd.m3u8
 CCTV-12 (720p),http://74.91.26.218:82/live/cctv12hd.m3u8
 CCTV-13 (1080p),http://go.bkpcp.top/mg/cctv13
-CCTV-13 (1080p),https://cdn3.163189.xyz/163189/cctv13
 CCTV-14 (1080p),http://74.91.26.218:82/live/cctv14hd.m3u8
 CCTV-15 (1080p),https://xykt-fix.github.io/play/a02e/index.m3u8
 CCTV-16 (1080p),http://74.91.26.218:82/live/cctv16hd.m3u8
