@@ -344,15 +344,7 @@ CCTV16-4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227709/index.m3u8
 凤凰中文A,http://push.cdn1.hls123.de:8080/streams/a4y2t99pzyi/index.m3u8
 凤凰资讯A,http://push.cdn1.hls123.de:8080/streams/0u0qd5ovqkg/index.m3u8
 凤凰香港A,http://push.cdn1.hls123.de:8080/streams/898y722sqjr/index.m3u8
-凤凰中文B,https://cdn6.163189.xyz/163189/fhzw
-凤凰资讯B,https://cdn6.163189.xyz/163189/fhzx
-凤凰香港B,https://cdn6.163189.xyz/163189/fhhk
-凤凰中文C,http://cdn6.163189.xyz/163189/fhzw
-凤凰资讯C,http://cdn6.163189.xyz/163189/fhzx
-凤凰香港C,http://cdn6.163189.xyz/163189/fhhk
-凤凰中文D,http://r.jdshipin.com/cCCzW
-凤凰资讯D,http://r.jdshipin.com/0Rp07
-凤凰香港D,http://r.jdshipin.com/yDo
+
 
 
 
