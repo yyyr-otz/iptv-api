@@ -327,6 +327,7 @@ CETV4,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
 国学频道,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227653/index.m3u8
 家庭理财,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221226754/index.m3u8
 家庭理财,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227596/index.m3u8
+生态环境,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227754/index.m3u8
 CCTV4K,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227623/index.m3u8
 CCTV16-4K,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227709/index.m3u8
 北京卫视4K,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227629/index.m3u8
