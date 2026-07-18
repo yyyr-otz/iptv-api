@@ -295,7 +295,6 @@ CETV4,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
 国学频道,rtmp://rtmp.tv.stream3.hndt.com/tv/647f9277018410008cf925e200000000?wsSecret=9a23316ee66e918684e097f?wsSecret=21dced1342664b58644ec3bca0808474&wsTime=1749985213
 国学频道,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227653/index.m3u8
 家庭理财,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227596/index.m3u8
-生态环境,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227754/index.m3u8
 CCTV4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227623/index.m3u8
 CCTV16-4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227709/index.m3u8
 北京卫视4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227629/index.m3u8
@@ -343,9 +342,6 @@ CCTV16-4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227709/index.m3u8
 咪视界31,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227381/index.m3u8
 凤凰中文,http://zmgd.zyrnet.com:8888/hls/110/index.m3u8$郑州酒店
 凤凰资讯,http://zmgd.zyrnet.com:8888/hls/109/index.m3u8$郑州酒店
-凤凰中文A,http://push.cdn1.hls123.de:8080/streams/a4y2t99pzyi/index.m3u8
-凤凰资讯A,http://push.cdn1.hls123.de:8080/streams/0u0qd5ovqkg/index.m3u8
-凤凰香港A,http://push.cdn1.hls123.de:8080/streams/898y722sqjr/index.m3u8
 
 
 
