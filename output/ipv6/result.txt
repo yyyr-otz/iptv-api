@@ -1510,6 +1510,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天映画,http://api.mytv666.top/api/qwt.php?t=台湾频道&id=靖天映画台
 靖天映画,https://cdn12.178.indevs.in/163189/jtyh
 靖天映画,https://cdn.qd.je/163189/jtyh
+靖天映画,https://test.946985.filegear-sg.me/proxy/dec613a636983708
 靖天戏剧,http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058
 靖天戏剧,http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv058
 靖天戏剧,https://mao.ffmking888.dpdns.org/?id=6Z2W5aSp5oiy5YqH5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89
@@ -1521,6 +1522,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv058/index.m3u8
 靖天戏剧,https://iptv.852851.xyz/ch/a0ce5f61da4ba42090cd8a6fb3144126/master.m3u8
 靖天戏剧,http://api.mytv666.top/api/hk.php?id=6439376364633336386561313339623337393864633730336461636261613535267469643d74762669643d313334
+靖天戏剧,https://test.946985.filegear-sg.me/proxy/e15a73b3e057b98b
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
