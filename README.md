@@ -1,3 +1,6 @@
+
+</think>
+
 <div align="center">
   <img src="./static/images/logo.svg" alt="IPTV-API logo"  width="120" height="120"/>
 </div>
@@ -158,27 +161,27 @@
 ```
 iptv-api/                  # 项目根目录
 ├── config                 # 配置文件目录，包含配置文件、模板文件等
-│   └── hls                # 本地HLS推流文件目录，用于存放多个频道名称命名的视频文件
-│   └── local              # 本地源文件目录，用于存放多个本地源文件，支持txt/m3u格式
-│   └── config.ini         # 配置参数文件
-│   └── demo.txt           # 频道模板
-│   └── alias.txt          # 频道别名
-│   └── blacklist.txt      # 接口黑名单
-│   └── whitelist.txt      # 接口白名单
-│   └── subscribe.txt      # 频道订阅源列表
-│   └── local.txt          # 本地源文件
+│   ├── hls                # 本地HLS推流文件目录，用于存放多个频道名称命名的视频文件
+│   ├── local              # 本地源文件目录，用于存放多个本地源文件，支持txt/m3u格式
+│   ├── config.ini         # 配置参数文件
+│   ├── demo.txt           # 频道模板
+│   ├── alias.txt          # 频道别名
+│   ├── blacklist.txt      # 接口黑名单
+│   ├── whitelist.txt      # 接口白名单
+│   ├── subscribe.txt      # 频道订阅源列表
+│   ├── local.txt          # 本地源文件
 │   └── epg.txt            # EPG订阅源列表
 └── output                 # 结果文件目录，包含生成的结果文件等
-    └── data               # 结果数据缓存目录
-    └── epg                # EPG结果目录
-    └── ipv4               # IPv4结果目录
-    └── ipv6               # IPv6结果目录
-    └── result.m3u/txt     # m3u/txt结果
-    └── hls.m3u/txt        # RTMP hls推流结果
+    ├── data               # 结果数据缓存目录
+    ├── epg                # EPG结果目录
+    ├── ipv4               # IPv4结果目录
+    ├── ipv6               # IPv6结果目录
+    ├── result.m3u/txt     # m3u/txt结果
+    ├── hls.m3u/txt        # RTMP hls推流结果
     └── log                # 日志文件目录
-        └── result.log     # 有效结果日志
-        └── speed_test.log # 测速日志
-        └── statistic.log  # 统计结果日志
+        ├── result.log     # 有效结果日志
+        ├── speed_test.log # 测速日志
+        ├── statistic.log  # 统计结果日志
         └── unmatch.log    # 未匹配频道记录
 ```
 
@@ -371,4 +374,3 @@ docker run -d -p 80:8080 guovern/iptv-api
 [AGPL-3.0](./LICENSE) License &copy; 2024-PRESENT [Govin](https://github.com/guovin)
 
 > 注意：本项目采用 AGPL-3.0。若将修改后的程序作为网络服务、公开容器镜像或以其他对外服务方式运行，须向使用者提供包括修改在内的完整源代码。详见：https://www.gnu.org/licenses/agpl-3.0.html
-
