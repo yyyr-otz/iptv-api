@@ -1226,6 +1226,7 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1718&sid=8d503851366779f546d65ab5ff29d
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=700f4cedea8af059591520ea65b251f1&exp=1785859083&sig=f3face8b3d938525992360b131afc3f4fd1171603ff2f411f6c66f83856cb4db
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1715&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=5a75e79582e6bfeef95fbd73785ec9c381663880833929eb96f9ff1385b4f4f4
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=b5a7f39a5b6326be96cfa1bbdd8bfb553fa7b775344a45bce9be5ffcada29dfe
+TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=10fa3ea8d75c20383ef56cde02f8ba364c07fca92c84a25b4fae1e51adb844c0
 香港卫视,http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 香港卫视,https://yvxymm.tv12.xyz/175.m3u8
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
@@ -1340,6 +1341,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=700f4cedea8af059591520ea65b251f1&exp=1785859083&sig=f73934ee5e255f07fa4be99a4b23a7201b9334551bc762ee54292a3f94952f14
 东森超视,http://tv123.cc.cd/live.php?ch=1725&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=ee1d7626e0af785f64e9f745c38d9deaba890582a761148ab7aacf60247b6dce
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=77231e6204dacc4321179347567e0d938fff075bd1b036e21ef8ea4e3b9f678c
+东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
@@ -1376,6 +1378,7 @@ Now华剧,http://api.mytv666.top/api/qwt.php?t=香港频道&id=Now華劇台
 靖天资讯,https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv065&token=https://t.me/GPT_858
 靖天资讯,https://cdn.19891230.eu.org/4gtv/4gtv-4gtv065/index.m3u8
 靖天资讯,http://api.mytv666.top/api/hk.php?id=6639383065333066306334313662336238356630636437666434343762656663267469643d74762669643d313631
+靖天资讯,http://4gtv.cnlive.club/channel/3fae463b/index.m3u8?q=1782639885837
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
@@ -1544,6 +1547,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://iptv.852851.xyz/ch/a0ce5f61da4ba42090cd8a6fb3144126/master.m3u8
 靖天戏剧,http://api.mytv666.top/api/hk.php?id=6439376364633336386561313339623337393864633730336461636261613535267469643d74762669643d313334
 靖天戏剧,https://test.946985.filegear-sg.me/proxy/e15a73b3e057b98b
+靖天戏剧,http://4gtv.cnlive.club/channel/3f07b409/index.m3u8?q=1782639885837
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
@@ -1654,6 +1658,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=700f4cedea8af059591520ea65b251f1&exp=1785859083&sig=f73934ee5e255f07fa4be99a4b23a7201b9334551bc762ee54292a3f94952f14
 东森超视,http://tv123.cc.cd/live.php?ch=1725&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=ee1d7626e0af785f64e9f745c38d9deaba890582a761148ab7aacf60247b6dce
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=77231e6204dacc4321179347567e0d938fff075bd1b036e21ef8ea4e3b9f678c
+东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
 
 🪁动画频道,#genre#
 少儿动画,http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
