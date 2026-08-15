@@ -1227,6 +1227,7 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=700f4cedea8af059591520ea65b25
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1715&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=5a75e79582e6bfeef95fbd73785ec9c381663880833929eb96f9ff1385b4f4f4
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=b5a7f39a5b6326be96cfa1bbdd8bfb553fa7b775344a45bce9be5ffcada29dfe
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=10fa3ea8d75c20383ef56cde02f8ba364c07fca92c84a25b4fae1e51adb844c0
+TVBS亚洲,http://tv123.cc.cd/live.php?ch=1598&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=8102e0c270947f8acec3ac72dd144188bca69f11534922b1663a28a2732f4bc8
 香港卫视,http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 香港卫视,https://yvxymm.tv12.xyz/175.m3u8
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
@@ -1342,6 +1343,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 东森超视,http://tv123.cc.cd/live.php?ch=1725&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=ee1d7626e0af785f64e9f745c38d9deaba890582a761148ab7aacf60247b6dce
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=77231e6204dacc4321179347567e0d938fff075bd1b036e21ef8ea4e3b9f678c
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
+东森超视,http://tv123.cc.cd/live.php?ch=1608&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=ad1fc489b96f19c9477d48d5828f6b5fab53201c1dc512431408283693b7d8b7
 东森电影,https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://smt.858.qzz.io/Smart.php?id=ettvmovie
@@ -1659,6 +1661,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 东森超视,http://tv123.cc.cd/live.php?ch=1725&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=ee1d7626e0af785f64e9f745c38d9deaba890582a761148ab7aacf60247b6dce
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=77231e6204dacc4321179347567e0d938fff075bd1b036e21ef8ea4e3b9f678c
 东森超视,http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
+东森超视,http://tv123.cc.cd/live.php?ch=1608&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=ad1fc489b96f19c9477d48d5828f6b5fab53201c1dc512431408283693b7d8b7
 
 🪁动画频道,#genre#
 少儿动画,http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
