@@ -2449,6 +2449,8 @@ http://tv123.cc.cd/live.php?ch=1725&sid=2374bdd3b037fece7b63e0f90c608da1&exp=178
 http://tv123.cc.cd/live.php?ch=1725&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=10fa3ea8d75c20383ef56cde02f8ba364c07fca92c84a25b4fae1e51adb844c0
 #EXTINF:-1 tvg-id="TVBS亚洲" tvg-name="TVBS亚洲" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVBS亚洲.png" group-title="🌊港·澳·台",TVBS亚洲
 http://tv123.cc.cd/live.php?ch=1598&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=8102e0c270947f8acec3ac72dd144188bca69f11534922b1663a28a2732f4bc8
+#EXTINF:-1 tvg-id="TVBS亚洲" tvg-name="TVBS亚洲" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVBS亚洲.png" group-title="🌊港·澳·台",TVBS亚洲
+http://tv123.cc.cd/live.php?ch=1744&sid=2fd4f5dfad2c05ddd82b9240ea702795&exp=1786889880&sig=e2c2a632e758bf38b7dbd6160d193933402f4d429b6c8c2bed3de125020cc2be
 #EXTINF:-1 tvg-id="香港卫视" tvg-name="香港卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/香港卫视.png" group-title="🌊港·澳·台",香港卫视
 http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 #EXTINF:-1 tvg-id="香港卫视" tvg-name="香港卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/香港卫视.png" group-title="🌊港·澳·台",香港卫视
@@ -2681,6 +2683,8 @@ http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=178
 http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
 #EXTINF:-1 tvg-id="东森超视" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
 http://tv123.cc.cd/live.php?ch=1608&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=ad1fc489b96f19c9477d48d5828f6b5fab53201c1dc512431408283693b7d8b7
+#EXTINF:-1 tvg-id="东森超视" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🌊港·澳·台",东森超视
+http://tv123.cc.cd/live.php?ch=1754&sid=2fd4f5dfad2c05ddd82b9240ea702795&exp=1786889880&sig=812bc950e0a06e333590cc2d3422a5fae03d78fc9899d0843657cf4df1c721d4
 #EXTINF:-1 tvg-id="东森电影" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
 https://smart.pendy.dpdns.org/Smart.php?id=ettvmovie
 #EXTINF:-1 tvg-id="东森电影" tvg-name="东森电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森电影.png" group-title="🌊港·澳·台",东森电影
@@ -3313,6 +3317,8 @@ http://tv123.cc.cd/live.php?ch=1735&sid=2374bdd3b037fece7b63e0f90c608da1&exp=178
 http://tv123.cc.cd/live.php?ch=1735&sid=cbaa47b759cc67a346acd5f50cacdff8&exp=1786634545&sig=2a1528a35bd1ca12784a84f74461e9d8d4596781970a8c1cd95c6b482d6b48e5
 #EXTINF:-1 tvg-id="东森超视" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
 http://tv123.cc.cd/live.php?ch=1608&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=ad1fc489b96f19c9477d48d5828f6b5fab53201c1dc512431408283693b7d8b7
+#EXTINF:-1 tvg-id="东森超视" tvg-name="东森超视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png" group-title="🎬电影频道",东森超视
+http://tv123.cc.cd/live.php?ch=1754&sid=2fd4f5dfad2c05ddd82b9240ea702795&exp=1786889880&sig=812bc950e0a06e333590cc2d3422a5fae03d78fc9899d0843657cf4df1c721d4
 #EXTINF:-1 tvg-id="少儿动画" tvg-name="少儿动画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/少儿动画.png" group-title="🪁动画频道",少儿动画
 http://www.xinxuzhen.com:8000/udp/239.77.0.109:5146
 #EXTINF:-1 tvg-id="少儿动画" tvg-name="少儿动画" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/少儿动画.png" group-title="🪁动画频道",少儿动画
