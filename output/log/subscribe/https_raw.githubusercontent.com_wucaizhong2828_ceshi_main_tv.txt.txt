@@ -262,15 +262,22 @@ CCTV-4K超高清,http://192.151.150.154/live/cctv4k.m3u8
 CCTV-8K超高清,http://192.151.150.154/live/cctv8k.m3u8
 CCTV-1 综合,https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
 CCTV-2 财经,https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
+CCTV-3 综艺,http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-4 中文国际（亚） Ⓨ,https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live
+CCTV-4 中文国际（欧）,https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 CCTV-4 中文国际（美） Ⓢ,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 CCTV-5 体育,https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
 CCTV-5+ 体育赛事,https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
+CCTV-6 电影,http://69.30.245.50/live/cctv6.m3u8
 CCTV-7 国防军事,https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8
 CCTV-8 电视剧,https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
 CCTV-9 纪录,https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
 CCTV-10 科教,https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8
+CCTV-11 戏曲,http://74.91.26.218:82/live/cctv11hd.m3u8
+CCTV-12 社会与法,http://74.91.26.218:82/live/cctv12hd.m3u8
 CCTV-13 新闻,https://node1.olelive.com:6443/live/CCTV13HD/hls.m3u8
+CCTV-14 少儿,http://74.91.26.218:82/live/cctv14hd.m3u8
+CCTV-16 奥林匹克,http://74.91.26.218:82/live/cctv16hd.m3u8
 CCTV-17 农业农村,https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8
 CCTV+ 1 (600p) [Not 24/7],https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 CCTV+ 2 (600p) [Not 24/7],https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
@@ -995,7 +1002,6 @@ CHC影迷电影,http://go.bkpcp.top/mg/ymdy
 凤凰中文,http://219.145.93.74:10000/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
 CHCH,http://152.89.62.111:8080/nXyAiP3DNp/QgOuvocpGv/222841
 Rai 4K Ⓖ,https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
-NHK BSP4K,https://stream01.willfonk.com/live_playlist.m3u8?cid=BS103&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
 爱上4K[超清],http://114.254.89.131:2222/rtp/239.3.1.236:2000
 4K超清[超清],http://114.254.89.131:2222/rtp/239.3.1.249:8001
 欢笑剧场-4K,http://180.97.247.27:8088/liveplay-kk.rtxapp.com/live/program/live/dsjc8m/8000000/mnf.m3u8
