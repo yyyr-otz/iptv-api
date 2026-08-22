@@ -1230,6 +1230,7 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1725&sid=cbaa47b759cc67a346acd5f50cacd
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1598&sid=c512ec5c4e8ba4bc6eac5305847df5f7&exp=1786806715&sig=8102e0c270947f8acec3ac72dd144188bca69f11534922b1663a28a2732f4bc8
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1744&sid=2fd4f5dfad2c05ddd82b9240ea702795&exp=1786889880&sig=e2c2a632e758bf38b7dbd6160d193933402f4d429b6c8c2bed3de125020cc2be
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1780&sid=6e74595f5d97521872bafb3c715e5413&exp=1787238227&sig=331734353e2dffbabeb70c8222640919e5f15cee89d6cdf17b9a51ca5d30e4a1
+TVBS亚洲,http://tv123.cc.cd/live.php?ch=1794&sid=e9ed6da76f31820ec220e66eeb6e819f&exp=1787407888&sig=4a1f457924acd36cf3e2449a5d5e2924f9896f286842b09cb1930f2c8f635eab
 香港卫视,http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 香港卫视,https://yvxymm.tv12.xyz/175.m3u8
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
