@@ -461,6 +461,7 @@ CETV-4,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000012000283003/1.m3
 香港卫视,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 香港卫视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 香港卫视,https://hkstv.tv/api/m3u8-proxy?url=http%3A%2F%2Fwebcast.hkstv.tv%2Flivestream%2Fmutfysrq%2Fplaylist.m3u8
+香港卫视,http://webcast.hkstv.tv:80/livestream/mutfysrq/playlist.m3u8?hls_ctx=9dl33ad6
 浙江卫视,http://z.b.bkpcp.top/m.php?id=zjws
 浙江卫视,http://goo.bkpcp.top/mg/zjws
 浙江卫视,http://iptv.huuc.edu.cn/hls/zjhd.m3u8
@@ -1231,6 +1232,7 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1598&sid=c512ec5c4e8ba4bc6eac5305847df
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1744&sid=2fd4f5dfad2c05ddd82b9240ea702795&exp=1786889880&sig=e2c2a632e758bf38b7dbd6160d193933402f4d429b6c8c2bed3de125020cc2be
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1780&sid=6e74595f5d97521872bafb3c715e5413&exp=1787238227&sig=331734353e2dffbabeb70c8222640919e5f15cee89d6cdf17b9a51ca5d30e4a1
 TVBS亚洲,http://tv123.cc.cd/live.php?ch=1794&sid=e9ed6da76f31820ec220e66eeb6e819f&exp=1787407888&sig=4a1f457924acd36cf3e2449a5d5e2924f9896f286842b09cb1930f2c8f635eab
+TVBS亚洲,http://tv123.cc.cd/live.php?ch=1773&sid=5b77f446889efba65ce76734d8734a21&exp=1787667310&sig=4de8c6c9311f9e1d2c84b6b91d94398f1124e9ed508d4801cd633cf265c113c4
 香港卫视,http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 香港卫视,https://yvxymm.tv12.xyz/175.m3u8
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
@@ -1239,6 +1241,7 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1794&sid=e9ed6da76f31820ec220e66eeb6e8
 香港卫视,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 香港卫视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 香港卫视,https://hkstv.tv/api/m3u8-proxy?url=http%3A%2F%2Fwebcast.hkstv.tv%2Flivestream%2Fmutfysrq%2Fplaylist.m3u8
+香港卫视,http://webcast.hkstv.tv:80/livestream/mutfysrq/playlist.m3u8?hls_ctx=9dl33ad6
 纬来体育,https://smart.pendy.dpdns.org/Smart.php?id=videolandsport
 纬来体育,https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8
 纬来体育,https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8
