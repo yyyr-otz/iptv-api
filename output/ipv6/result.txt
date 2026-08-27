@@ -1217,6 +1217,7 @@ CETV-4,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000012000283003/1.m3
 凤凰卫视,http://ott.mobaibox.com/PLTV/-/224/3221228527/index.m3u8
 凤凰卫视,http://xsmt.ccwu.cc/xsmt/smt.php?id=60
 凤凰卫视,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236260/index.m3u8
+凤凰卫视,https://7612-5516-affc-d88b.kylintv.tv/live/pxinhd_iphone.m3u8
 TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd
 TVBS亚洲,https://4gtv.158.qzz.io/163189/5c95e227-8109-4d5a-ad31-a5456eeba506/
 TVBS亚洲,https://4gtv.158.qzz.io/163189/ac9fc30c-1caf-401e-a373-9a8cc054b527/
@@ -1283,7 +1284,9 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1773&sid=5b77f446889efba65ce76734d8734
 纬来育乐,http://tv123.cc.cd/live.php?ch=547&sid=f74f1e2391a6329f912a0548968ee6ab&exp=1786117427&sig=a6a795dcd4325200d596ccf49465063d6e96f2ac7bc1e152ad7fe95496877917
 纬来育乐,http://tv123.cc.cd/live.php?ch=547&sid=2374bdd3b037fece7b63e0f90c608da1&exp=1786374444&sig=d8ba7f02d1a204adfc726e2d206679136b3c9a85459579bf82a55dc9c09d93c1
 J2,http://api.kkitv.itv888.vip:8080/streams/48uxa7dlbga/index.m3u8
+J2,https://hls-gateway.vpstv.net/streams/476932.m3u8
 Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
+Viutv,http://smt.1678520.xyz/smt3.2.3.php?id=viu1_twn
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
 三立台湾,https://smart.946985.filegear-sg.me/smart.php?id=sanlitaiwan
 三立台湾,https://tv1288.xyz/tw.php?id=sltw
@@ -1293,6 +1296,7 @@ Viutv,http://api.kkitv.itv888.vip:8080/streams/bvdslcl5cts/index.m3u8
 三立台湾,https://ha.msbot.dpdns.org/4gtv_api.php?id=169
 三立台湾,https://www.youtube.com/watch
 三立台湾,https://ktpremium.world/live/LT1976F/A9177/1003298.ts
+三立台湾,https://hls-gateway.vpstv.net/streams/477050.m3u8
 无线新闻,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
 无线新闻,https://hls-gateway.vpstv.net/streams/708884.m3u8
 无线新闻,https://tv.iill.top/tvb/4
@@ -1579,6 +1583,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 经典电影,http://czkeji.vip:9000/rtp/239.252.220.139:5140
+经典电影,https://goodiptv.club/douyu/6091425
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 天映经典,https://hls-gateway.vpstv.net/streams/709488.m3u8
@@ -1609,6 +1614,7 @@ IPTV经典电影,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/r
 无线星河,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 无线星河,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 无线星河,https://cdn6.163189.xyz/163189/tvbxh
+无线星河,https://iptv.707626.xyz/ch/35a8b1635c056f83fcb56fe163a0b487/master.m3u8
 星空卫视,https://hls-gateway.vpstv.net/streams/709267.m3u8
 星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
 星空卫视,http://wouu.net:9977/udp/239.93.1.10:2193
@@ -1864,6 +1870,7 @@ CN卡通,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/head
 河北少儿科教,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 河北少儿科教,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 河北少儿科教,http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f
+河北少儿科教,http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=2510710360&k=4ff4446adf3cce3de40dd013255b38b2
 七龙珠,https://live.ottiptv.cc/huya/11601966
 七龙珠,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 七龙珠,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
