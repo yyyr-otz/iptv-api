@@ -725,7 +725,6 @@ CCTV老故事,http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/322122704
 新疆卫视,http://t.061899.xyz/tl/tl.php?id=xjws
 吉林卫视,http://t.061899.xyz/tl/tl.php?id=jlws
 西藏卫视,http://t.061899.xyz/tl/tl.php?id=xzws
-河南卫视,http://39.165.39.49:19901/tsfile/live/1105_1.m3u8
 BRTV 北京卫视 (1080p),http://go.bkpcp.top/mg/bjws
 云南卫视 (1080p),https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
 四川卫视 (576p),http://39.134.115.163:8080/PLTV/88888910/224/3221225733/index.m3u8
@@ -947,12 +946,6 @@ CHC动作电影,http://192.151.150.154/live/chcdz.m3u8
 CHC影迷电影,http://192.151.150.154/live/chchd.m3u8
 CHC家庭影院,http://192.151.150.154/live/chcjt.m3u8
 重温经典,http://192.151.150.154/live/cwjd.m3u8
-重温经典,http://zmgd.zyrnet.com:8888/hls/29/index.m3u8
-CHC家庭影院,http://nas.201606.xyz:4022/rtp/239.10.0.86:5140
-CHC动作电影,http://nas.201606.xyz:4022/rtp/239.10.0.87:5140
-咪视界4K,http://nas.201606.xyz:4022/rtp/239.10.0.240:5140
-CHC影迷电影,http://go.bkpcp.top/mg/ymdy
-凤凰中文,http://219.145.93.74:10000/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
 CHCH,http://152.89.62.111:8080/nXyAiP3DNp/QgOuvocpGv/222841
 Rai 4K Ⓖ,https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
 爱上4K[超清],http://114.254.89.131:2222/rtp/239.3.1.236:2000
