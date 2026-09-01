@@ -142,7 +142,6 @@ CETV4,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
 青海卫视,http://3872327.top:1225/udp/239.69.2.24:11298
 山西卫视,http://3872327.top:1225/udp/239.69.2.41:11400
 陕西卫视,http://3872327.top:1225/udp/239.69.2.42:11406
-内蒙古卫视,http://3872327.top:1225/udp/239.69.2.43:11412
 阜新教育,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227662/index.m3u8
 阜新新闻综合,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227717/index.m3u8
 盘锦都市,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227659/index.m3u8
@@ -494,6 +493,7 @@ CCTV-老故事,http://39.134.51.147:6410/PLTV/11/224/3221227745/index.m3u8??serv
 厦门卫视,http://39.134.51.147:6410/PLTV/11/224/3221227591/index.m3u8??servicetype=1
 三沙卫视,http://39.134.51.147:6410/PLTV/11/224/3221227610/index.m3u8??servicetype=1
 快乐垂钓,http://39.134.51.147:6410/PLTV/11/224/3221227632/index.m3u8??servicetype=1
+内蒙古卫视,http://39.134.51.147:6410/PLTV/11/224/3221227585/index.m3u8??servicetype=1
 
 👭付昱代理,#genre#
 北京卫视4K,http://bjtv.fzyi.cc.cd/btime_worker?id=bjws4k
