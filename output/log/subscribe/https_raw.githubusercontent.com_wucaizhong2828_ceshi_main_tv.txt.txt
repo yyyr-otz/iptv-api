@@ -713,6 +713,7 @@ CCTV老故事,http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/322122704
 吉林卫视,http://t.061899.xyz/tl/tl.php?id=jlws
 西藏卫视,http://t.061899.xyz/tl/tl.php?id=xzws
 BRTV 北京卫视 (1080p),http://go.bkpcp.top/mg/bjws
+BRTV 北京卫视 [Not 24/7],http://ivi.bupt.edu.cn/hls/btv1.m3u8
 云南卫视 (1080p),https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
 四川卫视 (576p),http://39.134.115.163:8080/PLTV/88888910/224/3221225733/index.m3u8
 天津卫视 (1080p),http://39.134.115.163:8080/PLTV/88888910/224/3221225698/index.m3u8
@@ -932,6 +933,7 @@ CHC家庭影院,http://192.151.150.154/live/chcjt.m3u8
 重温经典,http://192.151.150.154/live/cwjd.m3u8
 CHCH,http://152.89.62.111:8080/nXyAiP3DNp/QgOuvocpGv/222841
 Rai 4K Ⓖ,https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+NHK BSP4K,https://naori-test.netgenx.site/pxx.php?shk_cid=bs01#.m3u8
 爱上4K[超清],http://114.254.89.131:2222/rtp/239.3.1.236:2000
 4K超清[超清],http://114.254.89.131:2222/rtp/239.3.1.249:8001
 欢笑剧场-4K,http://180.97.247.27:8088/liveplay-kk.rtxapp.com/live/program/live/dsjc8m/8000000/mnf.m3u8
