@@ -1583,6 +1583,7 @@ NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8
 靖天戏剧,https://cdn.qd.je/163189/jtxj
 靖天戏剧,https://cdn12.178.indevs.in/163189/jtxj
 靖天戏剧,http://4gtv.cnlive.club/channel/3f07b409/index.m3u8?q=1784706116084
+靖天戏剧,https://ktpremium.world/live/LT1976F/A9177/918600.ts
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/China-TV-Live-M3U8/refs/heads/main/tv.m3u
 星卫娱乐,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 星卫娱乐,https://live.ottiptv.cc/huya/880203
