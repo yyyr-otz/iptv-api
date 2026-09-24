@@ -1507,6 +1507,7 @@ NewTV动作电影,http://cdnrrs.gx.chinamobile.com/PLTV/77777777/224/3221225703/
 NewTV动作电影,https://iptv.catvod.com/live.php?id=NewTV%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1
 NewTV动作电影,http://ott.mobaibox.com/PLTV/-/224/3221227606/index.m3u8
 NewTV动作电影,http://gxyd.484947.xyz/PLTV/77777777/224/3221225703/index.m3u8?servicetype=3&IASHttpSessionId=OTT
+NewTV动作电影,http://ott.mobaibox.com/PLTV/4/224/3221227606/index.m3u8
 黑莓电影,http://[2409:8087:1a01:df::4001]:80/TVOD/88888888/224/3221225681/main.m3u8
 黑莓电影,http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
 黑莓电影,http://www.zhch682022.cn:35455/itv/1000000004000019624.m3u8?cdn=ystenlive
