@@ -109,8 +109,6 @@ CCTV17,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227685/index.m3u8
 辽宁生活,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227657/index.m3u8
 辽宁体育休闲,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227642/index.m3u8
 辽宁体育休闲,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227654/index.m3u8
-辽宁移动电视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227554/index.m3u8
-辽宁移动电视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227664/index.m3u8
 辽宁影视剧,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227651/index.m3u8
 辽宁影视剧,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227652/index.m3u8
 沈阳新闻综合,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227563/index.m3u8
@@ -131,8 +129,6 @@ CCTV-老故事,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227745/index.m
 CHC动作电影,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227724/index.m3u8
 CHC家庭影院,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227727/index.m3u8
 CHC影迷电影,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227635/index.m3u8
-CETV1,http://3872327.top:1225/udp/239.69.1.110:10298
-CETV4,http://3872327.top:1225/udp/239.69.2.29:11328
 CETV1,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227593/index.m3u8
 CETV1,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226171/index.m3u8
 CETV2,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226170/index.m3u8
@@ -291,7 +287,6 @@ CETV4,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
 嘉佳卡通,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227672/index.m3u8
 优漫卡通,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227676/index.m3u8
 优漫卡通,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226149/index.m3u8
-新动漫,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227706/index.m3u8
 卡酷少儿,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226157/index.m3u8
 快乐垂钓,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227632/index.m3u8
 梨园频道,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227721/index.m3u8
@@ -354,14 +349,7 @@ CCTV16-4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227709/index.m3u8
 凤凰资讯B,http://3872327.top:1225/udp/239.69.2.19:11268$湖北电信
 云南都市,https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
 云南娱乐,https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
-欢笑剧场4K,http://3872327.top:1225/udp/239.69.2.5:11184
-动漫秀场,http://3872327.top:1225/udp/239.69.2.6:11190
-游戏风云,http://3872327.top:1225/udp/239.69.2.8:11202
-东方财经,http://3872327.top:1225/udp/239.69.2.9:11208
-生活时尚,http://3872327.top:1225/udp/239.69.2.11:11220
-乐游,http://3872327.top:1225/udp/239.69.2.12:11226
-法治天地,http://3872327.top:1225/udp/239.69.2.10:11214
-金色学堂,http://3872327.top:1225/udp/239.69.2.13:11232
+
 
 
 
@@ -407,11 +395,8 @@ CCTV17,http://39.134.51.147:6410/PLTV/11/224/3221227552/index.m3u8??servicetype=
 辽宁公共,http://39.134.51.147:6410/PLTV/11/224/3221226766/index.m3u8??servicetype=1
 家庭理财,http://39.134.51.147:6410/PLTV/11/224/3221227596/index.m3u8??servicetype=1
 家庭理财,http://39.134.51.147:6410/PLTV/11/224/3221226754/index.m3u8??servicetype=1
-新动漫,http://39.134.51.147:6410/PLTV/11/224/3221227706/index.m3u8??servicetype=1
 沈阳新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221227584/index.m3u8??servicetype=1
 沈阳新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221226895/index.m3u8??servicetype=1
-辽宁移动电视,http://39.134.51.147:6410/PLTV/11/224/3221227664/index.m3u8??servicetype=1
-辽宁移动电视,http://39.134.51.147:6410/PLTV/11/224/3221226982/index.m3u8??servicetype=1
 盘锦都市,http://39.134.51.147:6410/PLTV/11/224/3221227659/index.m3u8??servicetype=1
 黑龙江卫视,http://39.134.51.147:6410/PLTV/11/224/3221227583/index.m3u8??servicetype=1
 吉林卫视,http://39.134.51.147:6410/PLTV/11/224/3221227488/index.m3u8??servicetype=1
