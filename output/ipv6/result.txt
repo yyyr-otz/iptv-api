@@ -1335,6 +1335,8 @@ Viutv,https://10.fast.hidns.vip/163189/viu/
 三立新闻,https://d2jc41c1shgcol.cloudfront.net/live/iNEWS/playlist.m3u8
 三立新闻,https://www.goodiptv.club/douyu/5692901
 三立新闻,https://ktpremium.world/live/LT1976F/A9177/515185.ts
+三立新闻,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
+三立新闻,https://www.youtube.com/watch?v=ZSKIiW54rtQ
 东森综合,https://smart.pendy.dpdns.org/Smart.php?id=ettvzhonghe
 东森综合,https://hls-gateway.vpstv.net/streams/476987.m3u8
 东森综合,https://smt.858.qzz.io/Smart.php?id=ettvzhonghe
