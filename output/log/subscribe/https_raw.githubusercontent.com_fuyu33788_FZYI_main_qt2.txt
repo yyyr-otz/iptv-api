@@ -134,6 +134,8 @@ CETV1,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226171/index.m3u8
 CETV2,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226170/index.m3u8
 CETV3,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226950/index.m3u8
 CETV4,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
+内蒙古足球频道,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227720/index.m3u8
+环球奇观,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227760/index.m3u8
 甘肃卫视,http://3872327.top:1225/udp/239.69.2.23:11292
 青海卫视,http://3872327.top:1225/udp/239.69.2.24:11298
 山西卫视,http://3872327.top:1225/udp/239.69.2.41:11400
@@ -472,6 +474,8 @@ CETV1,http://39.134.51.147:6410/PLTV/11/224/3221227593/index.m3u8??servicetype=1
 甘肃卫视,http://39.134.51.147:6410/PLTV/11/224/3221227470/index.m3u8??servicetype=1
 农林卫视,http://39.134.51.147:6410/PLTV/11/224/3221227497/index.m3u8??servicetype=1
 CCTV-老故事,http://39.134.51.147:6410/PLTV/11/224/3221227745/index.m3u8??servicetype=1
+环球奇观,http://39.134.51.147:6410/PLTV/11/224/3221227760/index.m3u8??servicetype=1
+足球频道,http://39.134.51.147:6410/PLTV/11/224/3221227720/index.m3u8??servicetype=1
 国学频道,http://39.134.51.147:6410/PLTV/11/224/3221227653/index.m3u8??servicetype=1
 书画频道,http://39.134.51.147:6410/PLTV/11/224/3221227650/index.m3u8??servicetype=1
 盘锦新闻综合,http://39.134.51.147:6410/PLTV/11/224/3221227751/index.m3u8??servicetype=1
