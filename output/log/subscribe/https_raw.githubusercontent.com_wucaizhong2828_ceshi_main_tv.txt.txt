@@ -114,6 +114,7 @@ CCTV-1 HD (1080p),http://69.30.245.50/live/cctv1.m3u8
 CCTV-2 (720p),http://74.91.26.218:82/live/cctv2hd.m3u8
 CCTV-3 (720p),http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-4K HD (1080p),http://198.204.240.250:82/live/cctv4k.m3u8
+CCTV-5+ (1080p),https://php.jdshipin.com/TVOD/iptv.php?id=cctv5p
 CCTV-6 [Geo-blocked],https://live.eac-news.com/CCTV/streams/cctv6.m3u8
 CCTV-6 HD (1080p),http://69.30.245.50/live/cctv6.m3u8
 CCTV-7 (720p),http://74.91.26.218:82/live/cctv7hd.m3u8
