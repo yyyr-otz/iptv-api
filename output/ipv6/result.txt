@@ -463,6 +463,8 @@ CETV-4,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000012000283003/1.m3
 香港卫视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 香港卫视,https://hkstv.tv/api/m3u8-proxy?url=http%3A%2F%2Fwebcast.hkstv.tv%2Flivestream%2Fmutfysrq%2Fplaylist.m3u8
 香港卫视,http://webcast.hkstv.tv:80/livestream/mutfysrq/playlist.m3u8?hls_ctx=9dl33ad6
+香港卫视,https://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+香港卫视,https://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8?hls_ctx=8o89406w
 浙江卫视,http://z.b.bkpcp.top/m.php?id=zjws
 浙江卫视,http://goo.bkpcp.top/mg/zjws
 浙江卫视,http://iptv.huuc.edu.cn/hls/zjhd.m3u8
@@ -1248,6 +1250,8 @@ TVBS亚洲,http://tv123.cc.cd/live.php?ch=1561&sid=af198341a5a0bfb43b4ab96a88b19
 香港卫视,https://raw.githubusercontent.com/mytv-android/BRTV-Live-M3U8/refs/heads/main/BRTV.m3u
 香港卫视,https://hkstv.tv/api/m3u8-proxy?url=http%3A%2F%2Fwebcast.hkstv.tv%2Flivestream%2Fmutfysrq%2Fplaylist.m3u8
 香港卫视,http://webcast.hkstv.tv:80/livestream/mutfysrq/playlist.m3u8?hls_ctx=9dl33ad6
+香港卫视,https://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+香港卫视,https://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8?hls_ctx=8o89406w
 纬来体育,https://smart.pendy.dpdns.org/Smart.php?id=videolandsport
 纬来体育,https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8
 纬来体育,https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8
@@ -1297,6 +1301,7 @@ Viutv,https://cdn.163189.xyz/163189/viu
 Viutv,https://cdn.123.rr.kg/163189/viu
 Viutv,https://cdn.qd.je/163189.php?id=viu
 Viutv,https://10.fast.hidns.vip/163189/viu/
+Viutv,https://10.fast.hidns.vip/163189/viu/video/index.php
 三立台湾,http://php.666230.xyz/smt.php?id=sanlitaiwan
 三立台湾,https://smart.946985.filegear-sg.me/smart.php?id=sanlitaiwan
 三立台湾,https://tv1288.xyz/tw.php?id=sltw
