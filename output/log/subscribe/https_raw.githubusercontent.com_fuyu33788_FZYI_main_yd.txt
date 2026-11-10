@@ -140,6 +140,7 @@ CETV4,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226940/index.m3u8
 阜新综合,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227717/index.m3u8
 盘锦都市,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227659/index.m3u8
 盘锦新闻综合,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227751/index.m3u8
+兵团卫视,http://ltcottcdnfh.ln.chinamobile.com/PLTV/11/224/3221227726/index.m3u8?servicetype=1$全高清
 安多卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227561/index.m3u8
 安徽卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227567/index.m3u8
 安徽卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227634/index.m3u8
