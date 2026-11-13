@@ -1221,6 +1221,7 @@ CETV-4,http://[2409:8087:1e01:23::10]:8112/000000001000/5000000012000283003/1.m3
 凤凰卫视,http://xsmt.ccwu.cc/xsmt/smt.php?id=60
 凤凰卫视,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236260/index.m3u8
 凤凰卫视,https://7612-5516-affc-d88b.kylintv.tv/live/pxinhd_iphone.m3u8
+凤凰卫视,https://tv123.cc.cd/live.php?ch=613&sid=49075a4f8fcfca5e295ab1ce78cc3f74&exp=1794598347&sig=4364505bee67ce43e12eb8940a28028334bccd662ae7b3b5aeb9a4b3a231dd21
 TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd
 TVBS亚洲,https://4gtv.158.qzz.io/163189/5c95e227-8109-4d5a-ad31-a5456eeba506/
 TVBS亚洲,https://4gtv.158.qzz.io/163189/ac9fc30c-1caf-401e-a373-9a8cc054b527/
